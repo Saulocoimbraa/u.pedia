@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>μ.pedia - Enciclopédia Digital de Matemática</title>
+  <meta name="description" content="Uma enciclopédia matemática ultra-moderna focada na educação básica. Aprenda teoremas, axiomas e demonstrações com recursos visuais e interativos.">
+  
+  <!-- Google Fonts (Outfit & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX CSS (for LaTeX rendering) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- KaTeX JS and Auto-Render extension -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <!-- App Core JS Modules -->
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="app-header">
+    <a href="#/" id="logo-brand" class="brand">
+      <i data-lucide="infinity"></i>
+      μ<span>.pedia</span>
+    </a>
+    
+    <!-- Search Bar with Suggestions -->
+    <div class="search-container">
+      <div class="search-box">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar teorema, axioma..." autocomplete="off">
+      </div>
+      <div id="search-results" class="search-results-dropdown"></div>
+    </div>
+  </header>
+
+  <!-- Viewport for SPA Content Rendering -->
+  <main class="app-main">
+    <div id="content-viewport" class="animate-fade-in">
+      <!-- Loaded dynamically via router.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 μ.pedia. Todos os direitos reservados. Projetado para professores e alunos de matemática.</p>
+  </footer>
+
+</body>
+</html>
