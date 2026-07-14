@@ -1,4 +1,47 @@
 export const articles = [
+    {
+    id: "hipotenusa",
+    title: "Hipotenusa",
+    level: "Ensino Fundamental e Médio",
+    category: "Geometria",
+    icon: "triangle",
+    summary: "Maior lado do triângulo retângulo",
+    content: String.raw`## 1. O que é a Hipotenusa?
+A **hipotenusa** é definida como o **maior lado** de um **triângulo retângulo**. Ela possui uma propriedade geométrica única: está sempre localizada **oposta ao ângulo reto** (o ângulo de **90°**). 
+Em termos matemáticos, se um triângulo retângulo possui catetos (os outros dois lados) medindo *a* e *b*, e a hipotenusa medindo *c*, a relação entre eles é dada pelo **Teorema de Pitágoras**: **c² = a² + b²**.
+
+## 2. Onde aparece?
+A hipotenusa aparece **exclusivamente** em **triângulos retângulos**. Você a encontrará em dois grandes campos da matemática:
+
+- **Na Geometria Plana**: Como o lado fundamental do triângulo retângulo e das figuras que o contêm (como diagonais de quadrados e retângulos).
+- **Na Trigonometria**: É a base para o cálculo do **seno** e do **cosseno** de um ângulo agudo. Nessas razões, a hipotenusa atua como o **denominador** (ex: seno = cateto oposto / hipotenusa).
+- **No Plano Cartesiano**: Aparece no cálculo da **distância entre dois pontos** (pois a distância nada mais é que a hipotenusa de um triângulo formado pelas diferenças das coordenadas X e Y).
+
+## 3. Como identificar (Passo a passo)
+Para identificar a hipotenusa em qualquer figura, siga esta lógica:
+
+1. **Procure o ângulo reto**: Localize o sinal de **90°** (geralmente marcado com um quadradinho no vértice).
+2. **Olhe para o lado oposto**: A hipotenusa é o lado que **não toca** esse ângulo reto. Ela fica "de frente" para ele.
+3. **Confirme pelo tamanho**: Em qualquer triângulo retângulo, a hipotenusa será sempre o **maior lado** (isso é uma consequência direta do Teorema de Pitágoras). Se um lado for maior que os outros dois, ele é a hipotenusa.
+
+## 4. Usos práticos (Para que serve)
+A hipotenusa vai muito além dos livros didáticos. Seus principais usos são:
+
+- **Cálculo de distâncias indiretas**: Permite medir alturas ou larguras inacessíveis. Exemplo: calcular a **altura de um prédio** usando a sombra (cateto) e o ângulo do sol, ou a distância entre duas margens de um rio.
+- **Construção Civil e Engenharia**: Essencial para calcular **rampas de acessibilidade**, **inclinações de telhados** e **escadas**, garantindo a inclinação correta e segura.
+- **Navegação e Geoprocessamento**: Usado para encontrar a **menor distância** (linha reta) entre dois pontos em um mapa, considerando deslocamentos norte/sul e leste/oeste.
+- **Física (Vetores)**: Quando duas forças atuam perpendicularmente sobre um objeto, a **força resultante** é exatamente a hipotenusa do triângulo vetorial formado por elas.
+- **Tecnologia**: Nos monitores de computador e TVs, o tamanho da tela (polegadas) é sempre a medida da **hipotenusa** (a diagonal do retângulo da tela).
+
+## Resumo dos Palavras-Chave (Destaque)
+> **Hipotenusa** é o **maior lado** do **triângulo retângulo**, posicionada **oposta ao ângulo reto (90°)**. Ela é a base do **Teorema de Pitágoras** (a² + b² = c²) e das **razões trigonométricas**. Para identificá-la, basta achar o ângulo reto e ver o lado que está de frente para ele. Seu uso prático é crucial para medir **distâncias indiretas**, construir **rampas**, calcular **forças resultantes** e diagonais de telas.      
+                `,
+    infobox: {
+      "Fórmula": "$a^2 = b^2 + c^2$",
+      "Método": "[[metodos-de-demonstracao]]"
+    },
+    widget: null
+  },
   {
     id: "teorema-de-pitagoras",
     title: "Teorema de Pitágoras",
