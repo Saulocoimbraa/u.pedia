@@ -3,8 +3,8 @@ export function initWidgetPitagoras(containerId) {
   if (!container) return;
 
   container.innerHTML = `
-    <div class="widget-pitagoras-wrapper">
-      <div class="widget-top-actions" style="display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; justify-content: center;">
+    <div class="widget-pitagoras-wrapper" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <div class="widget-top-actions" style="display: flex; gap: 0.8rem; margin-bottom: 1.5rem; flex-wrap: wrap; justify-content: center; width: 100%;">
         <button id="btn-view-static" class="btn btn-secondary active-view-btn" style="border: 1px solid var(--accent); background: var(--accent-light); color: var(--accent);">
           <i data-lucide="triangle"></i> Áreas Estáticas
         </button>
@@ -16,7 +16,7 @@ export function initWidgetPitagoras(containerId) {
         </button>
       </div>
 
-      <div class="widget-action-bar" style="display: flex; justify-content: center; margin-bottom: 1rem; gap: 1rem;">
+      <div class="widget-action-bar" style="display: flex; justify-content: center; margin-bottom: 1rem; gap: 1rem; min-height: 40px; width: 100%;">
         <button id="btn-animate-arr" class="btn btn-primary" style="display: none;">
           <i data-lucide="play"></i> <span>Reordenar Peças</span>
         </button>
@@ -25,40 +25,45 @@ export function initWidgetPitagoras(containerId) {
         </button>
       </div>
 
-      <div id="sliders-controls" class="widget-controls" style="margin-bottom: 1.5rem;">
-        <div class="control-group">
-          <label for="cateto-b-range">Cateto <em>b</em>: <strong id="val-b">3.0</strong> cm</label>
-          <input type="range" id="cateto-b-range" min="2" max="6" step="0.5" value="3">
+      <div id="sliders-controls" class="widget-controls" style="margin-bottom: 1.5rem; width: 100%; max-width: 400px;">
+        <div class="control-group" style="margin-bottom: 1rem;">
+          <label for="cateto-b-range" style="display: flex; justify-content: space-between;">
+            <span>Cateto <em>b</em>:</span>
+            <span><strong id="val-b">3.0</strong> cm</span>
+          </label>
+          <input type="range" id="cateto-b-range" min="2" max="6" step="0.5" value="3" style="width: 100%;">
         </div>
         <div class="control-group">
-          <label for="cateto-c-range">Cateto <em>c</em>: <strong id="val-c">4.0</strong> cm</label>
-          <input type="range" id="cateto-c-range" min="2" max="6" step="0.5" value="4">
+          <label for="cateto-c-range" style="display: flex; justify-content: space-between;">
+            <span>Cateto <em>c</em>:</span>
+            <span><strong id="val-c">4.0</strong> cm</span>
+          </label>
+          <input type="range" id="cateto-c-range" min="2" max="6" step="0.5" value="4" style="width: 100%;">
         </div>
       </div>
 
-      <div class="widget-visualization">
-        <svg id="pitagoras-svg" viewBox="-180 -180 460 460" width="100%" height="360px">
+      <div class="widget-visualization" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <svg id="pitagoras-svg" style="display: block; margin: 0 auto; max-width: 400px; background: transparent;" width="100%" height="360px">
           </svg>
       </div>
 
-      <div class="widget-math-summary">
-        <div class="math-eq">
-          <span class="term-a">a²</span> = <span class="term-b">b²</span> + <span class="term-c">c²</span>
+      <div class="widget-math-summary" style="text-align: center; margin-top: 1rem; width: 100%;">
+        <div class="math-eq" style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">
+          <span class="term-a" style="color: var(--accent, #f59e0b);">a²</span> = <span class="term-b" style="color: #4f46e5;">b²</span> + <span class="term-c" style="color: #10b981;">c²</span>
         </div>
-        <div class="math-values" id="eq-resolved">
-          <span class="val-a-sq">25.00</span> = <span class="val-b-sq">9.00</span> + <span class="val-c-sq">16.00</span>
+        <div class="math-values" id="eq-resolved" style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+          <span class="val-a-sq" style="color: #f59e0b; font-weight: 600;">25.00</span> = <span class="val-b-sq" style="color: #4f46e5;">9.00</span> + <span class="val-c-sq" style="color: #10b981;">16.00</span>
         </div>
-        <div class="math-hypotenuse">
-          Hipotenusa <em>(a)</em> ≈ <span id="val-a-result">5.00</span> cm
+        <div class="math-hypotenuse" style="font-size: 0.95rem; color: var(--text-muted, #6b7280);">
+          Hipotenusa <em>(a)</em> ≈ <span id="val-a-result" style="font-weight: bold; color: var(--text-main);">5.00</span> cm
         </div>
       </div>
 
-      <div id="arrangement-explanation" class="widget-explanation-box" style="display: none; margin-top: 1rem; padding: 1rem; background-color: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; font-size: 0.95rem; line-height: 1.5;">
+      <div id="arrangement-explanation" class="widget-explanation-box" style="display: none; margin-top: 1.5rem; padding: 1rem; background-color: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; font-size: 0.95rem; line-height: 1.5; width: 100%; max-width: 500px; box-sizing: border-box;">
         </div>
     </div>
   `;
 
-  // UI buttons
   const btnStatic = container.querySelector("#btn-view-static");
   const btnAnimated = container.querySelector("#btn-view-animated");
   const btnGrid = container.querySelector("#btn-view-grid");
@@ -72,21 +77,19 @@ export function initWidgetPitagoras(containerId) {
   const sliderC = container.querySelector("#cateto-c-range");
   const svg = container.querySelector("#pitagoras-svg");
 
-  // State: "static", "arrangement", "grid"
   let currentView = "static";
-  // Sub-states
   let arrangementState = 1;
-  let gridState = "initial"; // "initial" or "moved"
+  let gridState = "initial";
 
   function updateActiveButton(activeBtn) {
     [btnStatic, btnAnimated, btnGrid].forEach(btn => {
-      btn.style.border = "1px solid var(--border-color)";
-      btn.style.background = "var(--card-bg)";
-      btn.style.color = "var(--text-main)";
+      btn.style.border = "1px solid var(--border-color, #e5e7eb)";
+      btn.style.background = "var(--card-bg, #ffffff)";
+      btn.style.color = "var(--text-main, #1a1a1a)";
     });
-    activeBtn.style.border = "1px solid var(--accent)";
-    activeBtn.style.background = "var(--accent-light)";
-    activeBtn.style.color = "var(--accent)";
+    activeBtn.style.border = "1px solid var(--accent, #4f46e5)";
+    activeBtn.style.background = "var(--accent-light, rgba(79, 70, 229, 0.1))";
+    activeBtn.style.color = "var(--accent, #4f46e5)";
   }
 
   function draw() {
@@ -108,7 +111,17 @@ export function initWidgetPitagoras(containerId) {
       btnAnimateArr.style.display = "none";
       btnAnimateGrid.style.display = "none";
       explanationBox.style.display = "none";
-      svg.setAttribute("viewBox", "-180 -180 460 460");
+      
+      // Centraliza dinamicamente recalculando a ViewBox com base no tamanho das formas
+      const scale = 25;
+      const b = bVal * scale;
+      const c = cVal * scale;
+      const minX = -b - 20;
+      const minY = -b - c - 20;
+      const width = b + c + 2 * scale + 40;
+      const height = b + c + 2 * scale + 40;
+      svg.setAttribute("viewBox", `${minX} ${minY} ${width} ${height}`);
+      
       drawStaticView(bVal, cVal, aVal);
     } else if (currentView === "arrangement") {
       updateActiveButton(btnAnimated);
@@ -116,17 +129,20 @@ export function initWidgetPitagoras(containerId) {
       btnAnimateArr.style.display = "inline-flex";
       btnAnimateGrid.style.display = "none";
       explanationBox.style.display = "block";
-      svg.setAttribute("viewBox", "-20 -20 440 440");
+      
+      // ViewBox quadrada fixa para o arranjo centralizado
+      svg.setAttribute("viewBox", "-20 -20 360 360");
       drawAnimatedView(bVal, cVal, aVal);
     } else if (currentView === "grid") {
       updateActiveButton(btnGrid);
-      slidersControls.style.display = "none"; // Hide sliders to maintain a clean 3-4-5 grid
+      slidersControls.style.display = "none";
       btnAnimateArr.style.display = "none";
       btnAnimateGrid.style.display = "inline-flex";
       explanationBox.style.display = "block";
-      svg.setAttribute("viewBox", "-180 -180 460 460");
       
-      // Override values for clean 3-4-5 visual comparison
+      // Centralização fixa ótima para a proporção 3-4-5
+      svg.setAttribute("viewBox", "-140 -210 390 390");
+      
       container.querySelector("#val-b").textContent = "3.0";
       container.querySelector("#val-c").textContent = "4.0";
       container.querySelector(".val-b-sq").textContent = "9.00";
@@ -141,7 +157,7 @@ export function initWidgetPitagoras(containerId) {
   }
 
   function drawStaticView(bVal, cVal, aVal) {
-    const scale = 28;
+    const scale = 25;
     const b = bVal * scale;
     const c = cVal * scale;
 
@@ -162,8 +178,8 @@ export function initWidgetPitagoras(containerId) {
     const hCy = (By + Cy + C2y + B2y) / 4;
 
     svg.innerHTML = `
-      <line x1="-180" y1="0" x2="280" y2="0" stroke="#f0f0f0" stroke-width="1"/>
-      <line x1="0" y1="-180" x2="0" y2="280" stroke="#f0f0f0" stroke-width="1"/>
+      <line x1="-200" y1="0" x2="300" y2="0" stroke="#f0f0f0" stroke-width="1"/>
+      <line x1="0" y1="-200" x2="0" y2="300" stroke="#f0f0f0" stroke-width="1"/>
 
       <polygon points="${Sb}" fill="rgba(79,70,229,0.08)" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3"/>
       <text x="${Ax - b / 2}" y="${Ay - b / 2}" fill="#4f46e5" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">b²</text>
@@ -185,11 +201,10 @@ export function initWidgetPitagoras(containerId) {
   }
 
   function drawAnimatedView(bVal, cVal, aVal) {
-    const LVal = bVal + cVal;
-    const scale = 360 / LVal;
-    const b = bVal * scale;
-    const c = cVal * scale;
-    const L = LVal * scale;
+    const L = 320; // Tamanho fixo do quadrado externo para manter centralização
+    const totalVal = bVal + cVal;
+    const b = (bVal / totalVal) * L;
+    const c = (cVal / totalVal) * L;
 
     const triPoints = `0,0 ${b},0 0,${c}`;
     const TRI_COLORS = [
@@ -210,8 +225,8 @@ export function initWidgetPitagoras(containerId) {
 
       btnAnimateArr.querySelector("span").textContent = "Reordenar Peças (Arranjo 2)";
       explanationBox.innerHTML = `
-        <strong>Arranjo 1 (Quadrado de lado b + c):</strong> Quatro triângulos retângulos idênticos cobrem os quatro cantos. 
-        O espaço vazio no centro forma um quadrado inclinado correspondente à área da hipotenusa 
+        <strong>Arranjo 1 (Quadrado de lado b + c):</strong> Quatro triângulos retângulos cobrem os cantos. 
+        O espaço restante no centro forma um quadrado perfeito inclinado correspondente à área da hipotenusa 
         <strong style="color:#f59e0b">a²</strong> (${(aVal * aVal).toFixed(2)} cm²).
       `;
 
@@ -221,18 +236,19 @@ export function initWidgetPitagoras(containerId) {
         <text x="${L/2}" y="${L/2}" fill="#f59e0b" font-size="18" font-weight="800" text-anchor="middle" dominant-baseline="middle">a²</text>
       `;
     } else {
+      // Arranjo 2 clássico: Triângulos deslizados de modo simétrico e sem sobreposições
       t1_transform = `translate(0, 0) rotate(0)`;
       t2_transform = `translate(${b}, ${c}) rotate(180)`;
       t3_transform = `translate(${L}, ${L}) rotate(180)`;
-      t4_transform = `translate(${c}, ${b}) rotate(0)`; // CORRIGIDO: de ${b}, ${c} para ${c}, ${b} para evitar sobreposição
+      t4_transform = `translate(${c}, ${b}) rotate(0)`;
 
       btnAnimateArr.querySelector("span").textContent = "Ver Arranjo Inicial (Arranjo 1)";
       explanationBox.innerHTML = `
-        <strong>Arranjo 2:</strong> Deslizamos os triângulos para formar dois retângulos. 
-        O espaço vazio resultante agora se reorganiza em dois quadrados perfeitamente alinhados: 
+        <strong>Arranjo 2:</strong> Deslizando os triângulos, formamos dois retângulos. 
+        O espaço livre reorganiza-se em dois quadrados perfeitos alinhados nos eixos: 
         um de área <strong style="color:#4f46e5">b²</strong> (${(bVal * bVal).toFixed(2)} cm²) e outro de área 
-        <strong style="color:#10b981">c²</strong> (${(cVal * cVal).toFixed(2)} cm²). Como a área total é constante, 
-        provamos visualmente que <strong style="color:#f59e0b">a² = b² + c²</strong>!
+        <strong style="color:#10b981">c²</strong> (${(cVal * cVal).toFixed(2)} cm²). Como a área do quadrado externo 
+        permanece constante, provamos que: <strong style="color:#f59e0b">a² = b² + c²</strong>!
       `;
 
       emptySpaceElements = `
@@ -249,6 +265,7 @@ export function initWidgetPitagoras(containerId) {
     svg.innerHTML = `
       ${emptySpaceElements}
       <rect x="0" y="0" width="${L}" height="${L}" fill="none" stroke="#1a1a1a" stroke-width="3" rx="8"/>
+      
       <polygon points="${triPoints}" fill="${TRI_COLORS[0]}" stroke="#4f46e5" stroke-width="1.5"
         style="transform: ${t1_transform}; transform-origin: 0px 0px; transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);"/>
       <polygon points="${triPoints}" fill="${TRI_COLORS[1]}" stroke="#4f46e5" stroke-width="1.5"
@@ -261,16 +278,14 @@ export function initWidgetPitagoras(containerId) {
   }
 
   function drawGridView() {
-    // Fixed scale for a 3-4-5 grid
     const scale = 28;
-    const b = 3 * scale; // 84
-    const c = 4 * scale; // 112
+    const b = 3 * scale;
+    const c = 4 * scale;
 
     const Ax = 0, Ay = 0;
     const Bx = 0, By = -b;
     const Cx = c, Cy = 0;
 
-    // Boundaries of the three squares
     const Sb = `${Ax},${Ay} ${Bx},${By} ${Bx - b},${By} ${Ax - b},${Ay}`;
     const Sc = `${Ax},${Ay} ${Cx},${Cy} ${Cx},${Cy + c} ${Ax},${Ay + c}`;
 
@@ -280,39 +295,33 @@ export function initWidgetPitagoras(containerId) {
     const C2y = Cy - 4 * scale;
     const Sh = `${Bx},${By} ${Cx},${Cy} ${C2x},${C2y} ${B2x},${B2y}`;
 
-    // Hypotenuse vectors
-    const ux = 0.8, uy = 0.6;   // Along hypotenuse
-    const wx = 0.6, wy = -0.8;  // Perpendicular outward
+    // Vetores diretores da Hipotenusa para preenchimento de slots
+    const ux = 0.8, uy = 0.6;   // Direção paralela à hipotenusa
+    const wx = 0.6, wy = -0.8;  // Direção ortogonal para fora
 
-    // Generate coordinates of target slots on hypotenuse square (5x5 slots)
+    // 25 slots na hipotenusa
     const targetSlots = [];
-    for (let j = 0; j < 5; j++) { // rows (outward)
-      for (let i = 0; i < 5; i++) { // columns (along hyp)
+    for (let j = 0; j < 5; j++) {
+      for (let i = 0; i < 5; i++) {
         const tx = Bx + i * scale * ux + j * scale * wx;
         const ty = By + i * scale * uy + j * scale * wy;
         targetSlots.push({ x: tx, y: ty });
       }
     }
 
-    // Generate initial coordinates of small squares in b² (3x3 grid)
+    // Posições iniciais dos blocos em b²
     const bSquares = [];
     for (let r = 0; r < 3; r++) {
       for (let cl = 0; cl < 3; cl++) {
-        bSquares.push({
-          x: -scale - cl * scale,
-          y: -scale - r * scale
-        });
+        bSquares.push({ x: -scale - cl * scale, y: -scale - r * scale });
       }
     }
 
-    // Generate initial coordinates of small squares in c² (4x4 grid)
+    // Posições iniciais dos blocos em c²
     const cSquares = [];
     for (let r = 0; r < 4; r++) {
       for (let cl = 0; cl < 4; cl++) {
-        cSquares.push({
-          x: cl * scale,
-          y: r * scale
-        });
+        cSquares.push({ x: cl * scale, y: r * scale });
       }
     }
 
@@ -320,30 +329,28 @@ export function initWidgetPitagoras(containerId) {
       btnAnimateGrid.querySelector("span").textContent = "Mover Blocos para Hipotenusa";
       explanationBox.innerHTML = `
         <strong>Visão de Grid:</strong> O quadrado do cateto <em>b</em> contém <strong>9 quadradinhos menores</strong> (3×3) 
-        e o quadrado do cateto <em>c</em> contém <strong>16 quadradinhos menores</strong> (4×4). 
-        Ao clicar em "Mover Blocos", os 9 + 16 blocos voam e se reorganizam para preencher exatamente os 
+        e o do cateto <em>c</em> contém <strong>16 quadradinhos menores</strong> (4×4). 
+        Ao clicar no botão, os 9 + 16 blocos se reorganizam para preencher exatamente os 
         <strong>25 slots da hipotenusa</strong> (5×5)!
       `;
     } else {
       btnAnimateGrid.querySelector("span").textContent = "Retornar Blocos aos Catetos";
       explanationBox.innerHTML = `
-        <strong>Blocos Organizados:</strong> Os 9 blocos roxos (b²) e os 16 blocos verdes (c²) preenchem perfeitamente 
-        a área de 25 quadradinhos (a²) do quadrado da hipotenusa. 
-        Isto ilustra a prova aritmética concreta: 9 + 16 = 25!
+        <strong>Soma de Áreas Demonstrada:</strong> Os 9 blocos roxos (b²) e os 16 blocos verdes (c²) preenchem perfeitamente 
+        a área de 25 quadradinhos (a²) do quadrado da hipotenusa. Demonstração aritmética visual direta: 9 + 16 = 25!
       `;
     }
 
-    // Generate SVG Content
     let svgContent = `
-      <line x1="-180" y1="0" x2="280" y2="0" stroke="#f0f0f0" stroke-width="1"/>
-      <line x1="0" y1="-180" x2="0" y2="280" stroke="#f0f0f0" stroke-width="1"/>
+      <line x1="-140" y1="0" x2="250" y2="0" stroke="#f0f0f0" stroke-width="1"/>
+      <line x1="0" y1="-140" x2="0" y2="250" stroke="#f0f0f0" stroke-width="1"/>
 
       <polygon points="${Sb}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
       <polygon points="${Sc}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
       <polygon points="${Sh}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
     `;
 
-    // Render hypotenuse slot boundaries (empty dashed squares) - CORRIGIDO: rotação -53.13 para o sentido externo correto
+    // Desenha slots da hipotenusa
     targetSlots.forEach((slot) => {
       svgContent += `
         <rect x="0" y="0" width="${scale}" height="${scale}" 
@@ -352,13 +359,13 @@ export function initWidgetPitagoras(containerId) {
       `;
     });
 
-    // Render the 9 blocks of b²
+    // Renderiza blocos b²
     bSquares.forEach((pos, idx) => {
       const isMoved = (gridState === "moved");
       const tx = isMoved ? targetSlots[idx].x : pos.x;
       const ty = isMoved ? targetSlots[idx].y : pos.y;
-      const rot = isMoved ? -53.13 : 0; // CORRIGIDO: de 36.87 para -53.13 para manter congruência com a rotação externa
-      const delay = idx * 0.03;
+      const rot = isMoved ? -53.13 : 0;
+      const delay = idx * 0.02;
 
       svgContent += `
         <rect x="0" y="0" width="${scale - 2}" height="${scale - 2}" rx="3"
@@ -368,14 +375,14 @@ export function initWidgetPitagoras(containerId) {
       `;
     });
 
-    // Render the 16 blocks of c²
+    // Renderiza blocos c²
     cSquares.forEach((pos, idx) => {
       const isMoved = (gridState === "moved");
       const targetIdx = 9 + idx;
       const tx = isMoved ? targetSlots[targetIdx].x : pos.x;
       const ty = isMoved ? targetSlots[targetIdx].y : pos.y;
-      const rot = isMoved ? -53.13 : 0; // CORRIGIDO: de 36.87 para -53.13
-      const delay = idx * 0.03;
+      const rot = isMoved ? -53.13 : 0;
+      const delay = idx * 0.02;
 
       svgContent += `
         <rect x="0" y="0" width="${scale - 2}" height="${scale - 2}" rx="3"
@@ -385,7 +392,7 @@ export function initWidgetPitagoras(containerId) {
       `;
     });
 
-    // Draw the main triangle on top
+    // Triângulo de referência
     svgContent += `
       <polyline points="10,0 10,-10 0,-10" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
       <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx},${Cy}" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
@@ -397,7 +404,6 @@ export function initWidgetPitagoras(containerId) {
     svg.innerHTML = svgContent;
   }
 
-  // Event Listeners
   sliderB.addEventListener("input", draw);
   sliderC.addEventListener("input", draw);
 
@@ -426,6 +432,5 @@ export function initWidgetPitagoras(containerId) {
     draw();
   });
 
-  // Initial draw
   draw();
 }
