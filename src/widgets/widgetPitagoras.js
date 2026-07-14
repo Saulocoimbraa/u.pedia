@@ -16,7 +16,6 @@ export function initWidgetPitagoras(containerId) {
         </button>
       </div>
 
-      <!-- Action buttons specific to views -->
       <div class="widget-action-bar" style="display: flex; justify-content: center; margin-bottom: 1rem; gap: 1rem;">
         <button id="btn-animate-arr" class="btn btn-primary" style="display: none;">
           <i data-lucide="play"></i> <span>Reordenar Peças</span>
@@ -26,7 +25,6 @@ export function initWidgetPitagoras(containerId) {
         </button>
       </div>
 
-      <!-- Sliders (hidden in grid view as grid view is fixed to 3-4-5) -->
       <div id="sliders-controls" class="widget-controls" style="margin-bottom: 1.5rem;">
         <div class="control-group">
           <label for="cateto-b-range">Cateto <em>b</em>: <strong id="val-b">3.0</strong> cm</label>
@@ -40,8 +38,7 @@ export function initWidgetPitagoras(containerId) {
 
       <div class="widget-visualization">
         <svg id="pitagoras-svg" viewBox="-180 -180 460 460" width="100%" height="360px">
-          <!-- Dynamically populated -->
-        </svg>
+          </svg>
       </div>
 
       <div class="widget-math-summary">
@@ -57,8 +54,7 @@ export function initWidgetPitagoras(containerId) {
       </div>
 
       <div id="arrangement-explanation" class="widget-explanation-box" style="display: none; margin-top: 1rem; padding: 1rem; background-color: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; font-size: 0.95rem; line-height: 1.5;">
-        <!-- Dynamically populated -->
-      </div>
+        </div>
     </div>
   `;
 
@@ -169,21 +165,17 @@ export function initWidgetPitagoras(containerId) {
       <line x1="-180" y1="0" x2="280" y2="0" stroke="#f0f0f0" stroke-width="1"/>
       <line x1="0" y1="-180" x2="0" y2="280" stroke="#f0f0f0" stroke-width="1"/>
 
-      <!-- Square on b (indigo) -->
       <polygon points="${Sb}" fill="rgba(79,70,229,0.08)" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3"/>
       <text x="${Ax - b / 2}" y="${Ay - b / 2}" fill="#4f46e5" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">b²</text>
 
-      <!-- Square on c (green) -->
       <polygon points="${Sc}" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="2" stroke-dasharray="6,3"/>
       <text x="${Ax + c / 2}" y="${Ay + c / 2}" fill="#10b981" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">c²</text>
 
-      <!-- Square on Hypotenuse a (amber) -->
       <polygon points="${Sh}" fill="rgba(245,158,11,0.08)" stroke="#f59e0b" stroke-width="2"/>
       <text x="${hCx}" y="${hCy}" fill="#f59e0b" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">a²</text>
 
       <polyline points="10,0 10,-10 0,-10" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
 
-      <!-- Triangle -->
       <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx},${Cy}" fill="white" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
 
       <text x="${(Ax + Bx) / 2 - 16}" y="${(Ay + By) / 2}" fill="#4f46e5" font-size="13" font-weight="700" text-anchor="middle">b</text>
@@ -220,7 +212,7 @@ export function initWidgetPitagoras(containerId) {
       explanationBox.innerHTML = `
         <strong>Arranjo 1 (Quadrado de lado b + c):</strong> Quatro triângulos retângulos idênticos cobrem os quatro cantos. 
         O espaço vazio no centro forma um quadrado inclinado correspondente à área da hipotenusa 
-        <strong style="color:#f59e0b">a²</strong> (25.00 cm²).
+        <strong style="color:#f59e0b">a²</strong> (${(aVal * aVal).toFixed(2)} cm²).
       `;
 
       emptySpaceElements = `
@@ -232,14 +224,14 @@ export function initWidgetPitagoras(containerId) {
       t1_transform = `translate(0, 0) rotate(0)`;
       t2_transform = `translate(${b}, ${c}) rotate(180)`;
       t3_transform = `translate(${L}, ${L}) rotate(180)`;
-      t4_transform = `translate(${b}, ${c}) rotate(0)`;
+      t4_transform = `translate(${c}, ${b}) rotate(0)`; // CORRIGIDO: de ${b}, ${c} para ${c}, ${b} para evitar sobreposição
 
       btnAnimateArr.querySelector("span").textContent = "Ver Arranjo Inicial (Arranjo 1)";
       explanationBox.innerHTML = `
         <strong>Arranjo 2:</strong> Deslizamos os triângulos para formar dois retângulos. 
         O espaço vazio resultante agora se reorganiza em dois quadrados perfeitamente alinhados: 
-        um de área <strong style="color:#4f46e5">b²</strong> (9.00 cm²) e outro de área 
-        <strong style="color:#10b981">c²</strong> (16.00 cm²). Como a área total é constante, 
+        um de área <strong style="color:#4f46e5">b²</strong> (${(bVal * bVal).toFixed(2)} cm²) e outro de área 
+        <strong style="color:#10b981">c²</strong> (${(cVal * cVal).toFixed(2)} cm²). Como a área total é constante, 
         provamos visualmente que <strong style="color:#f59e0b">a² = b² + c²</strong>!
       `;
 
@@ -289,10 +281,8 @@ export function initWidgetPitagoras(containerId) {
     const Sh = `${Bx},${By} ${Cx},${Cy} ${C2x},${C2y} ${B2x},${B2y}`;
 
     // Hypotenuse vectors
-    // u = direction along hypotenuse = (0.8, 0.6)
-    // w = direction perpendicular outward = (0.6, -0.8)
-    const ux = 0.8, uy = 0.6;
-    const wx = 0.6, wy = -0.8;
+    const ux = 0.8, uy = 0.6;   // Along hypotenuse
+    const wx = 0.6, wy = -0.8;  // Perpendicular outward
 
     // Generate coordinates of target slots on hypotenuse square (5x5 slots)
     const targetSlots = [];
@@ -337,9 +327,9 @@ export function initWidgetPitagoras(containerId) {
     } else {
       btnAnimateGrid.querySelector("span").textContent = "Retornar Blocos aos Catetos";
       explanationBox.innerHTML = `
-        <strong>Blocos Organizados:</strong> Os 9 blocos roxos ($b^2$) e os 16 blocos verdes ($c^2$) preenchem perfeitamente 
-        a área de 25 quadradinhos ($a^2$) do quadrado da hipotenusa. 
-        Isto ilustra a prova aritmética concreta: $9 + 16 = 25$!
+        <strong>Blocos Organizados:</strong> Os 9 blocos roxos (b²) e os 16 blocos verdes (c²) preenchem perfeitamente 
+        a área de 25 quadradinhos (a²) do quadrado da hipotenusa. 
+        Isto ilustra a prova aritmética concreta: 9 + 16 = 25!
       `;
     }
 
@@ -348,28 +338,26 @@ export function initWidgetPitagoras(containerId) {
       <line x1="-180" y1="0" x2="280" y2="0" stroke="#f0f0f0" stroke-width="1"/>
       <line x1="0" y1="-180" x2="0" y2="280" stroke="#f0f0f0" stroke-width="1"/>
 
-      <!-- Outline squares -->
       <polygon points="${Sb}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
       <polygon points="${Sc}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
       <polygon points="${Sh}" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="3,3"/>
     `;
 
-    // Render hypotenuse slot boundaries (empty dashed squares)
-    targetSlots.forEach((slot, index) => {
+    // Render hypotenuse slot boundaries (empty dashed squares) - CORRIGIDO: rotação -53.13 para o sentido externo correto
+    targetSlots.forEach((slot) => {
       svgContent += `
         <rect x="0" y="0" width="${scale}" height="${scale}" 
           fill="none" stroke="#d1d5db" stroke-width="1" stroke-dasharray="2,2"
-          transform="translate(${slot.x}, ${slot.y}) rotate(36.87)"/>
+          transform="translate(${slot.x}, ${slot.y}) rotate(-53.13)"/>
       `;
     });
 
     // Render the 9 blocks of b²
     bSquares.forEach((pos, idx) => {
-      // If moved, target is slot idx 0 to 8
       const isMoved = (gridState === "moved");
       const tx = isMoved ? targetSlots[idx].x : pos.x;
       const ty = isMoved ? targetSlots[idx].y : pos.y;
-      const rot = isMoved ? 36.87 : 0;
+      const rot = isMoved ? -53.13 : 0; // CORRIGIDO: de 36.87 para -53.13 para manter congruência com a rotação externa
       const delay = idx * 0.03;
 
       svgContent += `
@@ -382,12 +370,11 @@ export function initWidgetPitagoras(containerId) {
 
     // Render the 16 blocks of c²
     cSquares.forEach((pos, idx) => {
-      // If moved, target is slot idx 9 to 24
       const isMoved = (gridState === "moved");
       const targetIdx = 9 + idx;
       const tx = isMoved ? targetSlots[targetIdx].x : pos.x;
       const ty = isMoved ? targetSlots[targetIdx].y : pos.y;
-      const rot = isMoved ? 36.87 : 0;
+      const rot = isMoved ? -53.13 : 0; // CORRIGIDO: de 36.87 para -53.13
       const delay = idx * 0.03;
 
       svgContent += `
