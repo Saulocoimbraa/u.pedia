@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>μ.pedia - Enciclopédia Digital de Matemática</title>
+  <meta name="description" content="Uma enciclopédia matemática ultra-moderna focada na educação básica. Aprenda teoremas, axiomas e demonstrações com recursos visuais e interativos.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- KaTeX (renderização de fórmulas LaTeX) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+
+  <!-- Estilos da aplicação -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- KaTeX JS -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!--
+    ═══════════════════════════════════════════════════════════════
+    SCRIPTS DA APLICAÇÃO — carregados em ordem de dependência
+    ───────────────────────────────────────────────────────────────
+    ARQUITETURA DE CONTEÚDO MODULAR:
+      O conteúdo dos artigos NÃO é mais carregado aqui.
+      Cada artigo fica em content/<eixo>/<id>.js e é
+      carregado sob demanda pelo articleRenderer.js.
+      Um erro em um artigo NÃO quebra o restante do site.
+
+    PARA ADICIONAR UM NOVO ARTIGO:
+      1. Execute: node inserir_artigo.js meu-artigo.md
+      2. O script cria content/<eixo>/<id>.js e atualiza data.js
+
+    PARA ADICIONAR UM NOVO WIDGET:
+      1. Crie js/widgets/widgetNomeDoWidget.js
+      2. Adicione um <script> abaixo apontando para ele
+      3. Em js/data.js, defina  widget: "nomeDoWidget"  no artigo
+    ═══════════════════════════════════════════════════════════════
+  -->
+
+  <!-- 1. Catálogo de artigos (metadados) -->
+  <script src="./js/data.js"></script>
+
+  <!-- 2. Roteador -->
+  <script src="./js/router.js"></script>
+
+  <!-- 3. Parser Markdown → HTML -->
+  <script src="./js/parser.js"></script>
+
+  <!-- 4. Componentes de página -->
+  <script src="./js/home.js"></script>
+  <script src="./js/articleRenderer.js"></script>
+  <script src="./js/search.js"></script>
+
+  <!-- 5. Widgets interativos (adicione novos aqui) -->
+  <script src="./js/widgets/widgetPitagoras.js"></script>
+  <script src="./js/widgets/widgetImpares.js"></script>
+
+  <!-- 6. Inicialização da aplicação (deve ser o último script) -->
+  <script src="./js/app.js"></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="app-header">
+    <a href="#/" id="logo-brand" class="brand">
+      <i data-lucide="infinity"></i>
+      μ<span>.pedia</span>
+    </a>
+
+    <!-- Barra de Busca -->
+    <div class="search-container">
+      <div class="search-box">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" id="search-input" class="search-input"
+               placeholder="Buscar teorema, axioma..." autocomplete="off">
+      </div>
+      <div id="search-results" class="search-results-dropdown"></div>
+    </div>
+  </header>
+
+  <!-- Área de conteúdo (SPA) -->
+  <main class="app-main">
+    <div id="content-viewport" class="animate-fade-in">
+      <!-- Conteúdo carregado dinamicamente pelo roteador -->
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="app-footer">
+    <p>&copy; 2026 μ.pedia. Todos os direitos reservados. Projetado para professores e alunos de matemática.</p>
+  </footer>
+
+</body>
+</html>
