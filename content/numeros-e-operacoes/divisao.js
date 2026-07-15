@@ -8,7 +8,7 @@ $$a \\div b = q \\iff b \\times q = a$$
 
 ### A Proibição Absoluta: Divisão por Zero
 
-**Dividir por zero é matematicamente impossível**, não é uma "convenção" ou "regra escolar". Se tentarmos $a \\div 0 = q$, precisaríamos que $0 \\times q = a$, mas $0 \times q = 0$ para qualquer $q$. Portanto, não existe nenhum número real $q$ que satisfaça a equação quando $a \\neq 0$.
+**Dividir por zero é matematicamente impossível**, não é uma "convenção" ou "regra escolar". Se tentarmos $a \\div 0 = q$, precisaríamos que $0 \\times q = a$, mas $0 \\times q = 0$ para qualquer $q$. Portanto, não existe nenhum número real $q$ que satisfaça a equação quando $a \\neq 0$.
 
 ### O Nascimento da Fração
 

@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["multiplicacao"] = `A multiplicação é a segunda das [[operacoes-basicas]] aritméticas. Para qualquer [[numero-natural]], a multiplicação é entendida intuitivamente como uma [[soma]] repetida.
+  window.UPEDIA_CONTENT["multiplicacao"] = `A multiplicação é a segunda das operações básicas aritméticas. Para qualquer [[numero-natural]], a multiplicação é entendida intuitivamente como uma [[soma]] repetida.
 
 $$a \\times b = \\underbrace{a + a + \\cdots + a}_{b \\text{ vezes}}$$
 
@@ -8,7 +8,7 @@ Nessa operação, $a$ e $b$ são os fatores (ou multiplicando e multiplicador) e
 
 ### O Elemento Neutro e Absorvente
 
-* **[[elemento-neutro]]:** Multiplicar por $1$ não altera o valor: $a \\times 1 = a$.
+* **Elemento neutro:** Multiplicar por $1$ não altera o valor: $a \\times 1 = a$.
 * **Elemento Absorvente:** Qualquer número multiplicado por zero colapsa a equação para zero: $a \\times 0 = 0$.
 
 ### Significado Dimensional e Geométrico
