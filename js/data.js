@@ -4,14 +4,14 @@
  */
 window.UPEDIA_ARTICLES = [
   {
-    id:       "teorema-de-pitagoras",
-    title:    "Teorema de Pitágoras",
-    level:    "Ensino Fundamental II",
+    id: "teorema-de-pitagoras",
+    title: "Teorema de Pitágoras",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "triangle",
-    summary:  "Relação métrica fundamental que governa os lados de qualquer triângulo retângulo.",
-    infobox:  {
+    axis: "geometria",
+    icon: "triangle",
+    summary: "Relação métrica fundamental que governa os lados de qualquer triângulo retângulo.",
+    infobox: {
       "Nível": "Ensino Fundamental II — 9º Ano",
       "Categoria": "[[geometria-plana]]",
       "Fórmula": "$a^2 = b^2 + c^2$",
@@ -19,1272 +19,1272 @@ window.UPEDIA_ARTICLES = [
       "Usos Práticos": "Marcenaria, diagonal de telas, aviação",
       "Método de prova": "[[metodos-de-demonstracao]]"
     },
-    widget:   "pitagoras"
+    widget: "pitagoras"
   },
 
   {
-    id:       "triangulo-retangulo",
-    title:    "Triângulo Retângulo",
-    level:    "Ensino Fundamental II",
+    id: "triangulo-retangulo",
+    title: "Triângulo Retângulo",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "triangle",
-    summary:  "O triângulo que possui um ângulo interno de 90°, tornando-se a porta de entrada para a trigonometria e o Teorema de Pitágoras.",
-    infobox:  {
+    axis: "geometria",
+    icon: "triangle",
+    summary: "O triângulo que possui um ângulo interno de 90°, tornando-se a porta de entrada para a trigonometria e o Teorema de Pitágoras.",
+    infobox: {
       "Ângulo especial": "$90°$ (ângulo reto)",
       "Lados": "Hipotenusa (1) + Catetos (2)",
       "Teorema principal": "[[teorema-de-pitagoras]]",
       "Conexão": "[[geometria-plana]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "geometria-plana",
-    title:    "Geometria Plana",
-    level:    "Ensino Fundamental II",
+    id: "geometria-plana",
+    title: "Geometria Plana",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "layout",
-    summary:  "O estudo das figuras e relações em duas dimensões: pontos, retas, ângulos, polígonos e círculos.",
-    infobox:  {
+    axis: "geometria",
+    icon: "layout",
+    summary: "O estudo das figuras e relações em duas dimensões: pontos, retas, ângulos, polígonos e círculos.",
+    infobox: {
       "Dimensão": "2D",
       "Teoremas": "[[teorema-de-pitagoras]], ângulos, paralelas",
       "Extensão 3D": "Geometria Espacial",
       "Pré-req.": "[[angulo-reto]], [[triangulo-retangulo]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo-reto",
-    title:    "Ângulo Reto",
-    level:    "Ensino Fundamental I",
+    id: "angulo-reto",
+    title: "Ângulo Reto",
+    level: "Ensino Fundamental I",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-right-up",
-    summary:  "Ângulo de exatamente 90°, representado por um pequeno quadrado no vértice. É a base do Teorema de Pitágoras e da trigonometria.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-right-up",
+    summary: "Ângulo de exatamente 90°, representado por um pequeno quadrado no vértice. É a base do Teorema de Pitágoras e da trigonometria.",
+    infobox: {
       "Medida": "$90°$",
       "Símbolo": "□ (quadrado no vértice)",
       "Conexão": "[[triangulo-retangulo]], [[teorema-de-pitagoras]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "soma-dos-impares",
-    title:    "Soma dos Números Ímpares",
-    level:    "Ensino Médio",
+    id: "soma-dos-impares",
+    title: "Soma dos Números Ímpares",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "hash",
-    summary:  "A soma dos n primeiros números ímpares é sempre igual a n² — uma conexão surpreendente entre aritmética e geometria.",
-    infobox:  {
+    axis: "algebra",
+    icon: "hash",
+    summary: "A soma dos n primeiros números ímpares é sempre igual a n² — uma conexão surpreendente entre aritmética e geometria.",
+    infobox: {
       "Fórmula": "$1 + 3 + \\dots + (2n-1) = n^2$",
       "Método de prova": "[[inducao-finita]] e visual",
       "Pré-requisito": "[[numero-impar]]",
       "Conexão": "Física (movimento acelerado)"
     },
-    widget:   "impares"
+    widget: "impares"
   },
 
   {
-    id:       "axiomas-fundamentais",
-    title:    "Axiomas Fundamentais da Aritmética",
-    level:    "Ensino Fundamental I e II",
+    id: "axiomas-fundamentais",
+    title: "Axiomas Fundamentais da Aritmética",
+    level: "Ensino Fundamental I e II",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "settings",
-    summary:  "As verdades básicas e não demonstradas que regem toda a aritmética e álgebra que usamos no dia a dia.",
-    infobox:  {
+    axis: "algebra",
+    icon: "settings",
+    summary: "As verdades básicas e não demonstradas que regem toda a aritmética e álgebra que usamos no dia a dia.",
+    infobox: {
       "Área": "Álgebra e Aritmética",
       "Nível": "Ensino Fundamental I e II",
       "Aplicações": "Cálculo mental, finanças pessoais, programação"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "raiz-de-2-irracional",
-    title:    "Irracionalidade da Raiz de 2",
-    level:    "Ensino Médio",
+    id: "raiz-de-2-irracional",
+    title: "Irracionalidade da Raiz de 2",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "help-circle",
-    summary:  "Prova clássica por contradição de que √2 não pode ser expresso como razão de dois inteiros.",
-    infobox:  {
+    axis: "algebra",
+    icon: "help-circle",
+    summary: "Prova clássica por contradição de que √2 não pode ser expresso como razão de dois inteiros.",
+    infobox: {
       "Valor aproximado": "$\\sqrt{2} \\approx 1{,}41421356\\ldots$",
       "Método de prova": "[[demonstracao-absurdo]]",
       "Pré-requisito": "[[numero-par]]",
       "Conexão": "[[teorema-de-pitagoras]], formato de papel (série A)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "metodos-de-demonstracao",
-    title:    "Métodos de Demonstração",
-    level:    "Ensino Médio",
+    id: "metodos-de-demonstracao",
+    title: "Métodos de Demonstração",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "book-open",
-    summary:  "As seis principais estratégias lógicas para transformar uma conjectura em um teorema matematicamente válido.",
-    infobox:  {
+    axis: "algebra",
+    icon: "book-open",
+    summary: "As seis principais estratégias lógicas para transformar uma conjectura em um teorema matematicamente válido.",
+    infobox: {
       "Quantidade de métodos": "6 principais",
       "Pré-requisito": "[[axiomas-fundamentais]], lógica básica",
       "Exemplos no site": "[[raiz-de-2-irracional]], [[soma-dos-impares]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "demonstracao-absurdo",
-    title:    "Demonstração por Contradição",
-    level:    "Ensino Médio",
+    id: "demonstracao-absurdo",
+    title: "Demonstração por Contradição",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "x-circle",
-    summary:  "Também chamada de redução ao absurdo: supomos o contrário do que queremos provar e mostramos que isso é impossível.",
-    infobox:  {
+    axis: "algebra",
+    icon: "x-circle",
+    summary: "Também chamada de redução ao absurdo: supomos o contrário do que queremos provar e mostramos que isso é impossível.",
+    infobox: {
       "Tipo": "Método de demonstração",
       "Também chamada": "Redução ao absurdo",
       "Melhor usada para": "Provar inexistência ou irracionalidade",
       "Exemplos": "[[raiz-de-2-irracional]]",
       "Outros métodos": "[[metodos-de-demonstracao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "inducao-finita",
-    title:    "Indução Matemática",
-    level:    "Ensino Médio",
+    id: "inducao-finita",
+    title: "Indução Matemática",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "layers",
-    summary:  "Método para provar que uma propriedade vale para todos os números naturais, usando dois passos: a base e o passo indutivo.",
-    infobox:  {
+    axis: "algebra",
+    icon: "layers",
+    summary: "Método para provar que uma propriedade vale para todos os números naturais, usando dois passos: a base e o passo indutivo.",
+    infobox: {
       "Tipo": "Método de demonstração",
       "Passos": "Base ($n=1$) + Passo Indutivo",
       "Exemplo": "[[soma-dos-impares]]",
       "Outros métodos": "[[metodos-de-demonstracao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-par",
-    title:    "Número Par",
-    level:    "Ensino Fundamental I",
+    id: "numero-par",
+    title: "Número Par",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "divide-circle",
-    summary:  "Um número inteiro é par quando pode ser dividido por 2 sem deixar resto.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "divide-circle",
+    summary: "Um número inteiro é par quando pode ser dividido por 2 sem deixar resto.",
+    infobox: {
       "Definição": "$n = 2k$, $k \\in \\mathbb{Z}$",
       "Complemento": "[[numero-impar]]",
       "Uso em provas": "[[raiz-de-2-irracional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-impar",
-    title:    "Número Ímpar",
-    level:    "Ensino Fundamental I",
+    id: "numero-impar",
+    title: "Número Ímpar",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "divide",
-    summary:  "Um número inteiro é ímpar quando não é divisível por 2 — seu resto na divisão por 2 é sempre 1.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "divide",
+    summary: "Um número inteiro é ímpar quando não é divisível por 2 — seu resto na divisão por 2 é sempre 1.",
+    infobox: {
       "Definição": "$n = 2k+1$, $k \\in \\mathbb{Z}$",
       "Complemento": "[[numero-par]]",
       "Fórmula": "[[soma-dos-impares]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "potencia-de-dois",
-    title:    "Potências de 2",
-    level:    "Ensino Fundamental II",
+    id: "potencia-de-dois",
+    title: "Potências de 2",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "hash",
-    summary:  "As potências de 2 são a base da computação digital e surgem naturalmente em problemas de dobramento e divisão sucessiva.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "hash",
+    summary: "As potências de 2 são a base da computação digital e surgem naturalmente em problemas de dobramento e divisão sucessiva.",
+    infobox: {
       "Definição": "$2^n = 2 \\times 2 \\times \\ldots \\times 2$ ($n$ vezes)",
       "Primeiro termos": "$1, 2, 4, 8, 16, 32, 64, \\ldots$",
       "Conexão": "[[axiomas-fundamentais]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-natural",
-    title:    "Número Natural",
-    level:    "Ensino Fundamental I",
+    id: "numero-natural",
+    title: "Número Natural",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "hash",
-    summary:  "Os números que usamos para contar: 0, 1, 2, 3… Fundados formalmente pelos Axiomas de Peano.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "hash",
+    summary: "Os números que usamos para contar: 0, 1, 2, 3… Fundados formalmente pelos Axiomas de Peano.",
+    infobox: {
       "Conjunto": "$\\mathbb{N} = \\{0, 1, 2, 3, \\ldots\\}$",
       "Formalização": "[[axiomas-de-peano]]",
       "Extensão": "[[numero-inteiro]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-inteiro",
-    title:    "Número Inteiro",
-    level:    "Ensino Fundamental II",
+    id: "numero-inteiro",
+    title: "Número Inteiro",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "minus",
-    summary:  "A extensão dos naturais que inclui os negativos: …−2, −1, 0, 1, 2…",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "minus",
+    summary: "A extensão dos naturais que inclui os negativos: …−2, −1, 0, 1, 2…",
+    infobox: {
       "Conjunto": "$\\mathbb{Z}$",
       "Inclui": "[[numero-natural]]",
       "Extensão": "[[numero-racional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-racional",
-    title:    "Número Racional",
-    level:    "Ensino Fundamental II",
+    id: "numero-racional",
+    title: "Número Racional",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "divide",
-    summary:  "Números que podem ser expressos como fração p/q de inteiros, com q ≠ 0.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "divide",
+    summary: "Números que podem ser expressos como fração p/q de inteiros, com q ≠ 0.",
+    infobox: {
       "Conjunto": "$\\mathbb{Q}$",
       "Forma": "$p/q$, $q \\neq 0$",
       "Inclui": "[[numero-inteiro]]",
       "Extensão": "[[numero-real]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-irracional",
-    title:    "Número Irracional",
-    level:    "Ensino Médio",
+    id: "numero-irracional",
+    title: "Número Irracional",
+    level: "Ensino Médio",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "help-circle",
-    summary:  "Números que não podem ser expressos como fração. Sua expansão decimal é infinita e não-periódica.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "help-circle",
+    summary: "Números que não podem ser expressos como fração. Sua expansão decimal é infinita e não-periódica.",
+    infobox: {
       "Exemplos": "$\\sqrt{2}$, $\\pi$, $e$",
       "Prova clássica": "[[raiz-de-2-irracional]]",
       "Conexão": "[[numero-real]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "soma",
-    title:    "Soma (Adição)",
-    level:    "Ensino Fundamental I",
+    id: "soma",
+    title: "Soma (Adição)",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "plus",
-    summary:  "A operação fundamental de combinar duas quantidades. Base da multiplicação e de toda a aritmética.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "plus",
+    summary: "A operação fundamental de combinar duas quantidades. Base da multiplicação e de toda a aritmética.",
+    infobox: {
       "Notação": "$a + b$",
       "Neutro": "$a + 0 = a$",
       "Extensão": "[[multiplicacao]]",
       "Formal": "[[axiomas-de-peano]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "multiplicacao",
-    title:    "Multiplicação",
-    level:    "Ensino Fundamental I",
+    id: "multiplicacao",
+    title: "Multiplicação",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "x",
-    summary:  "Soma repetida. Cria a segunda dimensão e fundamenta a potenciação.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "x",
+    summary: "Soma repetida. Cria a segunda dimensão e fundamenta a potenciação.",
+    infobox: {
       "Notação": "$a \\times b$",
       "Neutro": "$a \\times 1 = a$",
       "Absorvente": "$a \\times 0 = 0$",
       "Extensão": "[[potenciacao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "ponto",
-    title:    "Ponto",
-    level:    "Ensino Fundamental I",
+    id: "ponto",
+    title: "Ponto",
+    level: "Ensino Fundamental I",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "circle",
-    summary:  "Ente primitivo da geometria. Indica uma posição exata no espaço, sem dimensão alguma.",
-    infobox:  {
+    axis: "geometria",
+    icon: "circle",
+    summary: "Ente primitivo da geometria. Indica uma posição exata no espaço, sem dimensão alguma.",
+    infobox: {
       "Tipo": "Ente primitivo (sem definição formal)",
       "Dimensão": "0D",
       "Papel": "Origem de toda figura geométrica"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "reta",
-    title:    "Reta",
-    level:    "Ensino Fundamental I",
+    id: "reta",
+    title: "Reta",
+    level: "Ensino Fundamental I",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "minus",
-    summary:  "Ente primitivo. Extensão unidimensional infinita, sem espessura. Dois pontos determinam uma única reta.",
-    infobox:  {
+    axis: "geometria",
+    icon: "minus",
+    summary: "Ente primitivo. Extensão unidimensional infinita, sem espessura. Dois pontos determinam uma única reta.",
+    infobox: {
       "Tipo": "Ente primitivo",
       "Dimensão": "1D",
       "Axioma": "2 pontos → 1 única reta",
       "Equação": "$y = ax + b$"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "plano",
-    title:    "Plano",
-    level:    "Ensino Fundamental I",
+    id: "plano",
+    title: "Plano",
+    level: "Ensino Fundamental I",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "square",
-    summary:  "Ente primitivo. Superfície bidimensional ilimitada. Três pontos não-colineares determinam um único plano.",
-    infobox:  {
+    axis: "geometria",
+    icon: "square",
+    summary: "Ente primitivo. Superfície bidimensional ilimitada. Três pontos não-colineares determinam um único plano.",
+    infobox: {
       "Tipo": "Ente primitivo",
       "Dimensão": "2D",
       "Axioma": "3 pontos não-colineares → 1 plano"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "dimensao",
-    title:    "Dimensão",
-    level:    "Ensino Fundamental II",
+    id: "dimensao",
+    title: "Dimensão",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "layers",
-    summary:  "Número de coordenadas necessárias para localizar um ponto. Do 0D (ponto) ao 3D (espaço volumar).",
-    infobox:  {
+    axis: "geometria",
+    icon: "layers",
+    summary: "Número de coordenadas necessárias para localizar um ponto. Do 0D (ponto) ao 3D (espaço volumar).",
+    infobox: {
       "0D": "[[ponto]]",
       "1D": "[[reta]]",
       "2D": "[[plano]]",
       "3D": "Espaço"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo",
-    title:    "Ângulo",
-    level:    "Ensino Fundamental II",
+    id: "angulo",
+    title: "Ângulo",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-right-up",
-    summary:  "Abertura entre duas semirretas de mesma origem (vértice). Medido em graus ou radianos.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-right-up",
+    summary: "Abertura entre duas semirretas de mesma origem (vértice). Medido em graus ou radianos.",
+    infobox: {
       "Vértice": "[[vertice]]",
       "Unidades": "[[grau]] ou [[radiano]]",
       "Conexão": "[[trigonometria]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "grau",
-    title:    "Grau Sexagesimal (°)",
-    level:    "Ensino Fundamental II",
+    id: "grau",
+    title: "Grau Sexagesimal (°)",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "rotate-cw",
-    summary:  "Unidade de medida de ângulos. Um círculo completo = 360°. Criado pelos Babilônios pela alta fatorabilidade do 360.",
-    infobox:  {
+    axis: "geometria",
+    icon: "rotate-cw",
+    summary: "Unidade de medida de ângulos. Um círculo completo = 360°. Criado pelos Babilônios pela alta fatorabilidade do 360.",
+    infobox: {
       "Símbolo": "$^\\circ$",
       "Círculo": "$360^\\circ$",
       "Ângulo reto": "$90^\\circ$",
       "Alternativa": "[[radiano]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "teorema",
-    title:    "Teorema",
-    level:    "Ensino Médio",
+    id: "teorema",
+    title: "Teorema",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "check-circle",
-    summary:  "Uma declaração matemática provada como verdadeira a partir de axiomas via raciocínio lógico rigoroso.",
-    infobox:  {
+    axis: "algebra",
+    icon: "check-circle",
+    summary: "Uma declaração matemática provada como verdadeira a partir de axiomas via raciocínio lógico rigoroso.",
+    infobox: {
       "Estrutura": "Hipótese → Conclusão",
       "Contraste": "[[axiomas-fundamentais]]",
       "Método": "[[metodos-de-demonstracao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "hipotese",
-    title:    "Hipótese",
-    level:    "Ensino Médio",
+    id: "hipotese",
+    title: "Hipótese",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "arrow-right",
-    summary:  "A condição inicial assumida num teorema (o 'se'). Ponto de partida de todo argumento dedutivo.",
-    infobox:  {
+    axis: "algebra",
+    icon: "arrow-right",
+    summary: "A condição inicial assumida num teorema (o 'se'). Ponto de partida de todo argumento dedutivo.",
+    infobox: {
       "Papel lógico": "Premissa inicial ('Se P…')",
       "Contexto": "[[teorema]]",
       "Destino": "[[conclusao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "conclusao",
-    title:    "Conclusão",
-    level:    "Ensino Médio",
+    id: "conclusao",
+    title: "Conclusão",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "check",
-    summary:  "O resultado inevitável de um argumento dedutivo (o 'então'). Na matemática, é uma garantia eterna.",
-    infobox:  {
+    axis: "algebra",
+    icon: "check",
+    summary: "O resultado inevitável de um argumento dedutivo (o 'então'). Na matemática, é uma garantia eterna.",
+    infobox: {
       "Papel lógico": "Resultado ('…então Q')",
       "Contexto": "[[teorema]]",
       "Origem": "[[hipotese]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "vertice",
-    title:    "Vértice",
-    level:    "Ensino Fundamental II",
+    id: "vertice",
+    title: "Vértice",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-right-up",
-    summary:  "Ponto de encontro de dois lados de um polígono ou de duas semirretas que formam um ângulo.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-right-up",
+    summary: "Ponto de encontro de dois lados de um polígono ou de duas semirretas que formam um ângulo.",
+    infobox: {
       "É um": "[[ponto]]",
       "Gera": "[[angulo]]",
       "Em polígonos": "[[triangulo]], [[quadrado]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "triangulo",
-    title:    "Triângulo",
-    level:    "Ensino Fundamental II",
+    id: "triangulo",
+    title: "Triângulo",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "triangle",
-    summary:  "O polígono de três lados. O mais rígido das formas planas e fundamento da trigonometria.",
-    infobox:  {
+    axis: "geometria",
+    icon: "triangle",
+    summary: "O polígono de três lados. O mais rígido das formas planas e fundamento da trigonometria.",
+    infobox: {
       "Lados": "3",
       "Vértices": "3",
       "Soma dos ângulos": "$180^\\circ$",
       "Caso especial": "[[triangulo-retangulo]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "quadrilatero",
-    title:    "Quadrilátero",
-    level:    "Ensino Fundamental II",
+    id: "quadrilatero",
+    title: "Quadrilátero",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "square",
-    summary:  "Polígono de quatro lados. Família que inclui trapézios, paralelogramos, retângulos e quadrados.",
-    infobox:  {
+    axis: "geometria",
+    icon: "square",
+    summary: "Polígono de quatro lados. Família que inclui trapézios, paralelogramos, retângulos e quadrados.",
+    infobox: {
       "Lados": "4",
       "Soma dos ângulos": "$360^\\circ$",
       "Subtipos": "Retângulo, Losango, [[quadrado]]"
     },
-    widget:   null
+    widget: "quadrilateros"
   },
 
   {
-    id:       "quadrado",
-    title:    "Quadrado",
-    level:    "Ensino Fundamental I",
+    id: "quadrado",
+    title: "Quadrado",
+    level: "Ensino Fundamental I",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "square",
-    summary:  "Quadrilátero de máxima simetria: quatro lados iguais e quatro ângulos retos.",
-    infobox:  {
+    axis: "geometria",
+    icon: "square",
+    summary: "Quadrilátero de máxima simetria: quatro lados iguais e quatro ângulos retos.",
+    infobox: {
       "Área": "$A = l^2$",
       "Diagonal": "$d = l\\sqrt{2}$",
       "Conexão": "[[teorema-de-pitagoras]], [[numero-irracional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "pitagoras",
-    title:    "Pitágoras de Samos",
-    level:    "Ensino Médio",
+    id: "pitagoras",
+    title: "Pitágoras de Samos",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "user",
-    summary:  "Filósofo e matemático grego (c. 570–495 a.C.) fundador da escola pitagórica. Nome associado ao mais famoso teorema da geometria.",
-    infobox:  {
+    axis: "historia",
+    icon: "user",
+    summary: "Filósofo e matemático grego (c. 570–495 a.C.) fundador da escola pitagórica. Nome associado ao mais famoso teorema da geometria.",
+    infobox: {
       "Viveu": "c. 570–495 a.C.",
       "Escola": "Pitagórica (Crotona)",
       "Legado": "[[teorema-de-pitagoras]]",
       "Paradoxo": "[[numero-irracional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "euclides",
-    title:    "Euclides de Alexandria",
-    level:    "Ensino Médio",
+    id: "euclides",
+    title: "Euclides de Alexandria",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "user",
-    summary:  "Matemático grego (c. 300 a.C.) e autor de Os Elementos, o maior sistema axiomático da história da geometria.",
-    infobox:  {
+    axis: "historia",
+    icon: "user",
+    summary: "Matemático grego (c. 300 a.C.) e autor de Os Elementos, o maior sistema axiomático da história da geometria.",
+    infobox: {
       "Viveu": "c. 300 a.C.",
       "Obra": "Os Elementos (13 volumes)",
       "Legado": "[[geometria-euclidiana]]",
       "Método": "[[axiomas-fundamentais]] → [[teorema]]s"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "giuseppe-peano",
-    title:    "Giuseppe Peano",
-    level:    "Ensino Médio",
+    id: "giuseppe-peano",
+    title: "Giuseppe Peano",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "user",
-    summary:  "Matemático italiano (1858–1932) que formalizou a aritmética dos números naturais com os Axiomas de Peano.",
-    infobox:  {
+    axis: "historia",
+    icon: "user",
+    summary: "Matemático italiano (1858–1932) que formalizou a aritmética dos números naturais com os Axiomas de Peano.",
+    infobox: {
       "Viveu": "1858–1932",
       "Nacionalidade": "Italiano",
       "Legado": "[[axiomas-de-peano]], [[inducao-finita]]",
       "Símbolo": "$\\in$ (pertencimento)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "trigonometria",
-    title:    "Trigonometria",
-    level:    "Ensino Médio",
+    id: "trigonometria",
+    title: "Trigonometria",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "activity",
-    summary:  "O estudo das relações entre ângulos e lados do triângulo. Base de todo cálculo de ondas, sinais e distâncias.",
-    infobox:  {
+    axis: "geometria",
+    icon: "activity",
+    summary: "O estudo das relações entre ângulos e lados do triângulo. Base de todo cálculo de ondas, sinais e distâncias.",
+    infobox: {
       "Base": "[[triangulo-retangulo]]",
       "Razões": "[[seno]], [[cosseno]], [[tangente]]",
       "Identidade": "$\\sin^2\\theta + \\cos^2\\theta = 1$"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "seno",
-    title:    "Seno",
-    level:    "Ensino Médio",
+    id: "seno",
+    title: "Seno",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "activity",
-    summary:  "Razão trigonométrica: cateto oposto dividido pela hipotenusa. Função periódica que descreve ondas.",
-    infobox:  {
+    axis: "geometria",
+    icon: "activity",
+    summary: "Razão trigonométrica: cateto oposto dividido pela hipotenusa. Função periódica que descreve ondas.",
+    infobox: {
       "Definição": "$\\sin\\theta = \\text{op}/\\text{hip}$",
       "Valores": "$\\sin 0°=0$, $\\sin 90°=1$",
       "Conexão": "[[cosseno]], [[triangulo-retangulo]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "cosseno",
-    title:    "Cosseno",
-    level:    "Ensino Médio",
+    id: "cosseno",
+    title: "Cosseno",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "activity",
-    summary:  "Razão trigonométrica: cateto adjacente dividido pela hipotenusa. Complemento simétrico do seno.",
-    infobox:  {
+    axis: "geometria",
+    icon: "activity",
+    summary: "Razão trigonométrica: cateto adjacente dividido pela hipotenusa. Complemento simétrico do seno.",
+    infobox: {
       "Definição": "$\\cos\\theta = \\text{adj}/\\text{hip}$",
       "Simetria": "$\\cos\\theta = \\sin(90°-\\theta)$",
       "Identidade": "$\\sin^2+\\cos^2=1$"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "tangente",
-    title:    "Tangente",
-    level:    "Ensino Médio",
+    id: "tangente",
+    title: "Tangente",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "trending-up",
-    summary:  "Razão trigonométrica: cateto oposto sobre o adjacente. Mede a inclinação de uma reta.",
-    infobox:  {
+    axis: "geometria",
+    icon: "trending-up",
+    summary: "Razão trigonométrica: cateto oposto sobre o adjacente. Mede a inclinação de uma reta.",
+    infobox: {
       "Definição": "$\\tan\\theta = \\sin\\theta/\\cos\\theta$",
       "Inclinação": "coeficiente angular de uma reta",
       "Indefinida em": "$90°$"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-real",
-    title:    "Número Real",
-    level:    "Ensino Médio",
+    id: "numero-real",
+    title: "Número Real",
+    level: "Ensino Médio",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "minus",
-    summary:  "O conjunto completo que une racionais e irracionais. Corresponde a cada ponto da reta numérica sem lacunas.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "minus",
+    summary: "O conjunto completo que une racionais e irracionais. Corresponde a cada ponto da reta numérica sem lacunas.",
+    infobox: {
       "Conjunto": "$\\mathbb{R} = \\mathbb{Q} \\cup (\\mathbb{R}\\setminus\\mathbb{Q})$",
       "Inclui": "[[numero-racional]], [[numero-irracional]]",
       "Propriedade": "Completude"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "potenciacao",
-    title:    "Potenciação",
-    level:    "Ensino Fundamental II",
+    id: "potenciacao",
+    title: "Potenciação",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "zap",
-    summary:  "Multiplicação repetida. Extensão natural que conecta a aritmética básica às raízes e logaritmos.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "zap",
+    summary: "Multiplicação repetida. Extensão natural que conecta a aritmética básica às raízes e logaritmos.",
+    infobox: {
       "Notação": "$a^n$",
       "Neutro (exp)": "$a^0 = 1$",
       "Raiz": "$a^{1/n} = \\sqrt[n]{a}$",
       "Conexão": "[[multiplicacao]], [[numero-irracional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "divisao",
-    title:    "Divisão",
-    level:    "Ensino Fundamental I",
+    id: "divisao",
+    title: "Divisão",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "divide",
-    summary:  "Operação inversa da multiplicação. Origem das frações e dos números racionais.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "divide",
+    summary: "Operação inversa da multiplicação. Origem das frações e dos números racionais.",
+    infobox: {
       "Inversa de": "[[multiplicacao]]",
       "Origem": "[[numero-racional]], [[fracao]]",
       "Proibição": "$a \\div 0$ é indefinido"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "arquimedes",
-    title:    "Arquimedes de Siracusa",
-    level:    "Ensino Médio",
+    id: "arquimedes",
+    title: "Arquimedes de Siracusa",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "user",
-    summary:  "Maior matemático da Antiguidade (c. 287–212 a.C.). Calculou π por exaustão e fundou a estática e hidrostática.",
-    infobox:  {
+    axis: "historia",
+    icon: "user",
+    summary: "Maior matemático da Antiguidade (c. 287–212 a.C.). Calculou π por exaustão e fundou a estática e hidrostática.",
+    infobox: {
       "Viveu": "c. 287–212 a.C.",
       "Método": "Exaustão (precursor do cálculo)",
       "Legado": "Aproximação de $\\pi$, lei da alavanca"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "matematica-babilonica",
-    title:    "Matemática Babilônica",
-    level:    "Ensino Médio",
+    id: "matematica-babilonica",
+    title: "Matemática Babilônica",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "globe",
-    summary:  "Civilização que inventou o sistema sexagesimal (base 60), precursor do nosso grau e das tríplices pitagóricas.",
-    infobox:  {
+    axis: "historia",
+    icon: "globe",
+    summary: "Civilização que inventou o sistema sexagesimal (base 60), precursor do nosso grau e das tríplices pitagóricas.",
+    infobox: {
       "Época": "c. 3000–500 a.C.",
       "Base numérica": "60 (sexagesimal)",
       "Tábua famosa": "Plimpton 322 (tríplices pitagóricas)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "matematica-indiana",
-    title:    "Matemática Indiana",
-    level:    "Ensino Médio",
+    id: "matematica-indiana",
+    title: "Matemática Indiana",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "globe",
-    summary:  "Civilização que inventou o zero como número e o sistema posicional decimal — fundações de toda a computação moderna.",
-    infobox:  {
+    axis: "historia",
+    icon: "globe",
+    summary: "Civilização que inventou o zero como número e o sistema posicional decimal — fundações de toda a computação moderna.",
+    infobox: {
       "Legados": "Zero, sistema posicional, seno (jya)",
       "Brahmagupta": "Formalizou o zero (628 d.C.)",
       "Aryabhata": "Tabelas do seno (499 d.C.)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "numero-primo",
-    title:    "Número Primo",
-    level:    "Ensino Fundamental II",
+    id: "numero-primo",
+    title: "Número Primo",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "hash",
-    summary:  "Um número natural maior que 1 que possui exatamente dois divisores positivos distintos: o 1 e ele mesmo.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "hash",
+    summary: "Um número natural maior que 1 que possui exatamente dois divisores positivos distintos: o 1 e ele mesmo.",
+    infobox: {
       "Definição": "$p \\in \\mathbb{N}, p > 1$ divisível apenas por $1$ e $p$",
       "Oposto": "Número composto",
       "Teorema central": "Teorema Fundamental da Aritmética",
       "Primeiro primo": "$2$ (único primo par)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "fracao",
-    title:    "Fração",
-    level:    "Ensino Fundamental I",
+    id: "fracao",
+    title: "Fração",
+    level: "Ensino Fundamental I",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "divide",
-    summary:  "A representação matemática das partes de um todo, expressa pela divisão de dois números inteiros.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "divide",
+    summary: "A representação matemática das partes de um todo, expressa pela divisão de dois números inteiros.",
+    infobox: {
       "Notação": "$\\frac{a}{b}$ ou $a/b$",
       "Termos": "Numerador ($a$) e Denominador ($b \\neq 0$)",
       "Conexão": "[[numero-racional]]",
       "Operação básica": "[[divisao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "fracao-irredutivel",
-    title:    "Fração Irredutível",
-    level:    "Ensino Fundamental II",
+    id: "fracao-irredutivel",
+    title: "Fração Irredutível",
+    level: "Ensino Fundamental II",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "shield-check",
-    summary:  "Uma fração simplificada ao máximo, onde o numerador e o denominador não possuem divisores comuns além de 1.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "shield-check",
+    summary: "Uma fração simplificada ao máximo, onde o numerador e o denominador não possuem divisores comuns além de 1.",
+    infobox: {
       "Forma": "$\\frac{p}{q}$ simplificada",
       "Condição": "$\\text{mdc}(p, q) = 1$ (primos entre si)",
       "Importância": "Unicidade na representação racional",
       "Uso em provas": "[[raiz-de-2-irracional]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "quadrado-perfeito",
-    title:    "Quadrado Perfeito",
-    level:    "Ensino Fundamental II",
+    id: "quadrado-perfeito",
+    title: "Quadrado Perfeito",
+    level: "Ensino Fundamental II",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "square",
-    summary:  "Um número inteiro que é o resultado de elevar um outro número inteiro ao quadrado.",
-    infobox:  {
+    axis: "algebra",
+    icon: "square",
+    summary: "Um número inteiro que é o resultado de elevar um outro número inteiro ao quadrado.",
+    infobox: {
       "Definição": "$n = k^2$ onde $k \\in \\mathbb{Z}$",
       "Exemplos": "$0, 1, 4, 9, 16, 25, 36, \\dots$",
       "Operação inversa": "Raiz quadrada",
       "Conexão": "[[soma-dos-impares]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "proporcao",
-    title:    "Proporção",
-    level:    "Ensino Fundamental II",
+    id: "proporcao",
+    title: "Proporção",
+    level: "Ensino Fundamental II",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "percent",
-    summary:  "A igualdade entre duas razões matemáticas, estabelecendo relações equivalentes de escala e variação.",
-    infobox:  {
+    axis: "algebra",
+    icon: "percent",
+    summary: "A igualdade entre duas razões matemáticas, estabelecendo relações equivalentes de escala e variação.",
+    infobox: {
       "Definição": "$\\frac{a}{b} = \\frac{c}{d}$",
       "Regra central": "Multiplicação cruzada ($a \\times d = b \\times c$)",
       "Termos": "Meios ($b, c$) e Extremos ($a, d$)",
       "Aplicações": "Regra de três, escalas, cartografia"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "logica",
-    title:    "Lógica Matemática",
-    level:    "Ensino Médio",
+    id: "logica",
+    title: "Lógica Matemática",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "cpu",
-    summary:  "O ramo da matemática que estuda as regras de inferência lógica, proposições e a consistência das demonstrações.",
-    infobox:  {
+    axis: "algebra",
+    icon: "cpu",
+    summary: "O ramo da matemática que estuda as regras de inferência lógica, proposições e a consistência das demonstrações.",
+    infobox: {
       "Conectivos": "$\\land$ (E), $\\lor$ (OU), $\\neg$ (NÃO), $\\implies$ (Implica)",
       "Base do site": "[[axiomas-fundamentais]]",
       "Aplicações": "[[programacao]], [[metodos-de-demonstracao]]",
       "Estrutura": "[[hipotese]] $\\implies$ [[conclusao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "algoritmo",
-    title:    "Algoritmo",
-    level:    "Ensino Fundamental II",
+    id: "algoritmo",
+    title: "Algoritmo",
+    level: "Ensino Fundamental II",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "git-commit",
-    summary:  "Uma sequência passo a passo de instruções inequívocas e finitas criadas para resolver um problema específico.",
-    infobox:  {
+    axis: "algebra",
+    icon: "git-commit",
+    summary: "Uma sequência passo a passo de instruções inequívocas e finitas criadas para resolver um problema específico.",
+    infobox: {
       "Origem do nome": "Al-Khwarizmi (matemático persa)",
       "Características": "Finito, preciso, com entradas e saídas",
       "Exemplos matemáticos": "Algoritmo da divisão, algoritmo de Euclides",
       "Conexão moderna": "[[programacao]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "programacao",
-    title:    "Programação",
-    level:    "Ensino Médio",
+    id: "programacao",
+    title: "Programação",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "code",
-    summary:  "A arte e ciência de instruir um computador a realizar tarefas por meio de código escrito em linguagens formais.",
-    infobox:  {
+    axis: "algebra",
+    icon: "code",
+    summary: "A arte e ciência de instruir um computador a realizar tarefas por meio de código escrito em linguagens formais.",
+    infobox: {
       "Conexão matemática": "[[logica]], [[algoritmo]]s",
       "Pilares": "Variáveis, controle de fluxo, funções",
       "Aplicações": "Simulações, criptografia, IA",
       "Nível": "Ensino Médio"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "computacao",
-    title:    "Computação",
-    level:    "Ensino Médio",
+    id: "computacao",
+    title: "Computação",
+    level: "Ensino Médio",
     category: "Números e Operações",
-    axis:     "numeros-e-operacoes",
-    icon:     "monitor",
-    summary:  "O campo científico e técnico que estuda o processamento automatizado de dados e cálculos.",
-    infobox:  {
+    axis: "numeros-e-operacoes",
+    icon: "monitor",
+    summary: "O campo científico e técnico que estuda o processamento automatizado de dados e cálculos.",
+    infobox: {
       "Base numérica": "Binária (0 e 1)",
       "Unidade básica": "Bit ($2^0$ ou $2^1$)",
       "Conexão matemática": "[[potencia-de-dois]], [[algoritmo]]s",
       "História": "[[matematica-indiana]] (sistema decimal/zero)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "radiano",
-    title:    "Radiano",
-    level:    "Ensino Médio",
+    id: "radiano",
+    title: "Radiano",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "compass",
-    summary:  "A unidade de medida de ângulos na qual a abertura do ângulo corresponde ao comprimento do arco dividido pelo raio.",
-    infobox:  {
+    axis: "geometria",
+    icon: "compass",
+    summary: "A unidade de medida de ângulos na qual a abertura do ângulo corresponde ao comprimento do arco dividido pelo raio.",
+    infobox: {
       "Símbolo": "rad",
       "Círculo completo": "$2\\pi$ rad",
       "Equivalência": "$180^\\circ = \\pi$ rad",
       "Pré-requisito": "[[angulo]], [[grau]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo-agudo",
-    title:    "Ângulo Agudo",
-    level:    "Ensino Fundamental II",
+    id: "angulo-agudo",
+    title: "Ângulo Agudo",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-down-right",
-    summary:  "Um ângulo cuja abertura é estritamente maior que 0° e menor que 90°.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-down-right",
+    summary: "Um ângulo cuja abertura é estritamente maior que 0° e menor que 90°.",
+    infobox: {
       "Faixa em graus": "$0^\\circ < \\theta < 90^\\circ$",
       "Faixa em radianos": "$0 < \\theta < \\frac{\\pi}{2}$ rad",
       "Caso de uso": "[[triangulo-retangulo]]",
       "Oposto": "[[angulo-obtuso]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo-obtuso",
-    title:    "Ângulo Obtuso",
-    level:    "Ensino Fundamental II",
+    id: "angulo-obtuso",
+    title: "Ângulo Obtuso",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-right-up",
-    summary:  "Um ângulo cuja abertura é estritamente maior que 90° e menor que 180°.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-right-up",
+    summary: "Um ângulo cuja abertura é estritamente maior que 90° e menor que 180°.",
+    infobox: {
       "Faixa em graus": "$90^\\circ < \\theta < 180^\\circ$",
       "Faixa em radianos": "$\\frac{\\pi}{2} < \\theta < \\pi$ rad",
       "Opostos": "[[angulo-agudo]], [[angulo-reto]]",
       "Contexto": "Triângulo obtusângulo"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo-raso",
-    title:    "Ângulo Raso",
-    level:    "Ensino Fundamental II",
+    id: "angulo-raso",
+    title: "Ângulo Raso",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "minus",
-    summary:  "Um ângulo plano que mede exatamente 180°, representando meia volta completa.",
-    infobox:  {
+    axis: "geometria",
+    icon: "minus",
+    summary: "Um ângulo plano que mede exatamente 180°, representando meia volta completa.",
+    infobox: {
       "Medida": "$180^\\circ$ ou $\\pi$ rad",
       "Geometria": "Forma uma linha reta",
       "Soma de internos": "Soma dos ângulos do [[triangulo]]",
       "Complemento": "[[angulo-complementar]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "angulo-complementar",
-    title:    "Ângulos Complementares",
-    level:    "Ensino Fundamental II",
+    id: "angulo-complementar",
+    title: "Ângulos Complementares",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-right-up",
-    summary:  "Par de ângulos cujas medidas somadas resultam em exatamente 90°.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-right-up",
+    summary: "Par de ângulos cujas medidas somadas resultam em exatamente 90°.",
+    infobox: {
       "Equação": "$\\alpha + \\beta = 90^\\circ$",
       "Relação trigonométrica": "$\\sin \\alpha = \\cos(90^\\circ-\\alpha)$",
       "Contexto": "[[triangulo-retangulo]]",
       "Pré-requisito": "[[angulo-reto]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "poligono",
-    title:    "Polígono",
-    level:    "Ensino Fundamental II",
+    id: "poligono",
+    title: "Polígono",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "hexagon",
-    summary:  "Uma figura geométrica plana fechada por segmentos de reta lineares que não se cruzam.",
-    infobox:  {
+    axis: "geometria",
+    icon: "hexagon",
+    summary: "Uma figura geométrica plana fechada por segmentos de reta lineares que não se cruzam.",
+    infobox: {
       "Elementos": "Lados, vértices, diagonais e ângulos",
       "Tipos principais": "[[triangulo]], [[quadrilatero]], pentágono...",
       "Regularidade": "Lados e ângulos iguais (regular)",
       "Soma dos internos": "$S_i = (n-2) \\times 180^\\circ$"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "hipotenusa",
-    title:    "Hipotenusa",
-    level:    "Ensino Fundamental II",
+    id: "hipotenusa",
+    title: "Hipotenusa",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "slash",
-    summary:  "O maior dos três lados de um triângulo retângulo, localizado sempre oposto ao ângulo reto.",
-    infobox:  {
+    axis: "geometria",
+    icon: "slash",
+    summary: "O maior dos três lados de um triângulo retângulo, localizado sempre oposto ao ângulo reto.",
+    infobox: {
       "Definição": "Lado oposto ao [[angulo-reto]]",
       "Teorema chave": "[[teorema-de-pitagoras]] ($a^2=b^2+c^2$)",
       "Trigonometria": "Base para [[seno]] e [[cosseno]]",
       "Geometria": "[[triangulo-retangulo]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "cateto",
-    title:    "Cateto",
-    level:    "Ensino Fundamental II",
+    id: "cateto",
+    title: "Cateto",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "corner-left-down",
-    summary:  "Um dos dois lados de um triângulo retângulo que formam o ângulo reto de 90°.",
-    infobox:  {
+    axis: "geometria",
+    icon: "corner-left-down",
+    summary: "Um dos dois lados de um triângulo retângulo que formam o ângulo reto de 90°.",
+    infobox: {
       "Quantidade": "2 por triângulo retângulo",
       "Tipos": "Oposto e Adjacente",
       "Conexão": "[[hipotenusa]]",
       "Teorema": "[[teorema-de-pitagoras]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "triangulo-semelhante",
-    title:    "Semelhança de Triângulos",
-    level:    "Ensino Fundamental II",
+    id: "triangulo-semelhante",
+    title: "Semelhança de Triângulos",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "maximize-2",
-    summary:  "Propriedade geométrica de triângulos que possuem ângulos correspondentes iguais e lados proporcionais.",
-    infobox:  {
+    axis: "geometria",
+    icon: "maximize-2",
+    summary: "Propriedade geométrica de triângulos que possuem ângulos correspondentes iguais e lados proporcionais.",
+    infobox: {
       "Condição 1": "Ângulos correspondentes congruentes",
       "Condição 2": "Lados homólogos proporcionais",
       "Casos comuns": "Caso AA (Ângulo-Ângulo)",
       "Aplicação": "[[teorema-de-tales]], [[trigonometria]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "teorema-de-tales",
-    title:    "Teorema de Tales",
-    level:    "Ensino Fundamental II",
+    id: "teorema-de-tales",
+    title: "Teorema de Tales",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "grid",
-    summary:  "Teorema que demonstra que um feixe de retas paralelas interceptado por duas retas transversais determina segmentos proporcionais.",
-    infobox:  {
+    axis: "geometria",
+    icon: "grid",
+    summary: "Teorema que demonstra que um feixe de retas paralelas interceptado por duas retas transversais determina segmentos proporcionais.",
+    infobox: {
       "Enunciado": "Segmentos proporcionais em feixes paralelos",
       "Fórmula": "$\\frac{AB}{BC} = \\frac{DE}{EF}$",
       "Criador": "Tales de Mileto",
       "Conexão": "[[triangulo-semelhante]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "matematica-grega",
-    title:    "Matemática Grega",
-    level:    "Ensino Médio",
+    id: "matematica-grega",
+    title: "Matemática Grega",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "globe",
-    summary:  "O período histórico revolucionário que introduziu a prova formal, a dedução lógica e a geometrização matemática.",
-    infobox:  {
+    axis: "historia",
+    icon: "globe",
+    summary: "O período histórico revolucionário que introduziu a prova formal, a dedução lógica e a geometrização matemática.",
+    infobox: {
       "Época": "c. 600 a.C. a 600 d.C.",
       "Personagens": "[[pitagoras]], [[euclides]], [[arquimedes]], Tales",
       "Método central": "Demonstração dedutiva rigorosa",
       "Grande Obra": "Os Elementos de Euclides"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "movimento-uniformemente-acelerado",
-    title:    "Movimento Uniformemente Acelerado",
-    level:    "Ensino Médio",
+    id: "movimento-uniformemente-acelerado",
+    title: "Movimento Uniformemente Acelerado",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "activity",
-    summary:  "O movimento cuja aceleração é constante, conectando equações quadráticas da álgebra à cinemática física.",
-    infobox:  {
+    axis: "algebra",
+    icon: "activity",
+    summary: "O movimento cuja aceleração é constante, conectando equações quadráticas da álgebra à cinemática física.",
+    infobox: {
       "Fórmula": "$s(t) = s_0 + v_0 t + \\frac{1}{2} a t^2$",
       "Aceleração": "Constante ($a \\neq 0$)",
       "Conexão Matemática": "Funções quadráticas, [[soma-dos-impares]]",
       "Ciência": "[[fisica]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "fisica",
-    title:    "Física",
-    level:    "Ensino Médio",
+    id: "fisica",
+    title: "Física",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "shield",
-    summary:  "A ciência natural que estuda a matéria, energia e suas interações, utilizando equações matemáticas como linguagem fundamental.",
-    infobox:  {
+    axis: "algebra",
+    icon: "shield",
+    summary: "A ciência natural que estuda a matéria, energia e suas interações, utilizando equações matemáticas como linguagem fundamental.",
+    infobox: {
       "Método": "Científico (observação + modelagem)",
       "Linguagem": "Álgebra e cálculo",
       "Fundador moderno": "Galileu Galilei, Isaac Newton",
       "Conexões no site": "[[movimento-uniformemente-acelerado]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "filosofia",
-    title:    "Filosofia",
-    level:    "Ensino Médio",
+    id: "filosofia",
+    title: "Filosofia",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "help-circle",
-    summary:  "O estudo das questões fundamentais sobre a existência, conhecimento e verdade, cujas bases estruturaram a lógica formal.",
-    infobox:  {
+    axis: "algebra",
+    icon: "help-circle",
+    summary: "O estudo das questões fundamentais sobre a existência, conhecimento e verdade, cujas bases estruturaram a lógica formal.",
+    infobox: {
       "Origem": "Grécia Antiga",
       "Ferramenta": "Raciocínio lógico, questionamento",
       "Conexão matemática": "[[logica]], [[metodo-socratico]]",
       "Pensadores": "Tales, Pitágoras, Sócrates, Platão"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "metodo-socratico",
-    title:    "Método Socrático",
-    level:    "Ensino Médio",
+    id: "metodo-socratico",
+    title: "Método Socrático",
+    level: "Ensino Médio",
     category: "Álgebra",
-    axis:     "algebra",
-    icon:     "message-square",
-    summary:  "Técnica de investigação filosófica baseada em perguntas sucessivas para expor contradições e atingir definições claras.",
-    infobox:  {
+    axis: "algebra",
+    icon: "message-square",
+    summary: "Técnica de investigação filosófica baseada em perguntas sucessivas para expor contradições e atingir definições claras.",
+    infobox: {
       "Criador": "Sócrates (c. 470–399 a.C.)",
       "Etapas": "Ironia e Maiêutica (parto de ideias)",
       "Conexão matemática": "[[demonstracao-absurdo]], lógica dedutiva",
       "Eixo": "[[filosofia]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "arquitetura",
-    title:    "Arquitetura",
-    level:    "Ensino Fundamental II",
+    id: "arquitetura",
+    title: "Arquitetura",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "home",
-    summary:  "A arte e técnica de projetar espaços habitáveis baseando-se em proporções e formas geométricas.",
-    infobox:  {
+    axis: "geometria",
+    icon: "home",
+    summary: "A arte e técnica de projetar espaços habitáveis baseando-se em proporções e formas geométricas.",
+    infobox: {
       "Base": "[[geometria-plana]], proporções",
       "Teorema essencial": "[[teorema-de-pitagoras]]",
       "Aplicações": "Simetria, plantas baixas, volumetria",
       "Conexão": "[[engenharia]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "engenharia",
-    title:    "Engenharia",
-    level:    "Ensino Fundamental II",
+    id: "engenharia",
+    title: "Engenharia",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "tool",
-    summary:  "A aplicação prática da matemática e da física para projetar, construir e manter estruturas, máquinas e processos.",
-    infobox:  {
+    axis: "geometria",
+    icon: "tool",
+    summary: "A aplicação prática da matemática e da física para projetar, construir e manter estruturas, máquinas e processos.",
+    infobox: {
       "Base científica": "[[fisica]], matemática",
       "Ramos principais": "Civil, mecânica, elétrica, química...",
       "Área geométrica": "Trigonometria, geometria analítica",
       "Conexão": "[[arquitetura]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "geometria-dedutiva",
-    title:    "Geometria Dedutiva",
-    level:    "Ensino Médio",
+    id: "geometria-dedutiva",
+    title: "Geometria Dedutiva",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "git-merge",
-    summary:  "O ramo da geometria baseado em provar teoremas logicamente a partir de axiomas estabelecidos, sem depender de medições.",
-    infobox:  {
+    axis: "geometria",
+    icon: "git-merge",
+    summary: "O ramo da geometria baseado em provar teoremas logicamente a partir de axiomas estabelecidos, sem depender de medições.",
+    infobox: {
       "Método": "Axiomático-dedutivo",
       "Origem histórica": "[[matematica-grega]] (Tales e Pitágoras)",
       "Opõe-se a": "Geometria empírica/prática",
       "Exemplo máximo": "[[geometria-euclidiana]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "geometria-euclidiana",
-    title:    "Geometria Euclidiana",
-    level:    "Ensino Médio",
+    id: "geometria-euclidiana",
+    title: "Geometria Euclidiana",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "globe",
-    summary:  "O sistema geométrico clássico unificado por Euclides, governando o espaço bidimensional e tridimensional plano.",
-    infobox:  {
+    axis: "geometria",
+    icon: "globe",
+    summary: "O sistema geométrico clássico unificado por Euclides, governando o espaço bidimensional e tridimensional plano.",
+    infobox: {
       "Autor": "[[euclides]] (c. 300 a.C.)",
       "Obra": "Os Elementos",
       "Eixo": "[[geometria-plana]] e espacial",
       "Característica": "Espaço plano (sem curvatura)"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "triplice-pitagorica",
-    title:    "Tríplice Pitagórica",
-    level:    "Ensino Médio",
+    id: "triplice-pitagorica",
+    title: "Tríplice Pitagórica",
+    level: "Ensino Médio",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "hash",
-    summary:  "Conjunto de três números inteiros positivos que satisfazem perfeitamente a equação do Teorema de Pitágoras.",
-    infobox:  {
+    axis: "geometria",
+    icon: "hash",
+    summary: "Conjunto de três números inteiros positivos que satisfazem perfeitamente a equação do Teorema de Pitágoras.",
+    infobox: {
       "Equação": "$a^2 + b^2 = c^2$, onde $a,b,c \\in \\mathbb{N}^*$",
       "Terno mais famoso": "$(3, 4, 5)$",
       "Origem": "[[matematica-babilonica]]",
       "Aplicação": "Desenho de ângulos retos"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "identidade-algebrica",
-    title:    "Identidades Algébricas",
-    level:    "Ensino Fundamental II",
+    id: "identidade-algebrica",
+    title: "Identidades Algébricas",
+    level: "Ensino Fundamental II",
     category: "Geometria",
-    axis:     "geometria",
-    icon:     "columns",
-    summary:  "Equações matemáticas contendo variáveis que são válidas para quaisquer valores reais atribuídos a elas, explicadas geometricamente por áreas.",
-    infobox:  {
+    axis: "geometria",
+    icon: "columns",
+    summary: "Equações matemáticas contendo variáveis que são válidas para quaisquer valores reais atribuídos a elas, explicadas geometricamente por áreas.",
+    infobox: {
       "Exemplo clássico": "$(a+b)^2 = a^2 + 2ab + b^2$",
       "Área de estudo": "Álgebra Geométrica",
       "Relação geométrica": "Área de figuras bidimensionais",
       "Conexão": "[[quadrado]]"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "matematica-egipcia",
-    title:    "Matemática Egípcia",
-    level:    "Ensino Médio",
+    id: "matematica-egipcia",
+    title: "Matemática Egípcia",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "globe",
-    summary:  "O sistema de matemática prática desenvolvido no Antigo Egito focado em medições, aritmética comercial e engenharia monumental.",
-    infobox:  {
+    axis: "historia",
+    icon: "globe",
+    summary: "O sistema de matemática prática desenvolvido no Antigo Egito focado em medições, aritmética comercial e engenharia monumental.",
+    infobox: {
       "Época": "c. 3000 a.C. a 300 a.C.",
       "Documentos": "Papiro de Rhind, Papiro de Moscou",
       "Características": "Frações unitárias, agrimensura prática",
       "Legado": "Medição de áreas de terras, engenharia"
     },
-    widget:   null
+    widget: null
   },
 
   {
-    id:       "historia-da-matematica",
-    title:    "História da Matemática",
-    level:    "Ensino Médio",
+    id: "historia-da-matematica",
+    title: "História da Matemática",
+    level: "Ensino Médio",
     category: "História",
-    axis:     "historia",
-    icon:     "book-open",
-    summary:  "A evolução histórica das ideias matemáticas, das técnicas primitivas de contagem à formalização dedutiva moderna.",
-    infobox:  {
+    axis: "historia",
+    icon: "book-open",
+    summary: "A evolução histórica das ideias matemáticas, das técnicas primitivas de contagem à formalização dedutiva moderna.",
+    infobox: {
       "Períodos": "Antiguidade, Idade Média, Renascimento, Moderna",
       "Eixos no site": "[[matematica-babilonica]], [[matematica-egipcia]], [[matematica-indiana]], [[matematica-grega]]",
       "Grandes figuras": "[[pitagoras]], [[euclides]], [[arquimedes]], [[giuseppe-peano]]",
       "Processo": "Cálculo prático $\\implies$ Abstração lógica"
     },
-    widget:   null
+    widget: null
   }
 ];

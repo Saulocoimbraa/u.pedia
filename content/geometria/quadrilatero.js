@@ -10,6 +10,8 @@ $$360^\\circ$$
 
 Essa propriedade pode ser provada facilmente: toda figura quadrilátera pode ser decomposta em dois [[triangulo]]s por uma diagonal interna. Como cada triângulo soma $180^\\circ$, dois triângulos totalizam $2 \\times 180^\\circ = 360^\\circ$.
 
+{{widget}}
+
 ### A Hierarquia dos Quadriláteros
 
 Os quadriláteros formam uma rica família aninhada:
