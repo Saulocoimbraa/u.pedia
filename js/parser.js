@@ -53,7 +53,9 @@ window.parseContent = function (rawContent) {
       if (candidates[c] === targetId) continue; // evitar loop se nenhum sufixo foi removido
       target = articles.find(function (a) { return a.id === candidates[c]; });
       if (target) {
-        return '<a href="#/artigo/' + target.id + '" class="mupedia-link">' + target.title + '</a>';
+        // Usa o targetId original como texto do link para preservar a flexão escrita
+        // Ex: [[catetos]] → link para cateto.js mas exibe "catetos"
+        return '<a href="#/artigo/' + target.id + '" class="mupedia-link">' + targetId + '</a>';
       }
     }
 
