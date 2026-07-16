@@ -43,10 +43,10 @@ window.parseContent = function (rawContent) {
 
     // Fallback: tenta raízes por remoção progressiva de sufixos
     var candidates = [
-      targetId.replace(/-oes$/, '-ao'),   // -ões → -ão  (ex: operacoes → operacao)
-      targetId.replace(/-ns$/, '-m'),      // -ns  → -m   (ex: origems → origem)
-      targetId.replace(/-es$/, ''),        // -es  → raiz (ex: flores → flor)
-      targetId.replace(/-s$/, ''),         // -s   → raiz (ex: catetos → cateto)
+      targetId.replace(/oes$/, 'ao'),   // -ões → -ão  (ex: operacoes → operacao)
+      targetId.replace(/ns$/, 'm'),     // -ns  → -m   (ex: origems → origem)
+      targetId.replace(/es$/, ''),      // -es  → raiz (ex: flores → flor)
+      targetId.replace(/s$/, ''),       // -s   → raiz (ex: catetos → cateto)
     ];
 
     for (var c = 0; c < candidates.length; c++) {
