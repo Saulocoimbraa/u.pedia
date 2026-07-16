@@ -40,17 +40,17 @@ window.initWidgetPitagoras = function (containerId) {
   /* ── HTML ────────────────────────────────────────────────────── */
   container.innerHTML =
     '<div class="pit-wrapper">' +
-    '<div class="pit-tabs">' +
-    '<button class="pit-tab active" data-tab="squares">' +
-    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18"/></svg>' +
+    '<div class="pit-tabs" role="tablist">' +
+    '<button class="pit-tab active" data-tab="squares" role="tab" aria-selected="true">' +
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/></svg>' +
     'Quadrados nos Lados' +
     '</button>' +
-    '<button class="pit-tab" data-tab="rearrange">' +
-    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>' +
+    '<button class="pit-tab" data-tab="rearrange" role="tab" aria-selected="false">' +
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>' +
     'Prova por Rearranjo' +
     '</button>' +
-    '<button class="pit-tab" data-tab="grid">' +
-    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>' +
+    '<button class="pit-tab" data-tab="grid" role="tab" aria-selected="false">' +
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>' +
     'Blocos 3-4-5' +
     '</button>' +
     '</div>' +
@@ -58,16 +58,16 @@ window.initWidgetPitagoras = function (containerId) {
     '<div class="pit-sliders" id="pit-sliders">' +
     '<div class="pit-slider-row" style="color:#4f46e5">' +
     'Cateto <em style="margin:0 .2rem">b</em>: <strong id="pit-lb">3</strong>' +
-    '<input type="range" id="pit-sb" min="2" max="6" step="1" value="3" style="width:100px;accent-color:#4f46e5">' +
+    '<input type="range" id="pit-sb" min="2" max="6" step="1" value="3" style="width:100px;accent-color:#4f46e5" aria-label="Cateto b">' +
     '</div>' +
     '<div class="pit-slider-row" style="color:#10b981">' +
     'Cateto <em style="margin:0 .2rem">c</em>: <strong id="pit-lc">4</strong>' +
-    '<input type="range" id="pit-sc" min="2" max="6" step="1" value="4" style="width:100px;accent-color:#10b981">' +
+    '<input type="range" id="pit-sc" min="2" max="6" step="1" value="4" style="width:100px;accent-color:#10b981" aria-label="Cateto c">' +
     '</div>' +
     '</div>' +
 
     '<div class="pit-svg-wrap">' +
-    '<svg id="pit-svg" viewBox="0 0 520 400" style="width:100%;max-height:400px;display:block;"></svg>' +
+    '<svg id="pit-svg" role="img" aria-label="Visualização interativa do Teorema de Pitágoras" viewBox="0 -100 520 600" style="width:100%;max-height:400px;display:block;"></svg>' +
     '</div>' +
 
     '<div class="pit-action" id="pit-action" style="display:none">' +
@@ -114,14 +114,36 @@ window.initWidgetPitagoras = function (containerId) {
     return { b: b, c: c, a: Math.sqrt(b * b + c * c) };
   }
 
+  /**
+   * Retorna representação exata ou simplificada de √(b²+c²).
+   * Exemplos: b=3,c=4 → "5"; b=2,c=2 → "2√2"; b=3,c=5 → "√34"
+   */
+  function formatA(b, c) {
+    var n = b * b + c * c;
+    var sq = Math.round(Math.sqrt(n));
+    if (sq * sq === n) return String(sq); // inteiro perfeito
+    // tenta simplificar √n = k√m
+    for (var k = Math.floor(Math.sqrt(n)); k >= 2; k--) {
+      if (n % (k * k) === 0) {
+        var m = n / (k * k);
+        return (k === 1 ? "" : k) + "√" + m;
+      }
+    }
+    return "√" + n;
+  }
+
   function updateSub() {
     var v = vals();
-    sub.textContent = (v.b * v.b + v.c * v.c) + " = " + v.b * v.b + " + " + v.c * v.c + "   →   a ≈ " + v.a.toFixed(3);
+    var b2 = v.b * v.b, c2 = v.c * v.c, sum = b2 + c2;
+    var aStr = formatA(v.b, v.c);
+    sub.textContent = "b² + c² = " + b2 + " + " + c2 + " = " + sum + "  →  a = " + aStr;
   }
 
   function setTab(t) {
     for (var i = 0; i < tabs.length; i++) {
-      tabs[i].classList.toggle("active", tabs[i].dataset.tab === t);
+      var isActive = tabs[i].dataset.tab === t;
+      tabs[i].classList.toggle("active", isActive);
+      tabs[i].setAttribute("aria-selected", isActive ? "true" : "false");
     }
   }
 
@@ -132,6 +154,31 @@ window.initWidgetPitagoras = function (containerId) {
     return '<polygon points="' + pts.map(function (p) { return pt(p[0], p[1]); }).join(" ") + '"' +
       ' fill="' + fill + '" stroke="' + stroke + '" stroke-width="' + sw + '"' +
       (dash ? ' stroke-dasharray="' + dash + '"' : '') + '/>';
+  }
+
+  /* ── Marcador de ângulo reto ──────────────────────────────────── */
+  /**
+   * Desenha o quadradinho indicador de ângulo reto no vértice (vx, vy),
+   * com os dois lados apontando na direção dos segmentos (p1→vx,vy) e (p2→vx,vy).
+   */
+  function rightAngleMark(vx, vy, p1x, p1y, p2x, p2y) {
+    var sz = 10;
+    var d1x = p1x - vx, d1y = p1y - vy;
+    var len1 = Math.sqrt(d1x * d1x + d1y * d1y);
+    var u1x = d1x / len1, u1y = d1y / len1;
+
+    var d2x = p2x - vx, d2y = p2y - vy;
+    var len2 = Math.sqrt(d2x * d2x + d2y * d2y);
+    var u2x = d2x / len2, u2y = d2y / len2;
+
+    var ax = vx + u1x * sz, ay = vy + u1y * sz;
+    var cx = vx + u2x * sz, cy = vy + u2y * sz;
+    var bx = ax + u2x * sz, by = ay + u2y * sz;
+
+    return '<path d="M ' + ax.toFixed(2) + ' ' + ay.toFixed(2) +
+      ' L ' + bx.toFixed(2) + ' ' + by.toFixed(2) +
+      ' L ' + cx.toFixed(2) + ' ' + cy.toFixed(2) +
+      '" fill="none" stroke="#9ca3af" stroke-width="1.5"/>';
   }
 
   /* ══════════════════════════════════════════════════════════════
@@ -149,9 +196,8 @@ window.initWidgetPitagoras = function (containerId) {
 
     var hypLen = as;
     var ux = (Cx - Bx) / hypLen, uy = (Cy - By) / hypLen;
-    // IMPORTANTE: Para apontar para FORA do triângulo (cujo vértice do ângulo reto A é à esquerda e abaixo),
-    // o vetor ortogonal à hipotenusa deve ser (uy, -ux). 
-    var wx = uy, wy = -ux; 
+    // Vetor normal apontando para FORA do triângulo (lado direito)
+    var wx = uy, wy = -ux;
 
     var H1 = [Bx, By], H2 = [Cx, Cy];
     var H3 = [Cx + wx * as, Cy + wy * as], H4 = [Bx + wx * as, By + wy * as];
@@ -162,6 +208,8 @@ window.initWidgetPitagoras = function (containerId) {
 
     var C1 = [Ax, Ay], C2 = [Cx, Cy], C3 = [Cx, Cy + cs], C4 = [Ax, Ay + cs];
     var Ccx = (C1[0] + C2[0] + C3[0] + C4[0]) / 4, Ccy = (C1[1] + C2[1] + C3[1] + C4[1]) / 4;
+
+    var aStr = formatA(b, c);
 
     function sqLabel(x, y, big, small, col) {
       return '<text x="' + x + '" y="' + (y - 8) + '" fill="' + col + '" font-size="17" font-weight="800" text-anchor="middle" dominant-baseline="middle">' + big + '</text>' +
@@ -178,13 +226,14 @@ window.initWidgetPitagoras = function (containerId) {
       poly([H1, H2, H3, H4], "rgba(245,158,11,0.10)", "#f59e0b", 2.5, "") +
       sqLabel(Hcx, Hcy, "a²", b * b + c * c, "#f59e0b") +
 
-      '<path d="M ' + Ax + ' ' + (Ay - 10) + ' L ' + (Ax + 10) + ' ' + (Ay - 10) + ' L ' + (Ax + 10) + ' ' + Ay + '" fill="none" stroke="#9ca3af" stroke-width="1.5"/>' +
+      // Ângulo reto no vértice A (entre B e C)
+      rightAngleMark(Ax, Ay, Bx, By, Cx, Cy) +
 
       poly([[Ax, Ay], [Bx, By], [Cx, Cy]], "white", "#1a1a1a", 3) +
 
       '<text x="' + ((Ax + Bx) / 2 - 18) + '" y="' + ((Ay + By) / 2) + '" fill="#4f46e5" font-size="15" font-weight="800" text-anchor="middle" dominant-baseline="middle">b=' + b + '</text>' +
       '<text x="' + ((Ax + Cx) / 2) + '" y="' + ((Ay + Cy) / 2 + 20) + '" fill="#10b981" font-size="15" font-weight="800" text-anchor="middle">c=' + c + '</text>' +
-      '<text x="' + ((Bx + Cx) / 2 + wx * 20) + '" y="' + ((By + Cy) / 2 + wy * 20) + '" fill="#f59e0b" font-size="15" font-weight="800" text-anchor="middle">a≈' + a.toFixed(2) + '</text>';
+      '<text x="' + ((Bx + Cx) / 2 + wx * 20) + '" y="' + ((By + Cy) / 2 + wy * 20) + '" fill="#f59e0b" font-size="15" font-weight="800" text-anchor="middle">a=' + aStr + '</text>';
 
     expl.style.display = "block";
     expl.innerHTML = '<strong>Leitura geométrica:</strong> O quadrado amarelo sobre a hipotenusa (área <strong style="color:#f59e0b">a² = ' + (b * b + c * c) + '</strong>) ocupa exatamente a mesma área que o quadrado do cateto b (<strong style="color:#4f46e5">b² = ' + b * b + '</strong>) somado ao do cateto c (<strong style="color:#10b981">c² = ' + c * c + '</strong>). Arraste os controles para verificar com outros valores.';
@@ -192,8 +241,8 @@ window.initWidgetPitagoras = function (containerId) {
   }
 
   /* ══════════════════════════════════════════════════════════════
-     MODO 2 — Prova por Rearranjo
-  ══════════════════════════════════════════════════════════════ */
+      MODO 2 — Prova por Rearranjo (Corrigido)
+    ══════════════════════════════════════════════════════════════ */
   function rearrangePoints(t_anim) {
     var v = vals();
     var b = v.b, c = v.c;
@@ -208,11 +257,12 @@ window.initWidgetPitagoras = function (containerId) {
       [[OX, OY + L], [OX, OY + bs], [OX + bs, OY + L]],
     ];
 
+    // CORREÇÃO AQUI: T3 e T4 agora usam 'bs' para fechar o retângulo perfeito (bs x cs)
     var s2 = [
       [[OX + bs, OY], [OX + L, OY], [OX + bs, OY + bs]],
       [[OX + L, OY + bs], [OX + bs, OY + bs], [OX + L, OY]],
-      [[OX + cs, OY + L], [OX, OY + L], [OX + cs, OY + bs]],
-      [[OX, OY + bs], [OX + cs, OY + bs], [OX, OY + L]],
+      [[OX + bs, OY + L], [OX, OY + L], [OX + bs, OY + bs]], // Ajustado para bs
+      [[OX, OY + bs], [OX + bs, OY + bs], [OX, OY + L]],     // Ajustado para bs
     ];
 
     var tris = s1.map(function (tri1, i) {
@@ -232,10 +282,13 @@ window.initWidgetPitagoras = function (containerId) {
     var op1 = (1 - t_anim).toFixed(2);
     var op2 = t_anim.toFixed(2);
 
-    var a2pol = '<polygon points="' + (OX + cs) + ',' + OY + ' ' + (OX + L) + ',' + (OY + bs) + ' ' + (OX + bs) + ',' + (OY + L) + ' ' + OX + ',' + (OY + cs) + '"' +
+    var aStr = formatA(b, c);
+
+    // CORREÇÃO AQUI: Inversão milimétrica de bs/cs para alinhar perfeitamente o quadrado a²
+    var a2pol = '<polygon points="' + (OX + cs) + ',' + OY + ' ' + (OX + L) + ',' + (OY + cs) + ' ' + (OX + bs) + ',' + (OY + L) + ' ' + OX + ',' + (OY + bs) + '"' +
       ' fill="rgba(245,158,11,0.12)" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4" opacity="' + op1 + '"/>' +
-      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 - 6) + '" fill="#f59e0b" font-size="19" font-weight="800" text-anchor="middle" opacity="' + op1 + '">a²</text>' +
-      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 + 16) + '" fill="#f59e0b" font-size="12" font-weight="600" text-anchor="middle" opacity="' + op1 + '">' + (b * b + c * c) + '</text>';
+      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 - 8) + '" fill="#f59e0b" font-size="19" font-weight="800" text-anchor="middle" opacity="' + op1 + '">a² = ' + (b * b + c * c) + '</text>' +
+      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 + 14) + '" fill="#f59e0b" font-size="13" font-weight="600" text-anchor="middle" opacity="' + op1 + '">a = ' + aStr + '</text>';
 
     var bsq = '<rect x="' + OX + '" y="' + OY + '" width="' + bs + '" height="' + bs + '"' +
       ' fill="rgba(79,70,229,0.07)" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3" opacity="' + op2 + '"/>' +
@@ -275,12 +328,13 @@ window.initWidgetPitagoras = function (containerId) {
     }
 
     var v = vals();
+    var aStr = formatA(v.b, v.c);
     if (rearrangeT === 0) {
       tlabel.textContent = "Rearranjar → expor b² + c²";
-      expl.innerHTML = '<strong>Passo 1 — Grande quadrado de lado (b+c):</strong> Quatro triângulos retângulos idênticos ocupam os quatro cantos. O espaço vazio central é o quadrado da hipotenusa com área <strong style="color:#f59e0b">a²</strong>.';
+      expl.innerHTML = '<strong>Passo 1 — Grande quadrado de lado (b+c):</strong> Quatro triângulos retângulos idênticos ocupam os quatro cantos do quadrado grande. O espaço vazio central, em forma de losango, é precisamente o quadrado da hipotenusa com área <strong style="color:#f59e0b">a² = ' + (v.b * v.b + v.c * v.c) + '</strong>  (a = ' + aStr + ').';
     } else {
       tlabel.textContent = "← Voltar ao Passo 1";
-      expl.innerHTML = '<strong>Passo 2 — Dois retângulos:</strong> Reposicionamos os 4 triângulos para dois retângulos (b×c cada). Os espaços livres formam dois quadrados: <strong style="color:#4f46e5">b² = ' + v.b * v.b + '</strong> (canto superior esquerdo) e <strong style="color:#10b981">c² = ' + v.c * v.c + '</strong> (canto inferior direito). Mesmos triângulos, mesma área total → <strong style="color:#f59e0b">a² = b² + c²</strong>.';
+      expl.innerHTML = '<strong>Passo 2 — Dois quadrados:</strong> Os mesmos 4 triângulos são reposicionados em dois retângulos opostos dentro do mesmo quadrado grande. Os dois espaços vazios que sobram são agora dois quadrados menores: <strong style="color:#4f46e5">b² = ' + v.b * v.b + '</strong> (canto superior esquerdo) e <strong style="color:#10b981">c² = ' + v.c * v.c + '</strong> (canto inferior direito). Como os triângulos são idênticos e o quadrado externo não mudou, a área vazia é a mesma — provando que <strong style="color:#f59e0b">a² = b² + c²</strong>.';
     }
     expl.style.display = "block";
     action.style.display = "flex";
@@ -296,16 +350,16 @@ window.initWidgetPitagoras = function (containerId) {
     var Bx = Ax, By = Ay - b * sc_;
     var Cx = Ax + c * sc_, Cy = Ay;
 
-    var bOX = Ax - b * sc_, bOY = By; 
+    var bOX = Ax - b * sc_, bOY = By;
     var cOX = Ax, cOY = Ay;
 
     var hypLen = 5 * sc_;
     var hux = (Cx - Bx) / hypLen;
     var huy = (Cy - By) / hypLen;
-    var hwx = huy;  
-    var hwy = -hux; 
-    
-    var hypAngle = Math.atan2(huy, hux) * 180 / Math.PI; 
+    var hwx = huy;
+    var hwy = -hux;
+
+    var hypAngle = Math.atan2(huy, hux) * 180 / Math.PI;
 
     function hypCell(col, row) {
       return {
@@ -329,57 +383,60 @@ window.initWidgetPitagoras = function (containerId) {
       for (var col = 0; col < 5; col++)
         hypSlots.push(hypCell(col, row));
 
+    // Centro geométrico real do quadrado da hipotenusa
+    var h00 = hypCell(0, 0), h50 = hypCell(5, 0), h55 = hypCell(5, 5), h05 = hypCell(0, 5);
+    var hypCx = (h00.x + h50.x + h55.x + h05.x) / 4;
+    var hypCy = (h00.y + h50.y + h55.y + h05.y) / 4;
+
     return {
       sc_: sc_, Ax: Ax, Ay: Ay, Bx: Bx, By: By, Cx: Cx, Cy: Cy,
       bOX: bOX, bOY: bOY, cOX: cOX, cOY: cOY, b: b, c: c,
-      h00: hypCell(0,0), h50: hypCell(5,0), h55: hypCell(5,5), h05: hypCell(0,5),
+      h00: h00, h50: h50, h55: h55, h05: h05,
+      hypCx: hypCx, hypCy: hypCy,
       hypAngle: hypAngle, bBlocks: bBlocks, cBlocks: cBlocks, hypSlots: hypSlots
     };
   }
 
   function initGridDOM(d) {
     var content = "";
-    content += '<rect x="' + d.bOX + '" y="' + d.bOY + '" width="' + (d.b * d.sc_) + '" height="' + (d.b * d.sc_) + '" fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="5,3" rx="2" opacity="0.4"/>';
-    content += '<rect x="' + d.cOX + '" y="' + d.cOY + '" width="' + (d.c * d.sc_) + '" height="' + (d.c * d.sc_) + '" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" rx="2" opacity="0.4"/>';
-    content += '<polygon points="' + pt(d.h00.x, d.h00.y) + ' ' + pt(d.h50.x, d.h50.y) + ' ' + pt(d.h55.x, d.h55.y) + ' ' + pt(d.h05.x, d.h05.y) + '" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.4"/>';
 
     d.hypSlots.forEach(function (slot) {
       content += '<rect x="0" y="0" width="' + (d.sc_ - 1) + '" height="' + (d.sc_ - 1) + '" rx="2"' +
-        ' fill="rgba(245,158,11,0.05)" stroke="#f59e0b" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"' +
+        ' fill="rgba(245,158,11,0.05)" stroke="#f59e0b" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"' +
         ' style="transform: translate(' + slot.x + 'px, ' + slot.y + 'px) rotate(' + d.hypAngle + 'deg);"/>';
     });
 
-    content += '<path d="M ' + d.Ax + ' ' + (d.Ay - 10) + ' L ' + (d.Ax + 10) + ' ' + (d.Ay - 10) + ' L ' + (d.Ax + 10) + ' ' + d.Ay + '" fill="none" stroke="#9ca3af" stroke-width="1.5"/>';
+    content += rightAngleMark(d.Ax, d.Ay, d.Bx, d.By, d.Cx, d.Cy);
     content += poly([[d.Ax, d.Ay], [d.Bx, d.By], [d.Cx, d.Cy]], "white", "#1a1a1a", 3);
 
     content += '<text x="' + ((d.Ax + d.Bx) / 2 - 22) + '" y="' + ((d.Ay + d.By) / 2) + '" fill="#4f46e5" font-size="14" font-weight="800" text-anchor="middle" dominant-baseline="middle">b = 3</text>';
     content += '<text x="' + ((d.Ax + d.Cx) / 2) + '" y="' + ((d.Ay + d.Cy) / 2 + 22) + '" fill="#10b981" font-size="14" font-weight="800" text-anchor="middle">c = 4</text>';
     content += '<text x="' + ((d.Bx + d.Cx) / 2 + 18) + '" y="' + ((d.By + d.Cy) / 2 - 14) + '" fill="#f59e0b" font-size="14" font-weight="800" text-anchor="middle">a = 5</text>';
 
-    // Textos dinâmicos
+    // Labels do estado inicial (b² e c²)
     content += '<g id="grid-labels-start">';
     content += '<text x="' + (d.bOX + d.b * d.sc_ / 2) + '" y="' + (d.bOY - 12) + '" fill="#4f46e5" font-size="13" font-weight="800" text-anchor="middle">b² = 9 blocos</text>';
     content += '<text x="' + (d.cOX + d.c * d.sc_ / 2) + '" y="' + (d.cOY + d.c * d.sc_ + 18) + '" fill="#10b981" font-size="13" font-weight="800" text-anchor="middle">c² = 16 blocos</text>';
     content += '</g>';
 
+    // Labels do estado final (a²) — posicionados no centro real do quadrado da hipotenusa
     content += '<g id="grid-labels-end" style="opacity:0; transition: opacity 0.5s;">';
-    var cx_ = (d.h00.x + d.h50.x + d.h55.x + d.h05.x) / 4;
-    var cy_ = (d.h00.y + d.h50.y + d.h55.y + d.h05.y) / 4;
-    content += '<text x="' + cx_ + '" y="' + (cy_ - 10) + '" fill="#f59e0b" font-size="14" font-weight="800" text-anchor="middle">a² = 25 blocos</text>';
-    content += '<text x="' + cx_ + '" y="' + (cy_ + 12) + '" fill="#f59e0b" font-size="11" font-weight="600" text-anchor="middle">9 + 16 = 25 ✓</text>';
+    content += '<text x="' + d.hypCx + '" y="' + (d.hypCy - 150) + '" fill="#f59e0b" font-size="14" font-weight="800" text-anchor="middle">a² = 25 blocos</text>';
+    content += '<text x="' + d.hypCx + '" y="' + (d.hypCy - 130) + '" fill="#f59e0b" font-size="11" font-weight="600" text-anchor="middle">9 + 16 = 25 ✓</text>';
     content += '</g>';
 
-    // Cria as caixas animáveis para b² e c²
-    d.bBlocks.forEach(function(pos, idx) {
+    // Blocos animáveis de b²
+    d.bBlocks.forEach(function (pos, idx) {
       content += '<rect id="gblk-b-' + idx + '" x="0" y="0" width="' + (d.sc_ - 3) + '" height="' + (d.sc_ - 3) + '" rx="3"' +
         ' fill="rgba(79,70,229,0.9)" stroke="rgba(79,70,229,0.4)" stroke-width="1"' +
-        ' style="transform: translate(' + pos.x + 'px, ' + pos.y + 'px) rotate(0deg); transition: transform 0.9s cubic-bezier(0.25,1,0.5,1) ' + (idx*0.035) + 's;"/>';
+        ' style="transform: translate(' + pos.x + 'px, ' + pos.y + 'px) rotate(0deg); transition: transform 0.9s cubic-bezier(0.25,1,0.5,1) ' + (idx * 0.035) + 's;"/>';
     });
 
-    d.cBlocks.forEach(function(pos, idx) {
+    // Blocos animáveis de c²
+    d.cBlocks.forEach(function (pos, idx) {
       content += '<rect id="gblk-c-' + idx + '" x="0" y="0" width="' + (d.sc_ - 3) + '" height="' + (d.sc_ - 3) + '" rx="3"' +
         ' fill="rgba(16,185,129,0.9)" stroke="rgba(16,185,129,0.4)" stroke-width="1"' +
-        ' style="transform: translate(' + pos.x + 'px, ' + pos.y + 'px) rotate(0deg); transition: transform 0.9s cubic-bezier(0.25,1,0.5,1) ' + ((9+idx)*0.035) + 's;"/>';
+        ' style="transform: translate(' + pos.x + 'px, ' + pos.y + 'px) rotate(0deg); transition: transform 0.9s cubic-bezier(0.25,1,0.5,1) ' + ((9 + idx) * 0.035) + 's;"/>';
     });
 
     svg.innerHTML = content;
@@ -387,20 +444,20 @@ window.initWidgetPitagoras = function (containerId) {
   }
 
   function updateGridDOM(d) {
-    d.bBlocks.forEach(function(pos, idx) {
+    d.bBlocks.forEach(function (pos, idx) {
       var tgt = d.hypSlots[idx];
       var el = container.querySelector("#gblk-b-" + idx);
-      if(!el) return;
+      if (!el) return;
       var tx = gridMoved ? tgt.x : pos.x;
       var ty = gridMoved ? tgt.y : pos.y;
       var rot = gridMoved ? d.hypAngle : 0;
       el.style.transform = 'translate(' + tx + 'px, ' + ty + 'px) rotate(' + rot + 'deg)';
     });
 
-    d.cBlocks.forEach(function(pos, idx) {
+    d.cBlocks.forEach(function (pos, idx) {
       var tgt = d.hypSlots[9 + idx];
       var el = container.querySelector("#gblk-c-" + idx);
-      if(!el) return;
+      if (!el) return;
       var tx = gridMoved ? tgt.x : pos.x;
       var ty = gridMoved ? tgt.y : pos.y;
       var rot = gridMoved ? d.hypAngle : 0;
@@ -409,19 +466,18 @@ window.initWidgetPitagoras = function (containerId) {
 
     var lStart = container.querySelector("#grid-labels-start");
     var lEnd = container.querySelector("#grid-labels-end");
-    if(lStart) lStart.style.opacity = gridMoved ? "0" : "1";
-    if(lEnd) lEnd.style.opacity = gridMoved ? "1" : "0";
+    if (lStart) lStart.style.opacity = gridMoved ? "0" : "1";
+    if (lEnd) lEnd.style.opacity = gridMoved ? "1" : "0";
   }
 
   function drawGrid() {
     var d = getGridData();
-    if(svg.dataset.gridRendered !== "true") {
+    if (svg.dataset.gridRendered !== "true") {
       initGridDOM(d);
-      // Força o reflow para garantir que as animações entrem da próxima vez
-      svg.getBoundingClientRect(); 
+      // Força reflow para que as transições CSS sejam aplicadas na próxima mutação
+      svg.getBoundingClientRect();
     }
-    
-    // Atualiza posições e animações
+
     updateGridDOM(d);
 
     tlabel.textContent = gridMoved ? "← Devolver blocos" : "Mover blocos → hipotenusa";
@@ -443,8 +499,8 @@ window.initWidgetPitagoras = function (containerId) {
     setTab(mode);
     action.style.display = "none";
 
-    // Reseta estado do Grid se mudar de aba
-    if(mode !== "grid") {
+    // Reseta o render do Grid ao sair da aba
+    if (mode !== "grid") {
       svg.dataset.gridRendered = "false";
     }
 
