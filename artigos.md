@@ -53,3 +53,41 @@ As seguintes palavras-chave já possuem um artigo no sistema:
 * arquimedes
 * matematica-babilonica
 * matematica-indiana
+
+## Lote 4 — Álgebra, Geometria e História
+* numero-primo
+* fracao
+* fracao-irredutivel
+* quadrado-perfeito
+* proporcao
+* logica
+* algoritmo
+* programacao
+* computacao
+* radiano
+* angulo-agudo
+* angulo-obtuso
+* angulo-raso
+* angulo-complementar
+* poligono
+* hipotenusa
+* cateto
+* triangulo-semelhante
+* teorema-de-tales
+* matematica-grega
+
+## Lote 5 — Ciências, Engenharia e Histórias
+* movimento-uniformemente-acelerado
+* fisica
+* filosofia
+* metodo-socratico
+* arquitetura
+* engenharia
+* geometria-dedutiva
+* geometria-euclidiana
+* triplice-pitagorica
+* identidade-algebrica
+* matematica-egipcia
+* historia-da-matematica
+
+

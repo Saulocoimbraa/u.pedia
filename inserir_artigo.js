@@ -39,7 +39,8 @@ const VALID_AXES = [
   'algebra',
   'numeros-e-operacoes',
   'estatistica',
-  'grandezas-e-medidas'
+  'grandezas-e-medidas',
+  'historia'
 ];
 
 // ─── Argumentos ─────────────────────────────────────────────────────────────
