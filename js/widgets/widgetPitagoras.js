@@ -213,7 +213,7 @@ window.initWidgetPitagoras = function (containerId) {
 
     function sqLabel(x, y, big, small, col) {
       return '<text x="' + x + '" y="' + (y - 8) + '" fill="' + col + '" font-size="17" font-weight="800" text-anchor="middle" dominant-baseline="middle">' + big + '</text>' +
-        '<text x="' + x + '" y="' + (y + 12) + '" fill="' + col + '" font-size="12" font-weight="600" text-anchor="middle" dominant-baseline="middle" opacity="0.8">' + small + '</text>';
+        '<text x="' + x + '" y="' + (y + 12) + '" fill="' + col + '" font-size="16" font-weight="600" text-anchor="middle" dominant-baseline="middle" opacity="0.8">' + small + '</text>';
     }
 
     svg.innerHTML =
@@ -288,21 +288,21 @@ window.initWidgetPitagoras = function (containerId) {
     var a2pol = '<polygon points="' + (OX + cs) + ',' + OY + ' ' + (OX + L) + ',' + (OY + cs) + ' ' + (OX + bs) + ',' + (OY + L) + ' ' + OX + ',' + (OY + bs) + '"' +
       ' fill="rgba(245,158,11,0.12)" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4" opacity="' + op1 + '"/>' +
       '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 - 8) + '" fill="#f59e0b" font-size="19" font-weight="800" text-anchor="middle" opacity="' + op1 + '">a² = ' + (b * b + c * c) + '</text>' +
-      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 + 14) + '" fill="#f59e0b" font-size="13" font-weight="600" text-anchor="middle" opacity="' + op1 + '">a = ' + aStr + '</text>';
+      '<text x="' + (OX + L / 2) + '" y="' + (OY + L / 2 + 14) + '" fill="#f59e0b" font-size="19" font-weight="800" text-anchor="middle" opacity="' + op1 + '">a = ' + aStr + '</text>';
 
     var bsq = '<rect x="' + OX + '" y="' + OY + '" width="' + bs + '" height="' + bs + '"' +
       ' fill="rgba(79,70,229,0.07)" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3" opacity="' + op2 + '"/>' +
       '<text x="' + (OX + bs / 2) + '" y="' + (OY + bs / 2 - 6) + '" fill="#4f46e5" font-size="17" font-weight="800" text-anchor="middle" opacity="' + op2 + '">b²</text>' +
-      '<text x="' + (OX + bs / 2) + '" y="' + (OY + bs / 2 + 14) + '" fill="#4f46e5" font-size="12" font-weight="600" text-anchor="middle" opacity="' + op2 + '">' + (b * b) + '</text>';
+      '<text x="' + (OX + bs / 2) + '" y="' + (OY + bs / 2 + 14) + '" fill="#4f46e5" font-size="16" font-weight="600" text-anchor="middle" opacity="' + op2 + '">' + (b * b) + '</text>';
 
     var csq = '<rect x="' + (OX + bs) + '" y="' + (OY + bs) + '" width="' + cs + '" height="' + cs + '"' +
       ' fill="rgba(16,185,129,0.07)" stroke="#10b981" stroke-width="2" stroke-dasharray="6,3" opacity="' + op2 + '"/>' +
       '<text x="' + (OX + bs + cs / 2) + '" y="' + (OY + bs + cs / 2 - 6) + '" fill="#10b981" font-size="17" font-weight="800" text-anchor="middle" opacity="' + op2 + '">c²</text>' +
-      '<text x="' + (OX + bs + cs / 2) + '" y="' + (OY + bs + cs / 2 + 14) + '" fill="#10b981" font-size="12" font-weight="600" text-anchor="middle" opacity="' + op2 + '">' + (c * c) + '</text>';
+      '<text x="' + (OX + bs + cs / 2) + '" y="' + (OY + bs + cs / 2 + 14) + '" fill="#10b981" font-size="16" font-weight="600" text-anchor="middle" opacity="' + op2 + '">' + (c * c) + '</text>';
 
     svg.innerHTML =
       '<rect x="' + OX + '" y="' + OY + '" width="' + L + '" height="' + L + '" fill="none" stroke="#d1d5db" stroke-width="2" rx="4"/>' +
-      '<text x="' + (OX + L / 2) + '" y="' + (OY - 14) + '" fill="#888" font-size="11" font-weight="600" text-anchor="middle">lado = b + c = ' + (b + c) + '</text>' +
+      '<text x="' + (OX + L / 2) + '" y="' + (OY - 14) + '" fill="#888" font-size="17" font-weight="600" text-anchor="middle">lado = b + c = ' + (b + c) + '</text>' +
       a2pol + bsq + csq +
       d.tris.map(function (tri, i) { return poly(tri, triColors[i], "#4f46e5", 1.5); }).join("\n");
   }
@@ -331,7 +331,7 @@ window.initWidgetPitagoras = function (containerId) {
     var aStr = formatA(v.b, v.c);
     if (rearrangeT === 0) {
       tlabel.textContent = "Rearranjar → expor b² + c²";
-      expl.innerHTML = '<strong>Passo 1 — Grande quadrado de lado (b+c):</strong> Quatro triângulos retângulos idênticos ocupam os quatro cantos do quadrado grande. O espaço vazio central, em forma de losango, é precisamente o quadrado da hipotenusa com área <strong style="color:#f59e0b">a² = ' + (v.b * v.b + v.c * v.c) + '</strong>  (a = ' + aStr + ').';
+      expl.innerHTML = '<strong>Passo 1 — Grande quadrado de lado (b+c):</strong> Quatro triângulos retângulos idênticos ocupam os quatro cantos do quadrado grande. O espaço vazio central, tem forma de quadrado e sua área é precisamente o quadrado da hipotenusa com área <strong style="color:#f59e0b">a² = ' + (v.b * v.b + v.c * v.c) + '</strong>  (a = ' + aStr + ').';
     } else {
       tlabel.textContent = "← Voltar ao Passo 1";
       expl.innerHTML = '<strong>Passo 2 — Dois quadrados:</strong> Os mesmos 4 triângulos são reposicionados em dois retângulos opostos dentro do mesmo quadrado grande. Os dois espaços vazios que sobram são agora dois quadrados menores: <strong style="color:#4f46e5">b² = ' + v.b * v.b + '</strong> (canto superior esquerdo) e <strong style="color:#10b981">c² = ' + v.c * v.c + '</strong> (canto inferior direito). Como os triângulos são idênticos e o quadrado externo não mudou, a área vazia é a mesma — provando que <strong style="color:#f59e0b">a² = b² + c²</strong>.';
@@ -422,7 +422,7 @@ window.initWidgetPitagoras = function (containerId) {
     // Labels do estado final (a²) — posicionados no centro real do quadrado da hipotenusa
     content += '<g id="grid-labels-end" style="opacity:0; transition: opacity 0.5s;">';
     content += '<text x="' + d.hypCx + '" y="' + (d.hypCy - 150) + '" fill="#f59e0b" font-size="14" font-weight="800" text-anchor="middle">a² = 25 blocos</text>';
-    content += '<text x="' + d.hypCx + '" y="' + (d.hypCy - 130) + '" fill="#f59e0b" font-size="11" font-weight="600" text-anchor="middle">9 + 16 = 25 ✓</text>';
+    content += '<text x="' + d.hypCx + '" y="' + (d.hypCy - 130) + '" fill="#f59e0b" font-size="14" font-weight="800" text-anchor="middle">9 + 16 = 25 ✓</text>';
     content += '</g>';
 
     // Blocos animáveis de b²
