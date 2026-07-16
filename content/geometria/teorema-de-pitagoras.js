@@ -4,11 +4,11 @@
 
 ### A Fórmula Central
 
-Em qualquer triângulo retângulo, o quadrado do comprimento da [[hipotenusa]] é sempre igual à soma dos quadrados dos dois [[cateto]]s.
+Em qualquer triângulo retângulo, o quadrado do comprimento da [[hipotenusa]] é sempre igual à soma dos quadrados dos dois [[catetos]].
 
 $$a^2 = b^2 + c^2$$
 
-Nessa equação, $a$ é a medida da hipotenusa (o maior lado, oposto ao ângulo reto), e $b$ e $c$ são as medidas dos dois [[cateto]]s.
+Nessa equação, $a$ é a medida da hipotenusa (o maior lado, oposto ao ângulo reto), e $b$ e $c$ são as medidas dos dois [[catetos]].
 
 ### Por que isso funciona? A Prova Visual
 

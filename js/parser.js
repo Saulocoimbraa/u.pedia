@@ -32,11 +32,31 @@ window.parseContent = function (rawContent) {
   });
 
   // 4. Substituir [[article-id]] por links internos
+  //    Suporte a plurais/flexões: se o ID exato não existir, tenta remover
+  //    sufixos comuns do português (-s, -es, -ns, -ões→-ao) até achar um artigo.
   text = text.replace(/\[\[([a-zA-Z0-9-]+)\]\]/g, function (match, targetId) {
+    // Busca exata primeiro
     var target = articles.find(function (a) { return a.id === targetId; });
     if (target) {
       return '<a href="#/artigo/' + targetId + '" class="mupedia-link">' + target.title + '</a>';
     }
+
+    // Fallback: tenta raízes por remoção progressiva de sufixos
+    var candidates = [
+      targetId.replace(/-oes$/, '-ao'),   // -ões → -ão  (ex: operacoes → operacao)
+      targetId.replace(/-ns$/, '-m'),      // -ns  → -m   (ex: origems → origem)
+      targetId.replace(/-es$/, ''),        // -es  → raiz (ex: flores → flor)
+      targetId.replace(/-s$/, ''),         // -s   → raiz (ex: catetos → cateto)
+    ];
+
+    for (var c = 0; c < candidates.length; c++) {
+      if (candidates[c] === targetId) continue; // evitar loop se nenhum sufixo foi removido
+      target = articles.find(function (a) { return a.id === candidates[c]; });
+      if (target) {
+        return '<a href="#/artigo/' + target.id + '" class="mupedia-link">' + target.title + '</a>';
+      }
+    }
+
     return '<span class="broken-link">' + targetId + '</span>';
   });
 
