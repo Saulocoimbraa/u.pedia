@@ -1175,7 +1175,7 @@ window.UPEDIA_ARTICLES = [
     level: "Ensino Fundamental II",
     category: "Geometria",
     axis: "geometria",
-    icon: "tool",
+    icon: "wrench",
     summary: "A aplicação prática da matemática e da física para projetar, construir e manter estruturas, máquinas e processos.",
     infobox: {
       "Base científica": "[[fisica]], matemática",
