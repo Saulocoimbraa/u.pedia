@@ -13,6 +13,14 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+  // Rota: Portal de Eixo Temático
+  router.addRoute("#/eixo/:id", function (params) {
+    if (window.renderAxisHome) {
+      window.renderAxisHome(params.id, "content-viewport");
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   // Rota: Artigo individual
   router.addRoute("#/artigo/:id", function (params) {
     window.renderArticle(params.id, "content-viewport");
@@ -21,6 +29,11 @@
 
   // Inicializar quando o DOM estiver pronto
   document.addEventListener("DOMContentLoaded", function () {
+    // Inicializar sidebar de navegação lateral
+    if (window.renderSidebar) {
+      window.renderSidebar("sidebar-nav");
+    }
+
     // Barra de busca
     window.initSearchBar("search-input", "search-results");
 

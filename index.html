@@ -64,6 +64,8 @@
   <script src="./js/home.js"></script>
   <script src="./js/articleRenderer.js"></script>
   <script src="./js/search.js"></script>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/axisHome.js"></script>
 
   <!-- 5. Widgets interativos (adicione novos aqui) -->
   <script src="./js/widgets/widgetPitagoras.js"></script>
@@ -83,6 +85,11 @@
       μ<span>.pedia</span>
     </a>
 
+    <!-- Botão hamburguer (mobile) -->
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu de navegação">
+      <i data-lucide="menu"></i>
+    </button>
+
     <!-- Barra de Busca -->
     <div class="search-container">
       <div class="search-box">
@@ -94,12 +101,25 @@
     </div>
   </header>
 
-  <!-- Área de conteúdo (SPA) -->
-  <main class="app-main">
-    <div id="content-viewport" class="animate-fade-in">
-      <!-- Conteúdo carregado dinamicamente pelo roteador -->
-    </div>
-  </main>
+  <!-- Shell de duas colunas: sidebar + conteúdo -->
+  <div class="app-shell">
+
+    <!-- Sidebar de navegação lateral -->
+    <nav id="sidebar-nav" class="sidebar-nav" aria-label="Navegação por eixos temáticos">
+      <!-- Preenchido dinamicamente por sidebar.js -->
+    </nav>
+
+    <!-- Overlay para fechar sidebar no mobile -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Área de conteúdo principal (SPA) -->
+    <main class="app-main">
+      <div id="content-viewport" class="animate-fade-in">
+        <!-- Conteúdo carregado dinamicamente pelo roteador -->
+      </div>
+    </main>
+
+  </div>
 
   <!-- Rodapé -->
   <footer class="app-footer">

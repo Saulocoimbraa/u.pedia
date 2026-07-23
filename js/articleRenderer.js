@@ -194,7 +194,7 @@ function _buildArticlePage(article, articles, parsedContent, container) {
             '</div>' +
             '<div class="infobox-body">' + infoboxRows + '</div>' +
           '</div>' +
-          '<div class="sidebar-nav">' +
+          '<div class="article-sidebar-nav">' +
             '<a href="#/" class="sidebar-back-btn"><i data-lucide="arrow-left"></i> Todos os Artigos</a>' +
           '</div>' +
         '</aside>' +

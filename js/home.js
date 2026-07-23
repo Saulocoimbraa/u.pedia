@@ -10,52 +10,53 @@ window.renderHome = function (containerId) {
   container.style.transform = "translateY(10px)";
 
   var articles = window.UPEDIA_ARTICLES || [];
+  var axes = window.UPEDIA_AXES || {};
   var featured = articles.find(function (a) { return a.id === "teorema-de-pitagoras"; }) || articles[0];
 
-  // Agrupar por categoria
-  var categories = {};
-  articles.forEach(function (article) {
-    if (!categories[article.category]) categories[article.category] = [];
-    categories[article.category].push(article);
+  var AXIS_ORDER = [
+    "geometria",
+    "algebra",
+    "numeros-e-operacoes",
+    "historia",
+    "estatistica",
+    "grandezas-e-medidas"
+  ];
+
+  // Contagem por eixo
+  var axisCounts = {};
+  articles.forEach(function (a) {
+    if (a.axis) {
+      axisCounts[a.axis] = (axisCounts[a.axis] || 0) + 1;
+    }
   });
 
-  var categoryMeta = {
-    "Geometria":     { icon: "triangle",   color: "#10b981" },
-    "Álgebra":       { icon: "hash",       color: "#4f46e5" },
-    "Lógica":        { icon: "cpu",        color: "#f59e0b" },
-    "Trigonometria": { icon: "compass",    color: "#3b82f6" },
-    "Estatística":   { icon: "bar-chart",  color: "#ec4899" }
-  };
-
-  var categoriesHtml = "";
-  Object.keys(categories).forEach(function (cat) {
-    var arts = categories[cat];
-    var meta = categoryMeta[cat] || { icon: "book-open", color: "#4f46e5" };
-    var grid = arts.map(function (art) {
-      return '<a href="#/artigo/' + art.id + '" class="article-card-link">' +
-        '<div class="article-mini-card">' +
-          '<div class="card-icon-title">' +
-            '<i data-lucide="' + (art.icon || "book-open") + '" class="mini-card-icon" style="color:' + meta.color + '"></i>' +
-            '<h3>' + art.title + '</h3>' +
-          '</div>' +
-          '<p>' + art.summary + '</p>' +
-          '<div class="card-footer">' +
-            '<span class="badge badge-level">' + art.level + '</span>' +
-            '<span class="read-more">Ler <i data-lucide="arrow-right"></i></span>' +
-          '</div>' +
-        '</div>' +
-      '</a>';
+  // Renderizar a grade de 6 eixos temáticos
+  var axisCardsHtml = AXIS_ORDER.map(function (axisId) {
+    var meta = axes[axisId];
+    if (!meta) return "";
+    var count = axisCounts[axisId] || 0;
+    var keywordsHtml = (meta.keywords || []).slice(0, 4).map(function (k) {
+      return '<span class="axis-nav-keyword">#' + k + '</span>';
     }).join("");
 
-    categoriesHtml += '<div class="category-section">' +
-      '<div class="category-header">' +
-        '<i data-lucide="' + meta.icon + '" class="category-icon" style="color:' + meta.color + '"></i>' +
-        '<h2 class="category-title">' + cat + '</h2>' +
-        '<span class="category-count">' + arts.length + ' ' + (arts.length === 1 ? "artigo" : "artigos") + '</span>' +
+    return '<a href="#/eixo/' + axisId + '" class="axis-nav-card" style="--axis-color:' + meta.color + '; --axis-color-light:' + meta.colorLight + '">' +
+      '<div class="axis-nav-card-header">' +
+        '<div class="axis-nav-icon">' +
+          '<i data-lucide="' + meta.icon + '"></i>' +
+        '</div>' +
+        '<div>' +
+          '<h3 class="axis-nav-title">' + meta.label + '</h3>' +
+          '<span class="axis-nav-count">' + count + ' ' + (count === 1 ? 'artigo' : 'artigos') + '</span>' +
+        '</div>' +
       '</div>' +
-      '<div class="category-grid">' + grid + '</div>' +
-    '</div>';
-  });
+      '<p class="axis-nav-description">' + meta.description + '</p>' +
+      '<div class="axis-nav-keywords">' + keywordsHtml + '</div>' +
+      '<div class="axis-nav-footer">' +
+        '<span>Explorar Eixo</span>' +
+        '<i data-lucide="arrow-right"></i>' +
+      '</div>' +
+    '</a>';
+  }).join("");
 
   container.innerHTML =
     '<div class="home-wrapper">' +
@@ -63,13 +64,13 @@ window.renderHome = function (containerId) {
       '<div class="hero-section">' +
         '<div class="hero-badge"><i data-lucide="sparkles"></i> Enciclopédia Digital</div>' +
         '<h1 class="hero-title">A beleza da matemática,<br>explicada com clareza.</h1>' +
-        '<p class="hero-subtitle">μ.pedia une rigor teórico e intuição visual para estudantes do Ensino Fundamental e Médio. Cada conceito leva a outro — explore em qualquer direção.</p>' +
+        '<p class="hero-subtitle">μ.pedia une rigor teórico e intuição visual para estudantes do Ensino Fundamental e Médio. Escolha um eixo ou busque um conceito para começar.</p>' +
       '</div>' +
 
       '<div class="stats-container">' +
         '<div class="stat-card"><span class="stat-num">' + articles.length + '</span><span class="stat-lbl">Artigos</span></div>' +
-        '<div class="stat-card"><span class="stat-num">' + Object.keys(categories).length + '</span><span class="stat-lbl">Áreas</span></div>' +
-        '<div class="stat-card"><span class="stat-num">2</span><span class="stat-lbl">Widgets Interativos</span></div>' +
+        '<div class="stat-card"><span class="stat-num">' + AXIS_ORDER.length + '</span><span class="stat-lbl">Eixos Temáticos</span></div>' +
+        '<div class="stat-card"><span class="stat-num">3</span><span class="stat-lbl">Widgets Interativos</span></div>' +
         '<div class="stat-card"><span class="stat-num">∞</span><span class="stat-lbl">Conexões</span></div>' +
       '</div>' +
 
@@ -93,8 +94,8 @@ window.renderHome = function (containerId) {
       '</div>' +
 
       '<div class="browse-sections">' +
-        '<p class="section-label">✦ Explorar por Áreas</p>' +
-        categoriesHtml +
+        '<p class="section-label">✦ Explorar por Eixos Temáticos</p>' +
+        '<div class="axis-cards-grid">' + axisCardsHtml + '</div>' +
       '</div>' +
 
     '</div>';

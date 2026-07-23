@@ -161,13 +161,26 @@ body {
   font-size: 0.9rem;
 }
 
+/* Shell de duas colunas */
+.app-shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: calc(100dvh - 64px);
+  position: relative;
+  transition: grid-template-columns 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.app-shell.sidebar-collapsed {
+  grid-template-columns: 60px 1fr;
+}
+
+
 /* Viewport Principal */
 .app-main {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  min-width: 0;
+  padding: 2.5rem 2.5rem;
   min-height: calc(100vh - 180px);
+  max-width: 980px;
 }
 
 /* Transição de Entrada da Página (Page Fade-In) */
@@ -1261,3 +1274,661 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 }
 
+/* ============================================================
+   20. SIDEBAR DE NAVEGAÇÃO
+   ============================================================ */
+
+.sidebar-nav {
+  position: sticky;
+  top: 64px;
+  height: calc(100dvh - 64px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 240px;
+}
+
+/* Sidebar recolhida — modo ícones */
+.sidebar-nav.collapsed {
+  width: 60px;
+  padding: 1.5rem 0;
+}
+
+.sidebar-nav.collapsed .sidebar-section-label,
+.sidebar-nav.collapsed .sidebar-item-label,
+.sidebar-nav.collapsed .sidebar-item-count,
+.sidebar-nav.collapsed .sidebar-widget-label {
+  display: none;
+}
+
+.sidebar-nav.collapsed .sidebar-item {
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.sidebar-nav.collapsed .sidebar-widget-item {
+  justify-content: center;
+  padding: 0.65rem;
+}
+
+.sidebar-nav.collapsed .sidebar-widget-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar-nav.collapsed .sidebar-divider {
+  margin: 0.5rem 0.75rem;
+}
+
+/* Botão de recolher (dentro da sidebar) */
+.sidebar-collapse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.sidebar-nav.collapsed .sidebar-collapse-btn {
+  margin-left: 0;
+}
+
+.sidebar-collapse-btn:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.sidebar-collapse-btn svg,
+.sidebar-collapse-btn i {
+  width: 14px;
+  height: 14px;
+}
+
+.sidebar-nav.collapsed .sidebar-collapse-btn i[data-lucide="panel-left-close"],
+.sidebar-nav.collapsed .sidebar-collapse-btn i[data-lucide="chevrons-left"] {
+  transform: rotate(180deg);
+}
+
+
+.sidebar-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  padding: 0.75rem 1.25rem 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+  border-left: 3px solid transparent;
+  position: relative;
+}
+
+.sidebar-item:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  border-left-color: transparent;
+}
+
+.sidebar-item.active {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
+  border-left-color: var(--accent);
+}
+
+.sidebar-item svg,
+.sidebar-item i {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.sidebar-item.active svg,
+.sidebar-item.active i {
+  opacity: 1;
+}
+
+.sidebar-item-count {
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: var(--border-color);
+  color: var(--text-muted);
+  padding: 0.1rem 0.45rem;
+  border-radius: 99px;
+  transition: background 0.15s;
+}
+
+.sidebar-item.active .sidebar-item-count {
+  background-color: rgba(79, 70, 229, 0.15);
+  color: var(--accent);
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 0.75rem 1.25rem;
+}
+
+.sidebar-widget-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1.25rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-widget-item:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+.sidebar-widget-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar-widget-icon svg,
+.sidebar-widget-icon i {
+  width: 14px;
+  height: 14px;
+  color: inherit;
+}
+
+.sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 8px;
+  color: var(--text-main);
+  transition: var(--transition-fast);
+  order: -1;
+}
+
+.sidebar-toggle:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+.sidebar-toggle svg,
+.sidebar-toggle i {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 49;
+  backdrop-filter: blur(2px);
+}
+
+.sidebar-overlay.visible {
+  display: block;
+}
+
+/* ============================================================
+   21. AXIS-HOME (Portal de Eixo Temático)
+   ============================================================ */
+
+.axis-home {
+  max-width: 940px;
+}
+
+.axis-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--axis-color-light, #ede9fe) 0%, #ffffff 100%);
+  border: 1px solid var(--border-color);
+}
+
+.axis-hero-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--axis-color, #4f46e5);
+  box-shadow: 0 8px 24px -4px rgba(0,0,0,0.18);
+}
+
+.axis-hero-icon svg,
+.axis-hero-icon i {
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+  stroke-width: 1.75;
+}
+
+.axis-hero-text h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.4rem;
+}
+
+.axis-hero-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 560px;
+}
+
+.axis-hero-meta {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.axis-keyword-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  background-color: rgba(0,0,0,0.07);
+  color: var(--text-muted);
+}
+
+/* Artigo âncora */
+.axis-anchor-section {
+  margin-bottom: 2.5rem;
+}
+
+.axis-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.axis-anchor-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-subtle);
+}
+
+.axis-anchor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--axis-color, var(--accent));
+}
+
+.axis-anchor-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--axis-color-light, var(--accent-light));
+}
+
+.axis-anchor-icon svg,
+.axis-anchor-icon i {
+  width: 26px;
+  height: 26px;
+  color: var(--axis-color, var(--accent));
+}
+
+.axis-anchor-info h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.axis-anchor-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.axis-anchor-arrow {
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--axis-color-light, var(--accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.axis-anchor-card:hover .axis-anchor-arrow {
+  transform: translateX(4px);
+}
+
+.axis-anchor-arrow svg,
+.axis-anchor-arrow i {
+  width: 18px;
+  height: 18px;
+  color: var(--axis-color, var(--accent));
+}
+
+/* Grid de artigos do eixo */
+.axis-articles-section {
+  margin-bottom: 2rem;
+}
+
+.axis-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.axis-article-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.25rem;
+  border-radius: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition-fast);
+  gap: 0.35rem;
+}
+
+.axis-article-card:hover {
+  border-color: var(--axis-color, var(--accent));
+  background-color: var(--axis-color-light, var(--accent-light));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.axis-article-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.axis-article-card-header svg,
+.axis-article-card-header i {
+  width: 16px;
+  height: 16px;
+  color: var(--axis-color, var(--accent));
+  flex-shrink: 0;
+}
+
+.axis-article-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.axis-article-summary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.axis-article-level {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+/* ============================================================
+   22. HOME — GRADE DE EIXOS
+   ============================================================ */
+
+.axis-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.axis-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-subtle);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.axis-nav-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--axis-color, var(--accent));
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.axis-nav-card:hover::before {
+  opacity: 1;
+}
+
+.axis-nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--axis-color, var(--accent));
+}
+
+.axis-nav-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.axis-nav-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--axis-color-light, var(--accent-light));
+}
+
+.axis-nav-icon svg,
+.axis-nav-icon i {
+  width: 22px;
+  height: 22px;
+  color: var(--axis-color, var(--accent));
+}
+
+.axis-nav-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.axis-nav-count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.axis-nav-description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.axis-nav-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.axis-nav-keyword {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  background-color: var(--axis-color-light, var(--accent-light));
+  color: var(--axis-color, var(--accent));
+}
+
+.axis-nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--axis-color, var(--accent));
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.axis-nav-footer i,
+.axis-nav-footer svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.axis-nav-card:hover .axis-nav-footer i,
+.axis-nav-card:hover .axis-nav-footer svg {
+  transform: translateX(4px);
+}
+
+/* ============================================================
+   23. RESPONSIVIDADE — SIDEBAR MOBILE
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 280px;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-top: 1rem;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+  }
+
+  .sidebar-nav.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-main {
+    padding: 1.5rem 1rem;
+  }
+
+  .axis-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .axis-anchor-card {
+    flex-wrap: wrap;
+  }
+
+  .axis-anchor-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .axis-articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .axis-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+}

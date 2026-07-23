@@ -577,7 +577,7 @@ window.UPEDIA_ARTICLES = [
     infobox: {
       "Viveu": "1858–1932",
       "Nacionalidade": "Italiano",
-      "Legado": "[[axiomas-de-peano]], [[inducao-finita]]",
+      "Legado": "Axiomas de Peano, [[inducao-finita]]",
       "Símbolo": "$\\in$ (pertencimento)"
     },
     widget: null
@@ -1282,9 +1282,361 @@ window.UPEDIA_ARTICLES = [
     infobox: {
       "Períodos": "Antiguidade, Idade Média, Renascimento, Moderna",
       "Eixos no site": "[[matematica-babilonica]], [[matematica-egipcia]], [[matematica-indiana]], [[matematica-grega]]",
-      "Grandes figuras": "[[pitagoras]], [[euclides]], [[arquimedes]], [[giuseppe-peano]]",
       "Processo": "Cálculo prático $\\implies$ Abstração lógica"
+    },
+    widget: null
+  },
+
+  {
+    id: "tabelas-e-graficos",
+    title: "Tabelas e Gráficos",
+    level: "Ensino Fundamental II",
+    category: "Estatística",
+    axis: "estatistica",
+    icon: "bar-chart-2",
+    summary: "Formas de organização, síntese e representação visual de conjuntos de dados estatísticos (colunas, setores e linhas).",
+    infobox: {
+      "Área": "Estatística Descritiva",
+      "Tipos principais": "Tabelas simples/dupla entrada, Colunas, Setores, Linhas",
+      "Elementos": "Título, Eixos, Legenda, Fonte, Data",
+      "Aplicação": "Análise de mídia, síntese de pesquisas"
+    },
+    widget: null
+  },
+
+  {
+    id: "medidas-de-tendencia-central",
+    title: "Medidas de Tendência Central",
+    level: "Ensino Fundamental II",
+    category: "Estatística",
+    axis: "estatistica",
+    icon: "calculator",
+    summary: "Valores sintéticos que representam o centro ou ponto de equilíbrio de um conjunto estatístico: média, moda e mediana.",
+    infobox: {
+      "Média (x̄)": "Centro de gravidade dos dados",
+      "Mediana (Md)": "Divisor de 50% dos dados (robusta a outliers)",
+      "Moda (Mo)": "Valor de maior frequência absoluta",
+      "Dispersão básica": "Amplitude $A = x_{\\max} - x_{\\min}$"
+    },
+    widget: null
+  },
+
+  {
+    id: "espaco-amostral",
+    title: "Espaço Amostral",
+    level: "Ensino Fundamental II",
+    category: "Estatística & Probabilidade",
+    axis: "estatistica",
+    icon: "disc",
+    summary: "O conjunto de todos os resultados possíveis de um experimento aleatório, denotado por Ω.",
+    infobox: {
+      "Notação": "$\\Omega$ ou $S$",
+      "Elemento": "Ponto amostral $\\omega \\in \\Omega$",
+      "Evento (A)": "Subconjunto $A \\subseteq \\Omega$",
+      "Tipos de evento": "Certo ($A=\\Omega$), Impossível ($A=\\emptyset$)"
+    },
+    widget: null
+  },
+
+  {
+    id: "probabilidade-de-um-evento",
+    title: "Probabilidade de um Evento",
+    level: "Ensino Fundamental II",
+    category: "Estatística & Probabilidade",
+    axis: "estatistica",
+    icon: "percent",
+    summary: "A medida quantitativa da incerteza de um evento ocorrer, variando entre 0 (impossível) e 1 (certo).",
+    infobox: {
+      "Fórmula de Laplace": "$P(A) = \\frac{|A|}{|\\Omega|}$ (espaços equiprováveis)",
+      "Intervalo": "$0 \\le P(A) \\le 1$ ($0\\%$ a $100\\%$)",
+      "Complementar": "$P(A^c) = 1 - P(A)$",
+      "Eventos Independentes": "$P(A \\cap B) = P(A) \\cdot P(B)$"
+    },
+    widget: null
+  },
+
+  {
+    id: "pesquisa-amostral-e-censitaria",
+    title: "Pesquisa Amostral e Censitária",
+    level: "Ensino Fundamental II",
+    category: "Estatística",
+    axis: "estatistica",
+    icon: "users",
+    summary: "Métodos de coleta de dados estatísticos sobre uma população inteira (Censo) ou sobre um subconjunto representativo (Amostra).",
+    infobox: {
+      "População (N)": "Universo total de indivíduos",
+      "Amostra (n)": "Subconjunto representativo",
+      "Amostragem Probabilística": "Aleatória Simples, Sistemática, Estratificada",
+      "Armadilha": "Viés de amostragem (*Sampling Bias*)"
+    },
+    widget: null
+  },
+
+  // ── Lote 7 — Álgebra: Equações e Funções ──────────────────────────────────
+  {
+    id: "equacao-do-primeiro-grau",
+    title: "Equação do Primeiro Grau",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "sliders",
+    summary: "Igualdade matemática com uma variável de expoente 1, resolvida pelo isolamento da incógnita aplicando as propriedades aditiva e multiplicativa da igualdade.",
+    infobox: {
+      "Forma geral": "$ax + b = c$, com $a \\neq 0$",
+      "Solução": "$x = \\frac{c - b}{a}$",
+      "Interpretação Geométrica": "Interseção de uma [[reta]] com o eixo $x$",
+      "Pré-requisito": "[[axiomas-fundamentais]]"
+    },
+    widget: null
+  },
+
+  {
+    id: "sistemas-de-equacoes",
+    title: "Sistemas de Equações",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "git-branch",
+    summary: "Conjunto de equações lineares que devem ser satisfeitas simultaneamente. Classificados em SPD (solução única), SPI (infinitas soluções) ou SI (impossível).",
+    infobox: {
+      "Forma geral": "$\\begin{cases} a_1 x + b_1 y = c_1 \\\\ a_2 x + b_2 y = c_2 \\end{cases}$",
+      "Métodos": "Substituição, Adição, Comparação",
+      "SPD (Concorrentes)": "$\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
+      "Conexão": "[[plano-cartesiano]], [[reta]]"
+    },
+    widget: null
+  },
+
+  {
+    id: "equacao-do-segundo-grau",
+    title: "Equação do Segundo Grau",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "activity",
+    summary: "Equação polinomial onde o maior expoente da variável é 2. Resolvida pela Fórmula de Bhaskara: x = (-b ± √Δ) / 2a.",
+    infobox: {
+      "Forma geral": "$ax^2 + bx + c = 0$, com $a \\neq 0$",
+      "Discriminante": "$\\Delta = b^2 - 4ac$",
+      "Bhaskara": "$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$",
+      "Conexão": "[[fatoracao-algebrica]], [[numero-real]]"
+    },
+    widget: null
+  },
+
+  {
+    id: "fatoracao-algebrica",
+    title: "Fatoração Algébrica",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "scissors",
+    summary: "Processo de reescrever uma expressão algébrica como produto de fatores mais simples. Casos: fator comum, agrupamento, diferença de quadrados, trinômio perfeito.",
+    infobox: {
+      "Inversa de": "Expansão/Distributiva",
+      "Diferença de Quadrados": "$a^2 - b^2 = (a-b)(a+b)$",
+      "Trinômio Perfeito": "$a^2 + 2ab + b^2 = (a+b)^2$",
+      "Aplicação": "Simplificação de frações algébricas, raízes de [[equacao-do-segundo-grau]]"
+    },
+    widget: null
+  },
+
+  {
+    id: "funcao",
+    title: "Função",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "arrow-right",
+    summary: "Relação matemática que associa a cada elemento do Domínio exatamente um único elemento do Contradomínio. Representada algebricamente, numericamente ou graficamente.",
+    infobox: {
+      "Notação": "$f: A \\to B,\\ x \\mapsto f(x)$",
+      "Univocidade": "Cada $x \\in A$ tem exatamente 1 imagem $f(x)$",
+      "Imagem": "$Im(f) \\subseteq CD(f)$",
+      "Famílias": "Afim ($ax+b$), Quadrática ($ax^2+bx+c$), Exponencial ($a^x$)"
+    },
+    widget: null
+  },
+
+  // ── Lote 8 — Grandezas, Medidas e Sistema Monetário ─────────────────────
+  {
+    id: "sistema-monetario-brasileiro",
+    title: "Sistema Monetário Brasileiro",
+    level: "Ensino Fundamental I",
+    category: "Grandezas e Medidas",
+    axis: "grandezas-e-medidas",
+    icon: "dollar-sign",
+    summary: "Conjunto de moedas e cédulas do Real (R$) que regula as trocas comerciais no Brasil, incluindo cálculo de troco e desconto percentual.",
+    infobox: {
+      "Unidade": "Real (R$) = 100 centavos",
+      "Cédulas": "R$2, R$5, R$10, R$20, R$50, R$100, R$200",
+      "Troco": "$V_{\\text{pago}} - V_{\\text{compra}}$",
+      "Desconto": "$V \\cdot (1 - d/100)$"
+    },
+    widget: null
+  },
+
+  {
+    id: "unidades-de-medida",
+    title: "Unidades de Medida",
+    level: "Ensino Fundamental I",
+    category: "Grandezas e Medidas",
+    axis: "grandezas-e-medidas",
+    icon: "ruler",
+    summary: "Padrões do Sistema Internacional (SI) para quantificar as grandezas fundamentais: comprimento (m), massa (kg), capacidade (L), tempo (h/min/s) e temperatura (°C).",
+    infobox: {
+      "Comprimento": "km → m → cm → mm (fator 10/100/1000)",
+      "Massa": "t → kg → g → mg (fator 1000)",
+      "Capacidade": "$1\\text{ dm}^3 = 1\\text{ L}$, $1\\text{ cm}^3 = 1\\text{ mL}$",
+      "Tempo": "1h = 60min = 3600s (base 60)"
+    },
+    widget: null
+  },
+
+  {
+    id: "perimetro-e-area",
+    title: "Perímetro e Área",
+    level: "Ensino Fundamental I",
+    category: "Grandezas e Medidas",
+    axis: "grandezas-e-medidas",
+    icon: "maximize",
+    summary: "Perímetro é o comprimento do contorno (1D); Área é a extensão de superfície (2D). Fórmulas para retângulo, quadrado, triângulo, trapézio e círculo.",
+    infobox: {
+      "Retângulo": "$A = b \\cdot h$, $P = 2b + 2h$",
+      "Triângulo": "$A = \\frac{b \\cdot h}{2}$",
+      "Círculo": "$A = \\pi r^2$, $C = 2\\pi r$",
+      "Atenção": "Mesmo perímetro ≠ mesma área (e vice-versa)"
+    },
+    widget: null
+  },
+
+  {
+    id: "volume-do-bloco-retangular",
+    title: "Volume do Bloco Retangular",
+    level: "Ensino Fundamental I",
+    category: "Grandezas e Medidas",
+    axis: "grandezas-e-medidas",
+    icon: "box",
+    summary: "O volume de um paralelepípedo reto-retângulo é o produto de suas três dimensões (base × comprimento × altura). Inclui conversões entre m³, dm³, cm³ e litros.",
+    infobox: {
+      "Bloco Retangular": "$V = b \\times c \\times h$",
+      "Cubo": "$V = L^3$",
+      "Conversão SI": "$1\\text{ m}^3 = 1000\\text{ L}$",
+      "Prisma Geral": "$V = A_{\\text{base}} \\times h$"
+    },
+    widget: null
+  },
+
+  // ── Lote 9 — Geometria: Coordenadas, Espacial e Transformações ────────────
+  {
+    id: "plano-cartesiano",
+    title: "Plano Cartesiano",
+    level: "Ensino Fundamental II",
+    category: "Geometria",
+    axis: "geometria",
+    icon: "grid",
+    summary: "Sistema de referência bidimensional com dois eixos perpendiculares que permite representar pontos do plano por pares ordenados (x, y). Base da Geometria Analítica.",
+    infobox: {
+      "Criador": "René Descartes (séc. XVII)",
+      "Pares Ordenados": "$(x, y)$ — Abscissa e Ordenada",
+      "Distância": "$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+      "Ponto Médio": "$M = (\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$"
+    },
+    widget: null
+  },
+
+  {
+    id: "geometria-espacial",
+    title: "Geometria Espacial",
+    level: "Ensino Fundamental II",
+    category: "Geometria",
+    axis: "geometria",
+    icon: "box",
+    summary: "Estudo dos sólidos geométricos tridimensionais: poliedros (prismas, pirâmides) e sólidos de revolução (cilindro, cone, esfera), suas propriedades, áreas e volumes.",
+    infobox: {
+      "Poliedros": "Prismas ($V = A_{base} \\cdot h$), Pirâmides ($V = \\frac{A_{base} \\cdot h}{3}$)",
+      "Cilindro": "$V = \\pi r^2 h$",
+      "Cone": "$V = \\frac{\\pi r^2 h}{3}$",
+      "Euler (Poliedros)": "$V - A + F = 2$"
+    },
+    widget: null
+  },
+
+  {
+    id: "simetria-e-transformacoes-geometricas",
+    title: "Simetria e Transformações Geométricas",
+    level: "Ensino Fundamental II",
+    category: "Geometria",
+    axis: "geometria",
+    icon: "copy",
+    summary: "Isometrias (translação, reflexão e rotação) que preservam forma e tamanho, e homotecia que gera figuras semelhantes. Base da Geometria das Transformações.",
+    infobox: {
+      "Isometrias": "Translação, Reflexão (Simetria), Rotação",
+      "Reflexão": "Mediatriz de $PP'$ é o eixo de simetria",
+      "Rotação (n-simetria)": "Ordem $n$: coincide após $\\frac{360°}{n}$",
+      "Homotecia (razão k)": "Gera figuras [[triangulo-semelhante|semelhantes]]"
     },
     widget: null
   }
 ];
+
+/**
+ * Metadados visuais e estruturais de cada eixo temático.
+ * Consumido por: sidebar.js, home.js, axisHome.js
+ */
+window.UPEDIA_AXES = {
+  "geometria": {
+    label: "Geometria",
+    icon: "triangle",
+    color: "#10b981",
+    colorLight: "#d1fae5",
+    description: "Figuras, relações métricas e demonstrações no plano e no espaço. Do triângulo retângulo à trigonometria.",
+    anchor: "geometria-plana",
+    keywords: ["triângulo", "ângulo", "polígono", "círculo", "pitágoras", "seno", "cosseno"]
+  },
+  "algebra": {
+    label: "Álgebra",
+    icon: "hash",
+    color: "#4f46e5",
+    colorLight: "#ede9fe",
+    description: "A linguagem das estruturas abstratas: equações, funções, lógica e demonstrações formais.",
+    anchor: "logica",
+    keywords: ["equação", "função", "axioma", "demonstração", "lógica", "fatoração"]
+  },
+  "numeros-e-operacoes": {
+    label: "Números e Operações",
+    icon: "calculator",
+    color: "#f59e0b",
+    colorLight: "#fef3c7",
+    description: "Do número natural ao real: operações, potências, divisibilidade e a estrutura dos conjuntos numéricos.",
+    anchor: "numero-real",
+    keywords: ["inteiro", "racional", "irracional", "potência", "fatoração", "divisão"]
+  },
+  "historia": {
+    label: "História da Matemática",
+    icon: "scroll-text",
+    color: "#ec4899",
+    colorLight: "#fce7f3",
+    description: "As pessoas e culturas que construíram a matemática: de Euclides e Pitágoras à civilização babilônica.",
+    anchor: "euclides",
+    keywords: ["Euclides", "Pitágoras", "Peano", "Arquimedes", "babilônia", "axiomas"]
+  },
+  "estatistica": {
+    label: "Estatística e Probabilidade",
+    icon: "bar-chart-2",
+    color: "#06b6d4",
+    colorLight: "#cffafe",
+    description: "Coleta, organização e interpretação de dados. Espaços amostrais, médias e probabilidades de eventos.",
+    anchor: "espaco-amostral",
+    keywords: ["média", "mediana", "moda", "probabilidade", "gráfico", "amostra"]
+  },
+  "grandezas-e-medidas": {
+    label: "Grandezas e Medidas",
+    icon: "ruler",
+    color: "#f97316",
+    colorLight: "#ffedd5",
+    description: "Sistemas de medição, áreas, volumes e grandezas do cotidiano escolar e profissional.",
+    anchor: "unidades-de-medida",
+    keywords: ["metro", "área", "volume", "perímetro", "sistema métrico", "conversão"]
+  }
+};
