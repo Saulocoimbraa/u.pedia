@@ -22,9 +22,9 @@ O caso $a^0 = 1$ pode parecer contraintuitivo, mas é matematicamente necessári
 
 ### Expoentes Racionais e Raízes
 
-A potenciação pode ser estendida para expoentes [[numero-racional|racionais]]:
+A potenciação pode ser estendida para expoentes [[numeros-racionais]]:
 
 $$a^{1/n} = \\sqrt[n]{a}$$
 
-Isso conecta diretamente a potenciação às raízes. A raiz quadrada, tão central ao [[teorema-de-pitagoras]] e à descoberta dos [[numero-irracional|números irracionais]], é simplesmente $a^{1/2}$. As [[potencia-de-dois|potências de base 2]] têm papel central na [[computacao]] e na [[programacao]] modernas.`;
+Isso conecta diretamente a potenciação às raízes. A raiz quadrada, tão central ao [[teorema-de-pitagoras]] e à descoberta dos [[numeros-irracionais]], é simplesmente $a^{1/2}$. As [[potencia-de-dois]] têm papel central na [[computacao]] e na [[programacao]] modernas.`;
 })();

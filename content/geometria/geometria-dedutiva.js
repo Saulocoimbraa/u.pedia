@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["geometria-dedutiva"] = `A **Geometria Dedutiva** é o estudo da geometria que não se apoia em medições físicas ou aproximações empíricas, mas sim em um encadeamento de raciocínio estritamente lógico e rigoroso. Ela parte de premissas indiscutíveis chamadas axiomas para provar propriedades complexas, os [[teorema]]s.
+  window.UPEDIA_CONTENT["geometria-dedutiva"] = `A **Geometria Dedutiva** é o estudo da geometria que não se apoia em medições físicas ou aproximações empíricas, mas sim em um encadeamento de raciocínio estritamente lógico e rigoroso. Ela parte de premissas indiscutíveis chamadas axiomas para provar propriedades complexas, os [[teoremas]].
 
 ### Origem Histórica
 

@@ -4,6 +4,7 @@ As seguintes palavras-chave já possuem um artigo no sistema:
 
 ## Originais
 * metodos-de-demonstracao
+* demonstracao-absurdo
 * raiz-de-2-irracional
 * soma-dos-impares
 * axiomas-fundamentais
@@ -89,5 +90,32 @@ As seguintes palavras-chave já possuem um artigo no sistema:
 * identidade-algebrica
 * matematica-egipcia
 * historia-da-matematica
+
+## Lote 6 — Estatística e Probabilidade
+* tabelas-e-graficos
+* medidas-de-tendencia-central
+* espaco-amostral
+* probabilidade-de-um-evento
+* pesquisa-amostral-e-censitaria
+
+## Lote 7 — Álgebra: Equações e Funções
+* equacao-do-primeiro-grau
+* sistemas-de-equacoes
+* equacao-do-segundo-grau
+* fatoracao-algebrica
+* funcao
+
+## Lote 8 — Grandezas, Medidas e Sistema Monetário
+* sistema-monetario-brasileiro
+* unidades-de-medida
+* perimetro-e-area
+* volume-do-bloco-retangular
+
+## Lote 9 — Geometria: Coordenadas, Espacial e Transformações
+* plano-cartesiano
+* geometria-espacial
+* simetria-e-transformacoes-geometricas
+
+
 
 

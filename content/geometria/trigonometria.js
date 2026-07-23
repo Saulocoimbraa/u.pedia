@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["trigonometria"] = `A trigonometria é o ramo da [[geometria-euclidiana]] dedicado ao estudo das **relações entre os [[angulo]]s e os lados de um [[triangulo]]**. O nome vem do grego: *trígono* (triângulo) + *métron* (medida).
+  window.UPEDIA_CONTENT["trigonometria"] = `A trigonometria é o ramo da [[geometria-euclidiana]] dedicado ao estudo das **relações entre os [[angulos]] e os lados de um [[triangulo]]**. O nome vem do grego: *trígono* (triângulo) + *métron* (medida).
 
 Embora o campo tenha se expandido muito — englobando funções periódicas usadas em [[fisica]], [[engenharia]] de sinais e música —, a base de tudo é surpreendentemente simples: o [[triangulo-retangulo]].
 

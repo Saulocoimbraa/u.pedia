@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["cateto"] = `Em um [[triangulo-retangulo]], um **cateto** é qualquer um dos dois lados menores que se intersectam perpendicularmente para formar o [[angulo-reto]] ($90^\\circ$). O lado restante, oposto ao ângulo reto, é a [[hipotenusa]].
+  window.UPEDIA_CONTENT["cateto"] = `Em um [[triangulo-retangulo]], um cateto é qualquer um dos dois lados menores que se intersectam perpendicularmente para formar o [[angulo-reto]] ($90^\\circ$). O lado restante, oposto ao ângulo reto, é a [[hipotenusa]].
 
 ### Adjacente vs Oposto
 

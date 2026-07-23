@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["angulo-raso"] = `Um **ângulo raso** (ou ângulo plano) é um [[angulo]] que mede exatamente $180^\\circ$ (ou $\\pi$ [[radiano]]s). Ele representa uma meia-volta completa em torno de um vértice e suas duas semirretas formadoras apontam em direções exatamente opostas, constituindo uma única [[reta]].
+  window.UPEDIA_CONTENT["angulo-raso"] = `Um **ângulo raso** (ou ângulo plano) é um [[angulo]] que mede exatamente $180^\\circ$ (ou $\\pi$ [[radianos]]). Ele representa uma meia-volta completa em torno de um vértice e suas duas semirretas formadoras apontam em direções exatamente opostas, constituindo uma única [[reta]].
 
 ### Representação Geométrica
 

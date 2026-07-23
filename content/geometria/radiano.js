@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["radiano"] = `O **radiano** é a unidade padrão de medida de [[angulo]]s usada em matemática pura e física. Diferente do [[grau]], que é uma divisão arbitrária de uma circunferência em 360 partes, o radiano baseia-se diretamente na geometria intrínseca da circunferência.
+  window.UPEDIA_CONTENT["radiano"] = `O **radiano** é a unidade padrão de medida de [[angulos]] usada em matemática pura e física. Diferente do [[grau]], que é uma divisão arbitrária de uma circunferência em 360 partes, o radiano baseia-se diretamente na geometria intrínseca da circunferência.
 
 ### Definição Geométrica
 

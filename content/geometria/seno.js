@@ -51,7 +51,7 @@ Note que $\\sin 90^\\circ = 1$: quando o ângulo é o próprio [[angulo-reto]], 
 
 ### Além do Triângulo
 
-O seno possui uma definição circular mais geral: no círculo unitário (raio = 1), $\\sin \\theta$ é simplesmente a coordenada vertical do ponto sobre o círculo correspondente ao ângulo $\\theta$ medido a partir do eixo positivo. Isso estende o seno para ângulos maiores que $90^\\circ$, tornando-o uma **função periódica** de período $360^\\circ$ (ou $2\\pi$ [[radiano]]s) — a ondulação que descreve ondas sonoras, a corrente alternada e as marés.
+O seno possui uma definição circular mais geral: no círculo unitário (raio = 1), $\\sin \\theta$ é simplesmente a coordenada vertical do ponto sobre o círculo correspondente ao ângulo $\\theta$ medido a partir do eixo positivo. Isso estende o seno para ângulos maiores que $90^\\circ$, tornando-o uma **função periódica** de período $360^\\circ$ (ou $2\\pi$ [[radianos]]) — a ondulação que descreve ondas sonoras, a corrente alternada e as marés.
 
 A relação com o [[cosseno]] é sempre garantida pela identidade fundamental da [[trigonometria]]: $\\sin^2\\theta + \\cos^2\\theta = 1$.`;
 })();

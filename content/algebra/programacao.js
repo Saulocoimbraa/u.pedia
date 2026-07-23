@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["programacao"] = `A **programação** é o processo de projetar, escrever, testar e manter o código-fonte de programas de computador. Ela representa a tradução prática de [[algoritmo]]s em instruções que o hardware de um computador possa compreender e executar.
+  window.UPEDIA_CONTENT["programacao"] = `A **programação** é o processo de projetar, escrever, testar e manter o código-fonte de programas de computador. Ela representa a tradução prática de [[algoritmos]] em instruções que o hardware de um computador possa compreender e executar.
 
 ### A Conexão com a Matemática
 

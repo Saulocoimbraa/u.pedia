@@ -12,7 +12,7 @@ $$a \\div b = q \\iff b \\times q = a$$
 
 ### O Nascimento da Fração
 
-A [[multiplicacao]] de [[numero-inteiro|inteiros]] é "fechada" — inteiro × inteiro = inteiro. Mas a divisão **não é fechada** dentro dos inteiros: $7 \\div 3$ não é um inteiro. A necessidade de representar essas divisões "incompletas" é exatamente o que dá origem aos [[numero-racional|números racionais]]:
+A [[multiplicacao]] de [[numeros-inteiros]] é "fechada" — inteiro × inteiro = inteiro. Mas a divisão **não é fechada** dentro dos inteiros: $7 \\div 3$ não é um inteiro. A necessidade de representar essas divisões "incompletas" é exatamente o que dá origem aos [[numeros-racionais]]:
 
 $$\\frac{a}{b} \\in \\mathbb{Q}, \\quad b \\neq 0$$
 
@@ -20,7 +20,7 @@ Uma [[fracao]] não é outra coisa senão uma divisão escrita de forma suspensa
 
 ### Divisão e Resto
 
-No universo dos [[numero-inteiro|inteiros]], a divisão euclidiana sempre garante:
+No universo dos [[numeros-inteiros]], a divisão euclidiana sempre garante:
 
 $$a = b \\times q + r, \\quad 0 \\leq r < b$$
 

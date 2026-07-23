@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["hipotenusa"] = `A **hipotenusa** é o lado de maior comprimento em um [[triangulo-retangulo]]. Sua localização é fixa e única: ela é sempre o lado oposto ao [[angulo-reto]] ($90^\\circ$). Os outros dois lados menores que formam o ângulo reto são chamados de [[cateto]]s.
+  window.UPEDIA_CONTENT["hipotenusa"] = `A **hipotenusa** é o lado de maior comprimento em um [[triangulo-retangulo]]. Sua localização é fixa e única: ela é sempre o lado oposto ao [[angulo-reto]] ($90^\\circ$). Os outros dois lados menores que formam o ângulo reto são chamados de [[catetos]].
 
 ### Relação Métrica (Teorema de Pitágoras)
 

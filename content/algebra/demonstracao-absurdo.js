@@ -24,6 +24,6 @@ Outro exemplo simples: provar que não existe um maior [[numero-natural]].
 
 ### Conexão com outras áreas
 
-Na [[filosofia]] [[logica]], a contradição é a ferramenta central do [[metodo-socratico]]. Em [[programacao]], provas de impossibilidade de [[algoritmo]]s (como o problema da parada de Turing) usam a mesma estrutura lógica.
+Na [[filosofia]] [[logica]], a contradição é a ferramenta central do [[metodo-socratico]]. Em [[programacao]], provas de impossibilidade de [[algoritmos]] (como o problema da parada de Turing) usam a mesma estrutura lógica.
 `;
 })();

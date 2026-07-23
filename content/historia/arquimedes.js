@@ -4,12 +4,12 @@
 
 ### A Aproximação de π
 
-A conquista matemática mais marcante de Arquimedes foi delimitar o valor de $\\pi$ com uma precisão jamais vista no mundo antigo. Seu método era elegante: inscrever e circunscrever [[poligono]]s regulares de cada vez mais lados ao redor de um círculo de [[dimensao]] conhecida.
+A conquista matemática mais marcante de Arquimedes foi delimitar o valor de $\\pi$ com uma precisão jamais vista no mundo antigo. Seu método era elegante: inscrever e circunscrever [[poligonos]] regulares de cada vez mais lados ao redor de um círculo de [[dimensao]] conhecida.
 
 Com polígonos de 96 lados, ele provou que:
 $$\\frac{223}{71} < \\pi < \\frac{22}{7}$$
 
-Em valores decimais: $3{,}1408\\ldots < \\pi < 3{,}1428\\ldots$ — uma aproximação correta até a segunda casa decimal, usando apenas [[numero-racional|aritmética de frações]] e [[trigonometria]] primitiva.
+Em valores decimais: $3{,}1408\\ldots < \\pi < 3{,}1428\\ldots$ — uma aproximação correta até a segunda casa decimal, usando apenas [[numero-racional]] e [[trigonometria]] primitiva.
 
 ### O Método da Exaustão
 

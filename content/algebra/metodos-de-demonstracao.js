@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["metodos-de-demonstracao"] = `Uma demonstração matemática é uma cadeia rigorosa de raciocínios que parte de verdades conhecidas ([[axiomas-fundamentais]] ou [[teorema]]s já provados) e chega a uma nova verdade. Ela é universal: não apenas "funciona para os casos que testei", mas vale para todos os casos possíveis, para sempre.
+  window.UPEDIA_CONTENT["metodos-de-demonstracao"] = `Uma demonstração matemática é uma cadeia rigorosa de raciocínios que parte de verdades conhecidas ([[axiomas-fundamentais]] ou [[teoremas]] já provados) e chega a uma nova verdade. Ela é universal: não apenas "funciona para os casos que testei", mas vale para todos os casos possíveis, para sempre.
 
 Existem seis métodos principais. Cada um é uma estratégia diferente de ataque.
 
@@ -18,7 +18,7 @@ Exemplo clássico: a [[raiz-de-2-irracional]].
 
 ### 3. Demonstração por Indução Finita
 
-Usada para provar que algo vale para todos os [[numero-natural]]s. Tem dois passos:
+Usada para provar que algo vale para todos os [[numeros-naturais]]. Tem dois passos:
 
 * Verificar o caso $n = 1$ (a base).
 * Mostrar que se vale para $n = k$, então vale para $n = k+1$ (o passo indutivo).

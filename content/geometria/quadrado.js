@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["quadrado"] = `O quadrado é o [[quadrilatero]] de simetria máxima: todos os quatro lados possuem o mesmo comprimento e todos os quatro [[angulo]]s internos medem exatamente $90^\\circ$ ([[angulo-reto]]).
+  window.UPEDIA_CONTENT["quadrado"] = `O quadrado é o [[quadrilatero]] de simetria máxima: todos os quatro lados possuem o mesmo comprimento e todos os quatro [[angulos]] internos medem exatamente $90^\\circ$ ([[angulo-reto]]).
 
 Por essa razão, o quadrado é simultaneamente um retângulo perfeito e um losango perfeito — reunindo as duas condições mais restritas de simetria de um paralelogramo em uma única figura.
 
@@ -11,7 +11,7 @@ Se o lado do quadrado mede $l$, então:
 
 Daí vem o nome popular de **quadrado** para a operação de elevar um número a expoente 2 ($l^2$). A noção de [[potencia-de-dois]] é literalmente geométrica: é a área de um quadrado de lado $l$.
 
-A diagonal $d$ do quadrado — a [[reta]] que conecta dois [[vertice]]s opostos — mede:
+A diagonal $d$ do quadrado — a [[reta]] que conecta dois [[vertices]] opostos — mede:
 
 $$d = l \\cdot \\sqrt{2}$$
 

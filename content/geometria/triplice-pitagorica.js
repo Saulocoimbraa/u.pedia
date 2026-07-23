@@ -4,7 +4,7 @@
 
 $$a^2 + b^2 = c^2$$
 
-Onde $a$ e $b$ representam os [[cateto]]s e $c$ representa a [[hipotenusa]].
+Onde $a$ e $b$ representam os [[catetos]] e $c$ representa a [[hipotenusa]].
 
 ### O Terno Primitivo $(3, 4, 5)$
 

@@ -43,10 +43,28 @@ window.parseContent = function (rawContent) {
 
     // Fallback: tenta raízes por remoção progressiva de sufixos
     var candidates = [
-      targetId.replace(/oes$/, 'ao'),   // -ões → -ão  (ex: operacoes → operacao)
-      targetId.replace(/ns$/, 'm'),     // -ns  → -m   (ex: origems → origem)
-      targetId.replace(/es$/, ''),      // -es  → raiz (ex: flores → flor)
-      targetId.replace(/s$/, ''),       // -s   → raiz (ex: catetos → cateto)
+      targetId.replace(/oes$/, 'ao'),       // -ões → -ão  (ex: operacoes → operacao, dimensoes → dimensao)
+      targetId.replace(/ns$/, 'm'),         // -ns  → -m   (ex: origems → origem)
+      targetId.replace(/ais$/, 'al'),       // -ais → -al  (ex: reais → real, naturais → natural)
+      targetId.replace(/is$/, 'l'),         // -is  → -l   (ex: racionais → racional)
+      targetId.replace(/es$/, ''),          // -es  → raiz (ex: vertices → vertice)
+      targetId.replace(/s$/, ''),           // -s   → raiz (ex: catetos → cateto, radianos → radiano)
+      // Plurais de termos compostos
+      targetId
+        .replace(/^numeros-/, 'numero-')
+        .replace(/^triangulos-/, 'triangulo-')
+        .replace(/^quadrados-/, 'quadrado-')
+        .replace(/^equacoes-/, 'equacao-')
+        .replace(/^identidades-/, 'identidade-')
+        .replace(/^triplices-/, 'triplice-')
+        .replace(/-(reais|naturais|racionais|irracionais)$/, function(m, p1) {
+          if (p1 === 'reais') return '-real';
+          if (p1 === 'naturais') return '-natural';
+          if (p1 === 'racionais') return '-racional';
+          if (p1 === 'irracionais') return '-irracional';
+          return m;
+        })
+        .replace(/s$/, '')
     ];
 
     for (var c = 0; c < candidates.length; c++) {

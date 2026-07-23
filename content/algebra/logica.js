@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["logica"] = `A **lógica matemática** é o estudo formal dos princípios do raciocínio válido e da dedução. Ela fornece a linguagem precisa que matemáticos usam para estruturar teorias, definir axiomas e provar [[teorema]]s.
+  window.UPEDIA_CONTENT["logica"] = `A **lógica matemática** é o estudo formal dos princípios do raciocínio válido e da dedução. Ela fornece a linguagem precisa que matemáticos usam para estruturar teorias, definir axiomas e provar [[teoremas]].
 
 ### Proposições Lógicas
 

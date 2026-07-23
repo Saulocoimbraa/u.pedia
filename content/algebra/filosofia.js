@@ -12,6 +12,6 @@ A busca filosófica pela verdade absoluta levou à necessidade de criar métodos
 
 ### Da Filosofia à Ciência Moderna
 
-A lógica matemática de hoje é uma evolução direta dos sistemas de pensamento desenvolvidos por filósofos como Aristóteles. Essa mesma lógica fundamenta os [[algoritmo]]s computacionais modernos.
+A lógica matemática de hoje é uma evolução direta dos sistemas de pensamento desenvolvidos por filósofos como Aristóteles. Essa mesma lógica fundamenta os [[algoritmos]] computacionais modernos.
 `;
 })();

@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["axiomas-fundamentais"] = `Axiomas são as regras fundamentais do jogo matemático. São proposições aceitas como ponto de partida para definir um sistema — e a partir delas derivamos, por meio da lógica, todos os [[teorema]]s mais avançados.
+  window.UPEDIA_CONTENT["axiomas-fundamentais"] = `Axiomas são as regras fundamentais do jogo matemático. São proposições aceitas como ponto de partida para definir um sistema — e a partir delas derivamos, por meio da lógica, todos os [[teoremas]] mais avançados.
 
 Para construir os números que usamos para contar, o matemático Giuseppe Peano definiu regras simples e precisas, conhecidas como os **Axiomas de Peano**.
 

@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["inducao-finita"] = `A indução matemática (ou indução finita) é um dos [[metodos-de-demonstracao]] projetado especificamente para propriedades que envolvem os [[numero-natural]]s.
+  window.UPEDIA_CONTENT["inducao-finita"] = `A indução matemática (ou indução finita) é um dos [[metodos-de-demonstracao]] projetado especificamente para propriedades que envolvem os [[numeros-naturais]].
 
 ### A Analogia dos Dominós
 
@@ -27,6 +27,6 @@ Veja o artigo [[soma-dos-impares]] para uma aplicação completa deste método: 
 
 ### Por que isso funciona?
 
-A justificativa da indução matemática é ela própria um dos [[axiomas-fundamentais]] da aritmética, conhecido como Axiomas de Peano. Ele afirma que o conjunto dos [[numero-natural]]s é o menor conjunto que contém $1$ e é fechado pela operação de "passar ao sucessor".
+A justificativa da indução matemática é ela própria um dos [[axiomas-fundamentais]] da aritmética, conhecido como Axiomas de Peano. Ele afirma que o conjunto dos [[numeros-naturais]] é o menor conjunto que contém $1$ e é fechado pela operação de "passar ao sucessor".
 `;
 })();

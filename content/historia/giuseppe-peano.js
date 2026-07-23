@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["giuseppe-peano"] = `Giuseppe Peano (1858–1932) foi um matemático italiano de precisão cirúrgica e criatividade singular. Seu maior legado para a humanidade é a formalização rigorosa da aritmética dos [[numero-natural|números naturais]] através de um conjunto de postulados que hoje carregam seu nome: os Axiomas de peano.
+  window.UPEDIA_CONTENT["giuseppe-peano"] = `<img src="src/img/peano.png" alt="Giuseppe Peano" style="float: right; width: 170px; margin: 0 0 1rem 1.5rem;" />Giuseppe Peano (1858–1932) foi um matemático italiano de precisão cirúrgica e criatividade singular. Seu maior legado para a humanidade é a formalização rigorosa da aritmética baseada no [[numero-natural]] através de um conjunto de postulados que hoje carregam seu nome: os Axiomas de Peano.
 
 ### A Crise dos Fundamentos
 
