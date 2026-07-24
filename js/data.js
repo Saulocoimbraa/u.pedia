@@ -979,7 +979,7 @@ window.UPEDIA_ARTICLES = [
       "Contexto": "[[triangulo-retangulo]]",
       "Pré-requisito": "[[angulo-reto]]"
     },
-    widget: null
+    widget: "angulocomplementar"
   },
 
   {
@@ -998,6 +998,7 @@ window.UPEDIA_ARTICLES = [
     },
     widget: null
   },
+
 
   {
     id: "hipotenusa",

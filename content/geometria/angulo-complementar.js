@@ -29,5 +29,7 @@
 Na [[trigonometria]], a relação de complementaridade é a razão pela qual os co-funções (como cosseno) têm esse nome. Para qualquer ângulo agudo $\\alpha$:
 $$\\sin \\alpha = \\cos(90^\\circ - \\alpha)$$
 $$\\tan \\alpha = \\frac{1}{\\tan(90^\\circ - \\alpha)}$$
+
+{{widget}}
 `;
 })();
