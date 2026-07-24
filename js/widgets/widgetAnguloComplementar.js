@@ -50,8 +50,7 @@ window.initWidgetAngulocomplementar = function (containerId) {
       '.wcmp-btn:last-child{border-bottom:none;}',
       '.wcmp-btn:hover{background:rgba(255,255,255,.06);color:#fff;}',
       '.wcmp-btn.wcmp-active{background:#2563eb;color:#fff;}',
-      '.wcmp-btn-lbl{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;opacity:.5;margin-bottom:2px;}',
-      '.wcmp-btn.wcmp-active .wcmp-btn-lbl{opacity:.8;}',
+      '',
 
       /* Cards de informação */
       '.wcmp-info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding:20px;}',
@@ -132,15 +131,9 @@ window.initWidgetAngulocomplementar = function (containerId) {
         '</div>',
 
         '<div class="wcmp-btn-panel">',
-          '<button class="wcmp-btn" data-val="45" data-label="Preset">',
-            '<span class="wcmp-btn-lbl">Preset</span>Bissetriz do Quadrante',
-          '</button>',
-          '<button class="wcmp-btn" data-val="60" data-label="Preset">',
-            '<span class="wcmp-btn-lbl">Preset</span>Esquadro 60° / 30°',
-          '</button>',
-          '<button class="wcmp-btn" data-val="free" data-label="Investigação">',
-            '<span class="wcmp-btn-lbl">Investigação</span>Ajuste Livre',
-          '</button>',
+          '<button class="wcmp-btn" data-val="45">Bissetriz do Quadrante</button>',
+          '<button class="wcmp-btn" data-val="60">Esquadro 60° / 30°</button>',
+          '<button class="wcmp-btn" data-val="free">Ajuste Livre ↔</button>',
         '</div>',
 
       '</div>',
