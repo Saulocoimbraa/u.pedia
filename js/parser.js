@@ -91,6 +91,7 @@ window.parseContent = function (rawContent) {
   var html = "";
   var inUL = false;
   var inOL = false;
+  var inTable = false;
   var buffer = [];
 
   function flushBuffer() {
@@ -109,50 +110,71 @@ window.parseContent = function (rawContent) {
 
   function closeUL() { if (inUL) { html += "</ul>\n"; inUL = false; } }
   function closeOL() { if (inOL) { html += "</ol>\n"; inOL = false; } }
+  function closeTable() { if (inTable) { html += "</tbody></table></div>\n"; inTable = false; } }
 
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i];
     var trimmed = line.trim();
 
-    if (!trimmed) { flushBuffer(); closeUL(); closeOL(); continue; }
+    if (!trimmed) { flushBuffer(); closeUL(); closeOL(); closeTable(); continue; }
 
     if (/^(HTMLBLOCKPLACEHOLDER|MATHDISPLAYPLACEHOLDER)\d+$/.test(trimmed)) {
-      flushBuffer(); closeUL(); closeOL();
+      flushBuffer(); closeUL(); closeOL(); closeTable();
       html += trimmed + "\n";
       continue;
     }
     if (trimmed.startsWith("#### ")) {
-      flushBuffer(); closeUL(); closeOL();
+      flushBuffer(); closeUL(); closeOL(); closeTable();
       html += "<h4>" + trimmed.slice(5) + "</h4>\n";
       continue;
     }
     if (trimmed.startsWith("### ")) {
-      flushBuffer(); closeUL(); closeOL();
+      flushBuffer(); closeUL(); closeOL(); closeTable();
       html += "<h3>" + trimmed.slice(4) + "</h3>\n";
       continue;
     }
     if (trimmed.startsWith("## ")) {
-      flushBuffer(); closeUL(); closeOL();
+      flushBuffer(); closeUL(); closeOL(); closeTable();
       html += "<h2>" + trimmed.slice(3) + "</h2>\n";
       continue;
     }
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      flushBuffer(); closeUL(); closeOL();
+      var cells = trimmed.slice(1, -1).split("|").map(function(c) { return c.trim(); });
+      var isSeparator = cells.every(function(c) { return /^[-:]+$/.test(c); });
+      
+      if (!inTable) {
+        html += '<div class="table-container"><table class="mupedia-table">\n';
+        inTable = true;
+        html += "<thead><tr>";
+        cells.forEach(function(c) { html += "<th>" + c + "</th>"; });
+        html += "</tr></thead>\n<tbody>\n";
+      } else if (isSeparator) {
+        continue;
+      } else {
+        html += "<tr>";
+        cells.forEach(function(c) { html += "<td>" + c + "</td>"; });
+        html += "</tr>\n";
+      }
+      continue;
+    }
     if (/^[*-]\s+/.test(trimmed)) {
-      flushBuffer(); closeOL();
+      flushBuffer(); closeOL(); closeTable();
       if (!inUL) { html += "<ul>\n"; inUL = true; }
       html += "<li>" + trimmed.replace(/^[*-]\s+/, "") + "</li>\n";
       continue;
     }
     if (/^\d+\.\s+/.test(trimmed)) {
-      flushBuffer(); closeUL();
+      flushBuffer(); closeUL(); closeTable();
       if (!inOL) { html += "<ol>\n"; inOL = true; }
       html += "<li>" + trimmed.replace(/^\d+\.\s+/, "") + "</li>\n";
       continue;
     }
-    closeUL(); closeOL();
+    closeUL(); closeOL(); closeTable();
     buffer.push(trimmed);
   }
 
-  flushBuffer(); closeUL(); closeOL();
+  flushBuffer(); closeUL(); closeOL(); closeTable();
 
   // 7. Restaurar placeholders
   for (var j = placeholders.length - 1; j >= 0; j--) {

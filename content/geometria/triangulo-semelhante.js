@@ -3,14 +3,14 @@
   window.UPEDIA_CONTENT["triangulo-semelhante"] = `Dois triângulos são ditos **semelhantes** se possuem a mesma forma geométrica, embora possam ter tamanhos diferentes. Formalmente, eles devem possuir ângulos correspondentes congruentes e lados homólogos com medidas proporcionais.
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="100%" style="max-width:320px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif">
-  <rect width="320" height="180" fill="#0f172a" rx="12"/>
+  <rect width="320" height="180" fill="#edf0fbff" rx="12"/>
   <!-- Triângulo Menor -->
-  <polygon points="40,140 120,140 100,70" fill="none" stroke="#60a5fa" stroke-width="2"/>
+  <polygon points="40,140 120,140 100,70" fill="none" stroke="#1a3f6cff" stroke-width="2"/>
   <!-- Triângulo Maior (escala 1.5) -->
-  <polygon points="160,140 280,140 250,35" fill="none" stroke="#34d399" stroke-width="2"/>
+  <polygon points="160,140 280,140 250,35" fill="none" stroke="#278563ff" stroke-width="2"/>
   <!-- Labels -->
-  <text x="80" y="155" fill="#60a5fa" font-size="12" text-anchor="middle">Original</text>
-  <text x="220" y="155" fill="#34d399" font-size="12" text-anchor="middle">Semelhante (x1.5)</text>
+  <text x="80" y="155" fill="#163a67ff" font-size="12" text-anchor="middle">Original</text>
+  <text x="220" y="155" fill="#13714fff" font-size="12" text-anchor="middle">Semelhante (x1.5)</text>
 </svg>
 
 ### O Caso de Semelhança Ângulo-Ângulo (AA)

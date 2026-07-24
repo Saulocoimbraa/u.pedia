@@ -1,0 +1,43 @@
+Atue como um Desenvolvedor Frontend Sênior e Autor de Conteúdo Educacional de Matemática. Preciso que você gere DOIS arquivos de código completos para a nossa plataforma (μ.pedia). 
+
+A arquitetura do nosso sistema funciona assim: os artigos de texto são carregados dinamicamente via tags de script sob demanda, e os widgets interativos associados rodam no escopo global através de funções registradas no objeto 'window'.
+
+---
+
+### TEMA DO CONCEITO:
+- Artigo: Teorema de Pitágoras (Eixo: geometria, ID: pitagoras)
+- Ideia do Widget: Uma visualização clássica com um triângulo retângulo central de lados ajustáveis (a, b, c). Três quadrados coloridos se projetam a partir dos lados do triângulo. Ao alterar os tamanhos usando sliders para os catetos, as áreas dos quadrados (a² e b²) se somam e mostram visualmente que preenchem exatamente a área do quadrado da hipotenusa (c²).
+
+---
+
+### ARQUIVO 1: O Conteúdo do Artigo
+Crie o arquivo que será salvo em "content/geometria/pitagoras.js".
+Ele deve seguir estritamente o padrão de carregamento do nosso site, registrando o conteúdo em `window.UPEDIA_CONTENT`. Use formatação Markdown (com suporte a KaTeX usando $ para inline e $$ para blocos de equações se necessário). No local onde o widget deve ser renderizado, adicione a tag "{{widget}}".
+
+Estrutura esperada para o Arquivo 1:
+```javascript
+if (!window.UPEDIA_CONTENT) window.UPEDIA_CONTENT = {};
+window.UPEDIA_CONTENT["pitagoras"] = `
+# O Teorema de Pitágoras
+...texto explicativo em markdown aqui...
+{{widget}}
+...conclusão ou detalhes extras...
+`;
+
+###ARQUIVO 2: O Widget Interativo
+Crie o arquivo que será salvo em "js/widgets/widgetPitagoras.js".
+Ele deve expor a função global window.initWidgetPitagoras(containerId).
+
+Requisitos Técnicos do Widget:
+
+Encapsulamento completo: Todo o HTML, comportamento e estilos devem estar contidos dentro da função, injetados no container usando innerHTML.
+
+Controles: Sliders (input range) para alterar o tamanho dos catetos (a e b).
+
+Visualização: Use elementos visuais modernos, cores inspiradas no Tailwind (ex: Indigo para o cateto 'a' e seu quadrado a², Emerald para o cateto 'b' e seu quadrado b², Amber para a hipotenusa 'c' e seu quadrado c²).
+
+Transições suaves (transition: all 0.2s ease), fontes limpas e visual limpo (background dark: #0f172a, cards: #1e293b).
+
+Resumo matemático dinâmico na parte inferior que calcula em tempo real os valores de a², b² e c² com as cores correspondentes, mostrando que a soma realmente bate: a² + b² = c² (ex: "9 + 16 = 25").
+
+Gere o código completo, limpo e sem o uso de bibliotecas externas (apenas Vanilla JS puro) para ambos os arquivos.
