@@ -69,7 +69,7 @@ window.UPEDIA_ARTICLES = [
       "Símbolo": "□ (quadrado no vértice)",
       "Conexão": "[[triangulo-retangulo]], [[teorema-de-pitagoras]]"
     },
-    widget: null
+    widget: "angulo"
   },
 
   {
@@ -186,7 +186,7 @@ window.UPEDIA_ARTICLES = [
       "Complemento": "[[numero-impar]]",
       "Uso em provas": "[[raiz-de-2-irracional]]"
     },
-    widget: null
+    widget: "paridade"
   },
 
   {
@@ -202,7 +202,7 @@ window.UPEDIA_ARTICLES = [
       "Complemento": "[[numero-par]]",
       "Fórmula": "[[soma-dos-impares]]"
     },
-    widget: null
+    widget: "paridade"
   },
 
   {
@@ -218,7 +218,7 @@ window.UPEDIA_ARTICLES = [
       "Primeiro termos": "$1, 2, 4, 8, 16, 32, 64, \\ldots$",
       "Conexão": "[[axiomas-fundamentais]]"
     },
-    widget: null
+    widget: "potenciacao"
   },
 
   {
@@ -300,7 +300,7 @@ window.UPEDIA_ARTICLES = [
       "Extensão": "[[multiplicacao]]",
       "Formal": "[[axiomas-de-peano]]"
     },
-    widget: null
+    widget: "soma"
   },
 
   {
@@ -317,7 +317,7 @@ window.UPEDIA_ARTICLES = [
       "Absorvente": "$a \\times 0 = 0$",
       "Extensão": "[[potenciacao]]"
     },
-    widget: null
+    widget: "multiplicacao"
   },
 
   {
@@ -333,7 +333,7 @@ window.UPEDIA_ARTICLES = [
       "Dimensão": "0D",
       "Papel": "Origem de toda figura geométrica"
     },
-    widget: null
+    widget: "ponto"
   },
 
   {
@@ -350,7 +350,7 @@ window.UPEDIA_ARTICLES = [
       "Axioma": "2 pontos → 1 única reta",
       "Equação": "$y = ax + b$"
     },
-    widget: null
+    widget: "reta"
   },
 
   {
@@ -399,7 +399,7 @@ window.UPEDIA_ARTICLES = [
       "Unidades": "[[grau]] ou [[radiano]]",
       "Conexão": "[[trigonometria]]"
     },
-    widget: null
+    widget: "angulo"
   },
 
   {
@@ -497,7 +497,7 @@ window.UPEDIA_ARTICLES = [
       "Soma dos ângulos": "$180^\\circ$",
       "Caso especial": "[[triangulo-retangulo]]"
     },
-    widget: null
+    widget: "triangulo"
   },
 
   {
@@ -596,7 +596,7 @@ window.UPEDIA_ARTICLES = [
       "Razões": "[[seno]], [[cosseno]], [[tangente]]",
       "Identidade": "$\\sin^2\\theta + \\cos^2\\theta = 1$"
     },
-    widget: null
+    widget: "trigonometria"
   },
 
   {
@@ -612,7 +612,7 @@ window.UPEDIA_ARTICLES = [
       "Valores": "$\\sin 0°=0$, $\\sin 90°=1$",
       "Conexão": "[[cosseno]], [[triangulo-retangulo]]"
     },
-    widget: null
+    widget: "trigonometria"
   },
 
   {
@@ -628,7 +628,7 @@ window.UPEDIA_ARTICLES = [
       "Simetria": "$\\cos\\theta = \\sin(90°-\\theta)$",
       "Identidade": "$\\sin^2+\\cos^2=1$"
     },
-    widget: null
+    widget: "trigonometria"
   },
 
   {
@@ -644,7 +644,7 @@ window.UPEDIA_ARTICLES = [
       "Inclinação": "coeficiente angular de uma reta",
       "Indefinida em": "$90°$"
     },
-    widget: null
+    widget: "trigonometria"
   },
 
   {
@@ -677,7 +677,7 @@ window.UPEDIA_ARTICLES = [
       "Raiz": "$a^{1/n} = \\sqrt[n]{a}$",
       "Conexão": "[[multiplicacao]], [[numero-irracional]]"
     },
-    widget: null
+    widget: "potenciacao"
   },
 
   {
@@ -693,7 +693,7 @@ window.UPEDIA_ARTICLES = [
       "Origem": "[[numero-racional]], [[fracao]]",
       "Proibição": "$a \\div 0$ é indefinido"
     },
-    widget: null
+    widget: "divisao"
   },
 
   {
@@ -775,7 +775,7 @@ window.UPEDIA_ARTICLES = [
       "Conexão": "[[numero-racional]]",
       "Operação básica": "[[divisao]]"
     },
-    widget: null
+    widget: "fracao"
   },
 
   {
@@ -792,7 +792,7 @@ window.UPEDIA_ARTICLES = [
       "Importância": "Unicidade na representação racional",
       "Uso em provas": "[[raiz-de-2-irracional]]"
     },
-    widget: null
+    widget: "fracao"
   },
 
   {
@@ -809,7 +809,7 @@ window.UPEDIA_ARTICLES = [
       "Operação inversa": "Raiz quadrada",
       "Conexão": "[[soma-dos-impares]]"
     },
-    widget: null
+    widget: "quadradoPerfeito"
   },
 
   {
@@ -928,7 +928,7 @@ window.UPEDIA_ARTICLES = [
       "Caso de uso": "[[triangulo-retangulo]]",
       "Oposto": "[[angulo-obtuso]]"
     },
-    widget: null
+    widget: "angulo"
   },
 
   {
@@ -945,7 +945,7 @@ window.UPEDIA_ARTICLES = [
       "Opostos": "[[angulo-agudo]], [[angulo-reto]]",
       "Contexto": "Triângulo obtusângulo"
     },
-    widget: null
+    widget: "angulo"
   },
 
   {
@@ -962,7 +962,7 @@ window.UPEDIA_ARTICLES = [
       "Soma de internos": "Soma dos ângulos do [[triangulo]]",
       "Complemento": "[[angulo-complementar]]"
     },
-    widget: null
+    widget: "angulo"
   },
 
   {
@@ -1065,7 +1065,7 @@ window.UPEDIA_ARTICLES = [
       "Criador": "Tales de Mileto",
       "Conexão": "[[triangulo-semelhante]]"
     },
-    widget: null
+    widget: "tales"
   },
 
   {
@@ -1576,6 +1576,23 @@ window.UPEDIA_ARTICLES = [
       "Reflexão": "Mediatriz de $PP'$ é o eixo de simetria",
       "Rotação (n-simetria)": "Ordem $n$: coincide após $\\frac{360°}{n}$",
       "Homotecia (razão k)": "Gera figuras [[triangulo-semelhante|semelhantes]]"
+    },
+    widget: "Simetria"
+  },
+
+  {
+    id: "produtos-notaveis",
+    title: "Produtos Notáveis",
+    level: "Ensino Fundamental II",
+    category: "Álgebra",
+    axis: "algebra",
+    icon: "square",
+    summary: "Multiplicações de expressões algébricas com padrões recorrentes como o quadrado da soma e o produto da soma pela diferença.",
+    infobox: {
+      "Fórmula 1": "$(a + b)^2 = a^2 + 2ab + b^2$",
+      "Fórmula 2": "$(a - b)^2 = a^2 - 2ab + b^2$",
+      "Fórmula 3": "$(a + b)(a - b) = a^2 - b^2$",
+      "Eixo": "Álgebra"
     },
     widget: null
   }

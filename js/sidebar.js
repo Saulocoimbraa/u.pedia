@@ -8,9 +8,23 @@
 
   // Widgets disponíveis (atalhos diretos)
   var WIDGETS = [
-    { label: "Pitágoras Interativo", icon: "zap",        articleId: "teorema-de-pitagoras", color: "#10b981" },
-    { label: "Soma dos Ímpares",     icon: "sigma",       articleId: "soma-dos-impares",      color: "#4f46e5" },
-    { label: "Quadriláteros",        icon: "square",      articleId: "quadrilatero",          color: "#f59e0b" }
+    { label: "Pitágoras",            icon: "zap",              articleId: "teorema-de-pitagoras", color: "#10b981" },
+    { label: "Soma dos Ímpares",     icon: "sigma",            articleId: "soma-dos-impares",     color: "#4f46e5" },
+    { label: "Quadriláteros",        icon: "square",           articleId: "quadrilatero",         color: "#f59e0b" },
+    { label: "Ângulo Complementar",  icon: "corner-right-up",  articleId: "angulo-complementar",  color: "#f97316" },
+    { label: "Paridade",             icon: "divide-circle",    articleId: "numero-par",           color: "#3b82f6" },
+    { label: "Ponto Cartesiano",     icon: "circle",           articleId: "ponto",                color: "#8b5cf6" },
+    { label: "Reta Interativa",      icon: "minus",            articleId: "reta",                 color: "#14b8a6" },
+    { label: "Ângulos",              icon: "corner-up-right",  articleId: "angulo",               color: "#f97316" },
+    { label: "Frações",              icon: "divide",           articleId: "fracao",               color: "#ec4899" },
+    { label: "Soma Visual",          icon: "plus",             articleId: "soma",                 color: "#10b981" },
+    { label: "Multiplicação",        icon: "x",                articleId: "multiplicacao",        color: "#6366f1" },
+    { label: "Quadrado Perfeito",    icon: "hash",             articleId: "quadrado-perfeito",    color: "#f59e0b" },
+    { label: "Divisão",              icon: "divide",           articleId: "divisao",              color: "#ef4444" },
+    { label: "Potenciação",          icon: "zap",              articleId: "potenciacao",          color: "#8b5cf6" },
+    { label: "Triângulo",            icon: "triangle",         articleId: "triangulo",            color: "#3b82f6" },
+    { label: "Teorema de Tales",     icon: "git-branch",       articleId: "teorema-de-tales",     color: "#14b8a6" },
+    { label: "Círculo Trig.",        icon: "activity",         articleId: "trigonometria",        color: "#f97316" }
   ];
 
   // Ordem desejada dos eixos na sidebar
@@ -114,6 +128,10 @@
       '<a href="#/" class="sidebar-item" id="sidebar-home-link" title="Página Inicial">' +
         '<i data-lucide="home"></i>' +
         '<span class="sidebar-item-label">Início</span>' +
+      '</a>' +
+      '<a href="#/sobre-o-autor" class="sidebar-item" id="sidebar-author-link" title="Sobre o Autor">' +
+        '<i data-lucide="user"></i>' +
+        '<span class="sidebar-item-label">Sobre o Autor</span>' +
       '</a>';
 
     nav.innerHTML = headerHtml + axesHtml + dividerHtml + widgetsHtml + homeHtml;

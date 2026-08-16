@@ -208,7 +208,22 @@ function _buildArticlePage(article, articles, parsedContent, container) {
     if (typeof initFn === "function") {
       initFn("interactive-widget-container");
     } else {
-      console.warn("Widget não encontrado: initWidget" + widgetName + ". Verifique se o script foi carregado no index.html.");
+      // Lazy load widget script dynamically
+      var widgetScriptSrc = "js/widgets/widget" + widgetName + ".js";
+      var widgetScript = document.createElement("script");
+      widgetScript.src = widgetScriptSrc;
+      widgetScript.onload = function () {
+        var loadedInitFn = window["initWidget" + widgetName];
+        if (typeof loadedInitFn === "function") {
+          loadedInitFn("interactive-widget-container");
+        } else {
+          console.error("Widget carregado mas a função initWidget" + widgetName + " não foi encontrada.");
+        }
+      };
+      widgetScript.onerror = function () {
+        console.error("Erro ao carregar o script do widget: " + widgetScriptSrc);
+      };
+      document.head.appendChild(widgetScript);
     }
   }
 

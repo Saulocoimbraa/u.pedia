@@ -27,6 +27,14 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+  // Rota: Sobre o Autor
+  router.addRoute("#/sobre-o-autor", function () {
+    if (window.renderAboutAuthor) {
+      window.renderAboutAuthor("content-viewport");
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   // Inicializar quando o DOM estiver pronto
   document.addEventListener("DOMContentLoaded", function () {
     // Inicializar sidebar de navegação lateral

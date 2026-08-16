@@ -17,11 +17,11 @@ export function renderHome(containerId) {
   });
 
   const categoryMeta = {
-    "Geometria":     { icon: "triangle",   color: "#10b981" },
-    "Álgebra":       { icon: "hash",       color: "#4f46e5" },
-    "Lógica":        { icon: "cpu",        color: "#f59e0b" },
-    "Trigonometria": { icon: "compass",    color: "#3b82f6" },
-    "Estatística":   { icon: "bar-chart",  color: "#ec4899" }
+    "Geometria": { icon: "triangle", color: "#10b981" },
+    "Álgebra": { icon: "hash", color: "#4f46e5" },
+    "Lógica": { icon: "cpu", color: "#f59e0b" },
+    "Trigonometria": { icon: "compass", color: "#3b82f6" },
+    "Estatística": { icon: "bar-chart", color: "#ec4899" }
   };
 
   let categoriesHtml = Object.entries(categories).map(([cat, arts]) => {
@@ -58,7 +58,7 @@ export function renderHome(containerId) {
     <div class="home-wrapper">
 
       <div class="hero-section">
-        <div class="hero-badge"><i data-lucide="sparkles"></i> Enciclopédia Digital</div>
+        <div class="hero-badge"> Enciclopédia Digital</div>
         <h1 class="hero-title">A beleza da matemática,<br>explicada com clareza.</h1>
         <p class="hero-subtitle">μ.pedia une rigor teórico e intuição visual para estudantes do Ensino Fundamental e Médio. Cada conceito leva a outro — explore em qualquer direção.</p>
       </div>
