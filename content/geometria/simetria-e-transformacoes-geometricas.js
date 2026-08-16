@@ -2,26 +2,31 @@
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
   window.UPEDIA_CONTENT["simetria-e-transformacoes-geometricas"] = `As **Transformações Geométricas** são funções bijetoras que mapeiam pontos de um [[plano]] em outros pontos do mesmo plano, preservando ou alterando determinadas propriedades das figuras. Quando uma transformação preserva a forma e o tamanho da figura (isto é, quando preserva distâncias entre pontos), ela é denominada **Isometria**.
 
-<div style="text-align: center; margin: 1.5rem 0;">
-  <svg viewBox="0 0 500 180" width="100%" max-width="500" style="background: rgba(15, 23, 42, 0.6); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); padding: 10px;">
-    <!-- Figura Original F -->
-    <polygon points="60,80 90,50 120,80 90,130" fill="rgba(56,189,248,0.3)" stroke="#38bdf8" stroke-width="2"/>
-    <text x="90" y="155" fill="#38bdf8" font-size="11" text-anchor="middle">Original</text>
+<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+  <svg width="340" height="170" viewBox="0 0 340 170" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <!-- Eixo de Simetria e -->
+    <line x1="170" y1="20" x2="170" y2="150" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4" />
+    <text x="170" y="14" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">Eixo de Simetria (e)</text>
 
-    <!-- Reflexão (eixo vertical) -->
-    <line x1="180" y1="30" x2="180" y2="170" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4"/>
-    <polygon points="240,80 210,50 180,80 210,130" fill="rgba(251,191,36,0.3)" stroke="#fbbf24" stroke-width="2"/>
-    <text x="210" y="155" fill="#fbbf24" font-size="11" text-anchor="middle">Reflexão</text>
+    <!-- Linhas de Conexão Espelhada das Coordenadas (Perpendiculares a e) -->
+    <line x1="60" y1="40" x2="280" y2="40" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="2,2" />
+    <line x1="40" y1="120" x2="300" y2="120" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="2,2" />
+    <line x1="120" y1="110" x2="220" y2="110" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="2,2" />
 
-    <!-- Translação -->
-    <polygon points="300,80 330,50 360,80 330,130" fill="rgba(52,211,153,0.3)" stroke="#34d399" stroke-width="2"/>
-    <path d="M 125 90 L 295 90" stroke="#34d399" stroke-width="1" stroke-dasharray="4" marker-end="url(#arrowHead)"/>
-    <text x="330" y="155" fill="#34d399" font-size="11" text-anchor="middle">Translação</text>
+    <!-- Figura Original F (À Esquerda em Azul) -->
+    <polygon points="60,40 40,120 120,110" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5" stroke-linejoin="round" />
+    <text x="73" y="90" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#4338ca">Figura F</text>
 
-    <!-- Rotação -->
-    <polygon points="430,65 455,95 405,110 415,60" fill="rgba(244,63,94,0.3)" stroke="#f43f5e" stroke-width="2"/>
-    <text x="430" y="155" fill="#f43f5e" font-size="11" text-anchor="middle">Rotação</text>
-    <circle cx="430" cy="88" r="4" fill="#f43f5e"/>
+    <!-- Figura Refletida F' (À Direita em Verde - Espelhada) -->
+    <polygon points="280,40 300,120 220,110" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round" />
+    <text x="267" y="90" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Imagem F'</text>
+
+    <!-- Vértices Homólogos Destacados -->
+    <circle cx="60" cy="40" r="4" fill="#4f46e5" />
+    <text x="50" y="35" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#4338ca">P</text>
+
+    <circle cx="280" cy="40" r="4" fill="#16a34a" />
+    <text x="290" y="35" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#15803d">P'</text>
   </svg>
 </div>
 

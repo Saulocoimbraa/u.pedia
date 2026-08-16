@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["engenharia"] = `A **Engenharia** é a aplicação prática de conhecimentos matemáticos, científicos (principalmente da [[fisica]]) e técnicos para conceber, modelar, construir e manter estruturas, máquinas, dispositivos, sistemas e processos que resolvam problemas da sociedade.
+  window.UPEDIA_CONTENT["engenharia"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+ 
+</div>\n\nA **Engenharia** é a aplicação prática de conhecimentos matemáticos, científicos (principalmente da [[fisica]]) e técnicos para conceber, modelar, construir e manter estruturas, máquinas, dispositivos, sistemas e processos que resolvam problemas da sociedade.
 
 ### O Papel da Geometria na Engenharia Civil
 

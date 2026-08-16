@@ -2,39 +2,42 @@
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
   window.UPEDIA_CONTENT["plano-cartesiano"] = `O **Plano Cartesiano** (ou Sistema de Coordenadas Cartesianas) é um sistema de referência bidimensional criado pelo filósofo e matemático René Descartes no século XVII. Ele estabelece uma correspondência biunívoca entre os pontos de um [[plano]] geométrico e os pares ordenados de [[numeros-reais]] $(x, y)$, fundindo [[geometria-plana]] e Álgebra numa mesma linguagem.
 
-<div style="text-align: center; margin: 1.5rem 0;">
-  <svg viewBox="0 0 500 200" width="100%" max-width="500" style="background: rgba(15, 23, 42, 0.6); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); padding: 10px;">
-    <!-- Eixos Cartesianos -->
-    <line x1="40" y1="100" x2="460" y2="100" stroke="#94a3b8" stroke-width="2" />
-    <line x1="250" y1="10" x2="250" y2="190" stroke="#94a3b8" stroke-width="2" />
+<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+  <svg width="340" height="220" viewBox="0 0 340 220" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <!-- Malha de Fundo Suave -->
+    <path d="M 50 30 L 50 190 M 90 30 L 90 190 M 130 30 L 130 190 M 210 30 L 210 190 M 250 30 L 250 190 M 290 30 L 290 190" stroke="#f1f5f9" stroke-width="1.5" />
+    <path d="M 30 30 L 310 30 M 30 70 L 310 70 M 30 150 L 310 150 M 30 190 L 310 190" stroke="#f1f5f9" stroke-width="1.5" />
 
-    <!-- Marcações no eixo X -->
-    <line x1="170" y1="96" x2="170" y2="104" stroke="#64748b" stroke-width="1" />
-    <text x="170" y="118" fill="#64748b" font-size="11" text-anchor="middle">-2</text>
-    <line x1="330" y1="96" x2="330" y2="104" stroke="#64748b" stroke-width="1" />
-    <text x="330" y="118" fill="#64748b" font-size="11" text-anchor="middle">2</text>
+    <!-- Eixo X (Abscissas) -->
+    <line x1="20" y1="110" x2="320" y2="110" stroke="#334155" stroke-width="2" />
+    <text x="325" y="114" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">x</text>
 
-    <!-- Marcações no eixo Y -->
-    <line x1="246" y1="60" x2="254" y2="60" stroke="#64748b" stroke-width="1" />
-    <text x="235" y="64" fill="#64748b" font-size="11" text-anchor="middle">2</text>
-    <line x1="246" y1="140" x2="254" y2="140" stroke="#64748b" stroke-width="1" />
-    <text x="233" y="144" fill="#64748b" font-size="11" text-anchor="middle">-2</text>
+    <!-- Eixo Y (Ordenadas) -->
+    <line x1="170" y1="15" x2="170" y2="205" stroke="#334155" stroke-width="2" />
+    <text x="170" y="12" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">y</text>
 
-    <!-- Rótulos dos eixos -->
-    <text x="465" y="104" fill="#f8fafc" font-size="14" font-weight="bold">x</text>
-    <text x="250" y="10" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">y</text>
+    <!-- Marcadores Numéricos de Escala -->
+    <text x="210" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">1</text>
+    <text x="250" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">2</text>
+    <text x="290" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">3</text>
+    <text x="130" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">-1</text>
 
-    <!-- Ponto P(3, 2) -->
-    <circle cx="370" cy="60" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
-    <text x="385" y="55" fill="#38bdf8" font-size="13" font-weight="bold">P(3, 2)</text>
-    <line x1="370" y1="60" x2="370" y2="100" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4" />
-    <line x1="250" y1="60" x2="370" y2="60" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4" />
+    <text x="158" y="74" text-anchor="end" font-family="Inter, sans-serif" font-size="10" fill="#64748b">1</text>
+    <text x="158" y="34" text-anchor="end" font-family="Inter, sans-serif" font-size="10" fill="#64748b">2</text>
 
     <!-- Quadrantes -->
-    <text x="355" y="145" fill="#334155" font-size="11">Q IV</text>
-    <text x="145" y="60" fill="#334155" font-size="11">Q II</text>
-    <text x="355" y="60" fill="#334155" font-size="11">Q I</text>
-    <text x="145" y="145" fill="#334155" font-size="11">Q III</text>
+    <text x="260" y="55" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#cbd5e1">I Q</text>
+    <text x="80" y="55" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#cbd5e1">II Q</text>
+    <text x="80" y="175" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#cbd5e1">III Q</text>
+    <text x="260" y="175" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#cbd5e1">IV Q</text>
+
+    <!-- Projeções Pontilhadas do Ponto P(3, 2) -->
+    <line x1="290" y1="110" x2="290" y2="30" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="3,3" />
+    <line x1="170" y1="30" x2="290" y2="30" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="3,3" />
+
+    <!-- Ponto P(3, 2) -->
+    <circle cx="290" cy="30" r="5" fill="#4f46e5" stroke="#e0e7ff" stroke-width="2" />
+    <text x="295" y="24" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#4338ca">P(3, 2)</text>
   </svg>
 </div>
 

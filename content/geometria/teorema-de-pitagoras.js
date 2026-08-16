@@ -1,10 +1,26 @@
 (function () {
-  window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["teorema-de-pitagoras"] = `O Teorema de Pitágoras é uma das leis mais antigas e úteis de toda a [[geometria-plana]]. Ele descreve uma relação especial que existe entre os lados de qualquer [[triangulo-retangulo]] — ou seja, todo triângulo que possui um [[angulo-reto]] interno.
+   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
+   window.UPEDIA_CONTENT["teorema-de-pitagoras"] = `O Teorema de Pitágoras é uma das leis mais antigas e úteis de toda a [[geometria-plana]]. Ele descreve uma relação especial que existe entre os lados de qualquer [[triangulo-retangulo]] — ou seja, todo triângulo que possui um [[angulo-reto]] interno.
 
 ### A Fórmula Central
 
 Em qualquer triângulo retângulo, o quadrado do comprimento da [[hipotenusa]] é sempre igual à soma dos quadrados dos dois [[catetos]].
+
+<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+  <svg width="260" height="180" viewBox="0 0 260 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <!-- Triângulo Retângulo -->
+    <polygon points="40,30 40,140 200,140" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Quadrado do Ângulo Reto em (40, 140) -->
+    <rect x="40" y="123" width="17" height="17" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+    <circle cx="48.5" cy="131.5" r="2" fill="#1d4ed8"/>
+    
+    <!-- Rótulos dos Lados -->
+    <text x="18" y="90" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#dc2626">Cateto (c)</text>
+    <text x="100" y="162" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#059669">Cateto (b)</text>
+    <text x="130" y="78" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#4338ca">Hipotenusa (a)</text>
+  </svg>
+</div>
 
 $$a^2 = b^2 + c^2$$
 

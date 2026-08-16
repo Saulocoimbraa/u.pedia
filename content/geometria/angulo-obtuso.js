@@ -1,20 +1,26 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["angulo-obtuso"] = `Um **ângulo obtuso** é qualquer [[angulo]] cuja medida seja maior que $90^\\circ$ (um [[angulo-reto]]) e menor que $180^\\circ$ (um [[angulo-raso]]).
+  window.UPEDIA_CONTENT["angulo-obtuso"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="250" height="180" viewBox="0 0 250 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <!-- Arco de Preenchimento Setorial do Ângulo Obtuso -->
+    <path d="M 130 130 L 170 130 A 40 40 0 0 0 98.4 105.4 Z" fill="#ffedd5" fill-opacity="0.75" stroke="#ea580c" stroke-width="2"/>
+    
+    <!-- Semirreta Inicial (r1) a 0° -->
+    <line x1="130" y1="130" x2="220" y2="130" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Semirreta Terminal (r2) a ~142° -->
+    <line x1="130" y1="130" x2="40" y2="60" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Vértice em Destaque -->
+    <circle cx="130" cy="130" r="5" fill="#ea580c" stroke="#ffedd5" stroke-width="2" />
+    
+    <!-- Rótulo do Ângulo Obtuso -->
+    <text x="135" y="85" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#c2410c">90° &lt; θ &lt; 180°</text>
+  </svg>
+</div>
 
-### Representação Geométrica
+Um **ângulo obtuso** é qualquer [[angulo]] cuja medida seja maior que $90^\\circ$ (um [[angulo-reto]]) e menor que $180^\\circ$ (um [[angulo-raso]]).
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="100%" style="max-width:200px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif">
-  <rect width="200" height="160" fill="#0f172a" rx="12"/>
-  <!-- Vértice -->
-  <circle cx="100" cy="120" r="4" fill="#94a3b8"/>
-  <!-- Linhas -->
-  <line x1="100" y1="120" x2="170" y2="120" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="100" y1="120" x2="40" y2="60" stroke="#94a3b8" stroke-width="2"/>
-  <!-- Arco do ângulo -->
-  <path d="M 130 120 A 30 30 0 0 0 78.8 98.8" fill="none" stroke="#f59e0b" stroke-width="2"/>
-  <text x="110" y="90" fill="#f59e0b" font-size="12">θ > 90°</text>
-</svg>
 
 ### Presença na Geometria
 

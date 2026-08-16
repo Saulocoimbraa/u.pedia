@@ -1,6 +1,19 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["angulo-complementar"] = `Dois ângulos são chamados de **complementares** quando a soma de suas medidas é exatamente igual a $90^\\circ$ (um [[angulo-reto]]). Dizemos que um é o complemento do outro.
+  window.UPEDIA_CONTENT["angulo-complementar"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <line x1="50" y1="140" x2="190" y2="140" stroke="#334155" stroke-width="2" />
+    <line x1="50" y1="140" x2="50" y2="30" stroke="#334155" stroke-width="2" />
+    <line x1="50" y1="140" x2="160" y2="50" stroke="#2563eb" stroke-width="2" />
+    <path d="M 80 140 A 30 30 0 0 0 74 120" fill="none" stroke="#ef4444" stroke-width="2"/>
+    <path d="M 74 120 A 30 30 0 0 0 50 110" fill="none" stroke="#10b981" stroke-width="2"/>
+    <text x="85" y="132" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">α</text>
+    <text x="58" y="102" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#059669">β</text>
+    <text x="110" y="45" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">α + β = 90°</text>
+  </svg>
+</div>
+
+Dois ângulos são chamados de **complementares** quando a soma de suas medidas é exatamente igual a $90^\\circ$ (um [[angulo-reto]]). Dizemos que um é o complemento do outro.
 
 ### Representação Geométrica
 

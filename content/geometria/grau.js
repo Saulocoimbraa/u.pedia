@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["grau"] = `O grau sexagesimal (símbolo $^\\circ$) é a mais tradicional e popular unidade matemática desenhada para quantificar a abertura de um [[angulo]].
+  window.UPEDIA_CONTENT["grau"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nO grau sexagesimal (símbolo $^\\circ$) é a mais tradicional e popular unidade matemática desenhada para quantificar a abertura de um [[angulo]].
 
 Nesta convenção estruturada ainda na Antiguidade, os matemáticos e astrônomos Babilônios decretaram que um círculo completo de revolução corresponde a exatamente $360$ pequenos "passos" de rotação — originando o círculo de $360^\\circ$. 
 

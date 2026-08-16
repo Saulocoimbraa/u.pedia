@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["arquitetura"] = `A **Arquitetura** é a arte e a técnica de organizar e projetar espaços físicos e edifícios, harmonizando estética, funcionalidade, conforto e estabilidade estrutural.
+  window.UPEDIA_CONTENT["arquitetura"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nA **Arquitetura** é a arte e a técnica de organizar e projetar espaços físicos e edifícios, harmonizando estética, funcionalidade, conforto e estabilidade estrutural.
 
 Desde a Antiguidade, a geometria é a principal ferramenta de desenho e concepção arquitetônica.
 

@@ -1,6 +1,16 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["reta"] = `A reta é um dos entes primitivos da geometria (ao lado do [[ponto]] e do [[plano]]). Sem definição formal, ela é assumida logicamente como uma extensão unidimensional que possui apenas comprimento, mas que carece de qualquer largura ou espessura.
+  window.UPEDIA_CONTENT["reta"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <line x1="20" y1="140" x2="220" y2="40" stroke="#4f46e5" stroke-width="3" />
+    <polygon points="225,37 215,35 218,48" fill="#4f46e5" />
+    <polygon points="15,143 25,145 22,132" fill="#4f46e5" />
+    <circle cx="70" cy="115" r="5" fill="#f59e0b" />
+    <text x="65" y="135" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#b45309">A</text>
+    <circle cx="170" cy="65" r="5" fill="#f59e0b" />
+    <text x="165" y="85" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#b45309">B</text>
+  </svg>
+</div>\n\nA reta é um dos entes primitivos da geometria (ao lado do [[ponto]] e do [[plano]]). Sem definição formal, ela é assumida logicamente como uma extensão unidimensional que possui apenas comprimento, mas que carece de qualquer largura ou espessura.
 
 A reta se estende ao infinito em duas direções simétricas e opostas.
 

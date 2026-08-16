@@ -1,20 +1,16 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["angulo-agudo"] = `Um **ângulo agudo** é qualquer [[angulo]] cuja medida seja maior que $0^\\circ$ e menor que $90^\\circ$ (um [[angulo-reto]]). 
+  window.UPEDIA_CONTENT["angulo-agudo"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <line x1="50" y1="130" x2="190" y2="130" stroke="#334155" stroke-width="2.5" />
+    <line x1="50" y1="130" x2="170" y2="60" stroke="#334155" stroke-width="2.5" />
+    <path d="M 90 130 A 40 40 0 0 0 84 107" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="100" y="115" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#15803d">θ &lt; 90°</text>
+  </svg>
+</div>
 
-### Representação Geométrica
+Um **ângulo agudo** é qualquer [[angulo]] cuja medida seja maior que $0^\\circ$ e menor que $90^\\circ$ (um [[angulo-reto]]). 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="100%" style="max-width:200px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif">
-  <rect width="200" height="160" fill="#0f172a" rx="12"/>
-  <!-- Vértice -->
-  <circle cx="40" cy="120" r="4" fill="#94a3b8"/>
-  <!-- Linhas -->
-  <line x1="40" y1="120" x2="160" y2="120" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="40" y1="120" x2="125" y2="45" stroke="#94a3b8" stroke-width="2"/>
-  <!-- Arco do ângulo -->
-  <path d="M 70 120 A 30 30 0 0 0 60 93.5" fill="none" stroke="#34d399" stroke-width="2"/>
-  <text x="75" y="105" fill="#34d399" font-size="12">θ < 90°</text>
-</svg>
 
 ### Presença na Geometria
 

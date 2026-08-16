@@ -1,19 +1,15 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["angulo-raso"] = `Um **ângulo raso** (ou ângulo plano) é um [[angulo]] que mede exatamente $180^\\circ$ (ou $\\pi$ [[radianos]]). Ele representa uma meia-volta completa em torno de um vértice e suas duas semirretas formadoras apontam em direções exatamente opostas, constituindo uma única [[reta]].
+  window.UPEDIA_CONTENT["angulo-raso"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <line x1="30" y1="100" x2="210" y2="100" stroke="#334155" stroke-width="2.5" />
+    <path d="M 70 100 A 50 50 0 0 1 170 100" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+    <circle cx="120" cy="100" r="4" fill="#ef4444"/>
+    <text x="100" y="80" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#4338ca">180°</text>
+  </svg>
+</div>
 
-### Representação Geométrica
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" width="100%" style="max-width:220px;display:block;margin:1.5rem auto;font-family:system-ui,sans-serif">
-  <rect width="220" height="120" fill="#0f172a" rx="12"/>
-  <!-- Vértice -->
-  <circle cx="110" cy="80" r="4" fill="#94a3b8"/>
-  <!-- Linha reta -->
-  <line x1="30" y1="80" x2="190" y2="80" stroke="#94a3b8" stroke-width="2"/>
-  <!-- Arco do ângulo -->
-  <path d="M 140 80 A 30 30 0 0 0 80 80" fill="none" stroke="#60a5fa" stroke-width="2"/>
-  <text x="110" y="42" fill="#60a5fa" font-size="12" text-anchor="middle">180° (Raso)</text>
-</svg>
+Um **ângulo raso** (ou ângulo plano) é um [[angulo]] que mede exatamente $180^\\circ$ (ou $\\pi$ [[radianos]]). Ele representa uma meia-volta completa em torno de um vértice e suas duas semirretas formadoras apontam em direções exatamente opostas, constituindo uma única [[reta]].
 
 ### Importância na Geometria Plana
 
