@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["movimento-uniformemente-acelerado"] = `O **Movimento Uniformemente Acelerado (MUA)** é um conceito da cinemática que descreve um movimento cuja velocidade varia de forma constante ao longo do tempo. Em outras palavras, a aceleração é constante e diferente de zero.
+  window.UPEDIA_CONTENT["movimento-uniformemente-acelerado"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nO **Movimento Uniformemente Acelerado (MUA)** é um conceito da cinemática que descreve um movimento cuja velocidade varia de forma constante ao longo do tempo. Em outras palavras, a aceleração é constante e diferente de zero.
 
 Este movimento é um exemplo clássico de como a álgebra modela a realidade através de equações quadráticas.
 

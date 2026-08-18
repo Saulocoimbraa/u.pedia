@@ -1,6 +1,16 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["inducao-finita"] = `A indução matemática (ou indução finita) é um dos [[metodos-de-demonstracao]] projetado especificamente para propriedades que envolvem os [[numeros-naturais]].
+  window.UPEDIA_CONTENT["inducao-finita"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="260" height="180" viewBox="0 0 260 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <rect x="30" y="60" width="16" height="60" rx="3" fill="#ef4444" transform="rotate(15 30 120)"/>
+    <rect x="70" y="60" width="16" height="60" rx="3" fill="#f59e0b" transform="rotate(25 70 120)"/>
+    <rect x="110" y="60" width="16" height="60" rx="3" fill="#10b981" transform="rotate(35 110 120)"/>
+    <rect x="150" y="60" width="16" height="60" rx="3" fill="#3b82f6"/>
+    <rect x="190" y="60" width="16" height="60" rx="3" fill="#8b5cf6"/>
+    <text x="25" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">P(1)</text>
+    <text x="142" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">P(k) ⇒ P(k+1)</text>
+  </svg>
+</div>\n\nA indução matemática (ou indução finita) é um dos [[metodos-de-demonstracao]] projetado especificamente para propriedades que envolvem os [[numeros-naturais]].
 
 ### A Analogia dos Dominós
 

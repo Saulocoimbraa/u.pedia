@@ -1,6 +1,11 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["teorema"] = `Em matemática, um teorema é uma declaração absoluta que foi provada como verdadeira através de uma sequência inquebrável de raciocínio lógico. Essa cadeia probatória nasce a partir de premissas não-demonstráveis (como os [[axiomas-fundamentais]] ou o [[ponto]] geométrico) e se constrói passo a passo usando a [[logica]].
+  window.UPEDIA_CONTENT["teorema"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="200" height="200" viewBox="0 0 200 200" style="background: var(--card-bg); border-radius: 12px; box-shadow: var(--shadow-sm);">
+    <text x="100" y="110" font-family="var(--font-family)" font-size="48" font-style="italic" font-weight="bold" fill="var(--primary-color)" text-anchor="middle">x<tspan fill="var(--text-color)" font-size="32">²</tspan></text>
+    <path d="M 40 160 Q 100 40 160 160" fill="none" stroke="var(--accent-color)" stroke-width="3" opacity="0.6"/>
+  </svg>
+</div>\n\nEm matemática, um teorema é uma declaração absoluta que foi provada como verdadeira através de uma sequência inquebrável de raciocínio lógico. Essa cadeia probatória nasce a partir de premissas não-demonstráveis (como os [[axiomas-fundamentais]] ou o [[ponto]] geométrico) e se constrói passo a passo usando a [[logica]].
 
 ### Diferença entre Axioma e Teorema
 

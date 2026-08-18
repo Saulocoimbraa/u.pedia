@@ -1,0 +1,26 @@
+# Tarefas de Implementação
+
+- `[ ]` Inserir biografia do Autor e atualizar o rodapé
+  - `[ ]` Modificar [index.html](file:///d:/Projetos%20IA/u.pedia-main/index.html) (adicionar script do autor, alterar rodapé)
+  - `[ ]` Modificar [js/app.js](file:///d:/Projetos%20IA/u.pedia-main/js/app.js) (adicionar rota do autor)
+  - `[ ]` Criar [js/aboutAuthor.js](file:///d:/Projetos%20IA/u.pedia-main/js/aboutAuthor.js)
+- `[ ]` Implementar o Carregamento Dinâmico de Widgets em [js/articleRenderer.js](file:///d:/Projetos%20IA/u.pedia-main/js/articleRenderer.js)
+- `[ ]` Criar e catalogar os novos Widgets
+  - `[ ]` `widgetParidade.js` (para `numero-par`, `numero-impar`)
+  - `[ ]` `widgetPonto.js` (para `ponto`)
+  - `[ ]` `widgetReta.js` (para `reta`)
+  - `[ ]` `widgetAngulo.js` (para `angulo`, `angulo-agudo`, `angulo-obtuso`, `angulo-raso`, `angulo-reto`)
+  - `[ ]` `widgetFracao.js` (para `fracao`, `fracao-irredutivel`)
+  - `[ ]` `widgetSoma.js` (para `soma`)
+  - `[ ]` `widgetMultiplicacao.js` (para `multiplicacao`)
+  - `[ ]` `widgetQuadradoPerfeito.js` (para `quadrado-perfeito`)
+  - `[ ]` `widgetDivisao.js` (para `divisao`)
+  - `[ ]` `widgetPotenciacao.js` (para `potenciacao`, `potencia-de-dois`)
+  - `[ ]` `widgetTriangulo.js` (para `triangulo`)
+  - `[ ]` `widgetTales.js` (para `teorema-de-tales`)
+  - `[ ]` `widgetTrigonometria.js` (para `trigonometria`, `seno`, `cosseno`, `tangente`)
+  - `[ ]` Atualizar metadados no arquivo [js/data.js](file:///d:/Projetos%20IA/u.pedia-main/js/data.js) para apontar aos widgets criados
+- `[ ]` Injetar ilustrações SVG nos 62 artigos sem ilustração
+  - `[ ]` Criar e rodar script `scratch/inject_svgs.js`
+- `[ ]` Validação
+  - `[ ]` Verificar funcionamento do site

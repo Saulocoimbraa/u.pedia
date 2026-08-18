@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["demonstracao-absurdo"] = `A demonstração por contradição (ou redução ao absurdo) é um dos [[metodos-de-demonstracao]] mais poderosos. Ela é especialmente útil quando queremos provar que algo *não existe* ou que algo é *impossível*.
+  window.UPEDIA_CONTENT["demonstracao-absurdo"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nA demonstração por contradição (ou redução ao absurdo) é um dos [[metodos-de-demonstracao]] mais poderosos. Ela é especialmente útil quando queremos provar que algo *não existe* ou que algo é *impossível*.
 
 ### Como funciona
 

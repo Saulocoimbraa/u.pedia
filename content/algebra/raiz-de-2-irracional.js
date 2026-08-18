@@ -1,6 +1,14 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["raiz-de-2-irracional"] = `$\\sqrt{2}$ é um dos primeiros [[numero-irracional]] que encontramos. Sua irracionalidade foi descoberta pelos pitagóricos e causou um choque filosófico: nem todo comprimento pode ser medido por uma fração.
+  window.UPEDIA_CONTENT["raiz-de-2-irracional"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <polygon points="50,40 50,140 150,140" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+    <rect x="50" y="125" width="15" height="15" fill="none" stroke="#b45309" stroke-width="1"/>
+    <text x="30" y="95" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#92400e">1</text>
+    <text x="95" y="160" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#92400e">1</text>
+    <text x="110" y="85" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#b45309">√2 ∉ ℚ</text>
+  </svg>
+</div>\n\n$\\sqrt{2}$ é um dos primeiros [[numero-irracional]] que encontramos. Sua irracionalidade foi descoberta pelos pitagóricos e causou um choque filosófico: nem todo comprimento pode ser medido por uma fração.
 
 ### A Prova por Contradição
 

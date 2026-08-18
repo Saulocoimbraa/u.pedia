@@ -1,121 +1,98 @@
-# Artigos Existentes
+# Artigos Consolidados (μ.pedia)
 
-As seguintes palavras-chave já possuem um artigo no sistema:
+Total de artigos consolidados: **94**
 
-## Originais
-* metodos-de-demonstracao
-* demonstracao-absurdo
-* raiz-de-2-irracional
-* soma-dos-impares
-* axiomas-fundamentais
-* numero-par
-* numero-impar
-* triangulo-retangulo
-* inducao-finita
-* geometria-plana
-* teorema-de-pitagoras
-* angulo-reto
-* potencia-de-dois
-
-## Lote 1 — Fundações
-* numero-natural
-* numero-inteiro
-* numero-racional
-* numero-irracional
-* soma
-* multiplicacao
-* ponto
-* reta
-* plano
-* dimensao
-* angulo
-* grau
-
-## Lote 2 — Lógica, Polígonos e História
-* teorema
-* hipotese
-* conclusao
-* vertice
-* triangulo
-* quadrilatero
-* quadrado
-* pitagoras
-* euclides
-* giuseppe-peano
-
-## Lote 3 — Trigonometria, Reais e História
-* trigonometria
-* seno
-* cosseno
-* tangente
-* numero-real
-* potenciacao
-* divisao
-* arquimedes
-* matematica-babilonica
-* matematica-indiana
-
-## Lote 4 — Álgebra, Geometria e História
-* numero-primo
-* fracao
-* fracao-irredutivel
-* quadrado-perfeito
-* proporcao
-* logica
-* algoritmo
-* programacao
-* computacao
-* radiano
-* angulo-agudo
-* angulo-obtuso
-* angulo-raso
-* angulo-complementar
-* poligono
-* hipotenusa
-* cateto
-* triangulo-semelhante
-* teorema-de-tales
-* matematica-grega
-
-## Lote 5 — Ciências, Engenharia e Histórias
-* movimento-uniformemente-acelerado
-* fisica
-* filosofia
-* metodo-socratico
-* arquitetura
-* engenharia
-* geometria-dedutiva
-* geometria-euclidiana
-* triplice-pitagorica
-* identidade-algebrica
-* matematica-egipcia
-* historia-da-matematica
-
-## Lote 6 — Estatística e Probabilidade
-* tabelas-e-graficos
-* medidas-de-tendencia-central
-* espaco-amostral
-* probabilidade-de-um-evento
-* pesquisa-amostral-e-censitaria
-
-## Lote 7 — Álgebra: Equações e Funções
-* equacao-do-primeiro-grau
-* sistemas-de-equacoes
-* equacao-do-segundo-grau
-* fatoracao-algebrica
-* funcao
-
-## Lote 8 — Grandezas, Medidas e Sistema Monetário
-* sistema-monetario-brasileiro
-* unidades-de-medida
-* perimetro-e-area
-* volume-do-bloco-retangular
-
-## Lote 9 — Geometria: Coordenadas, Espacial e Transformações
-* plano-cartesiano
-* geometria-espacial
-* simetria-e-transformacoes-geometricas
-
-
-
-
+- `[[algoritmo]]`
+- `[[angulo]]`
+- `[[angulo-agudo]]`
+- `[[angulo-complementar]]`
+- `[[angulo-obtuso]]`
+- `[[angulo-raso]]`
+- `[[angulo-reto]]`
+- `[[arquimedes]]`
+- `[[arquitetura]]`
+- `[[axiomas-fundamentais]]`
+- `[[cateto]]`
+- `[[computacao]]`
+- `[[conclusao]]`
+- `[[cosseno]]`
+- `[[demonstracao-absurdo]]`
+- `[[dimensao]]`
+- `[[divisao]]`
+- `[[engenharia]]`
+- `[[equacao-do-primeiro-grau]]`
+- `[[equacao-do-segundo-grau]]`
+- `[[espaco-amostral]]`
+- `[[euclides]]`
+- `[[fatoracao-algebrica]]`
+- `[[filosofia]]`
+- `[[fisica]]`
+- `[[fracao]]`
+- `[[fracao-irredutivel]]`
+- `[[funcao]]`
+- `[[geometria-dedutiva]]`
+- `[[geometria-espacial]]`
+- `[[geometria-euclidiana]]`
+- `[[geometria-plana]]`
+- `[[giuseppe-peano]]`
+- `[[grau]]`
+- `[[hipotenusa]]`
+- `[[hipotese]]`
+- `[[historia-da-matematica]]`
+- `[[identidade-algebrica]]`
+- `[[inducao-finita]]`
+- `[[logica]]`
+- `[[matematica-babilonica]]`
+- `[[matematica-egipcia]]`
+- `[[matematica-grega]]`
+- `[[matematica-indiana]]`
+- `[[medidas-de-tendencia-central]]`
+- `[[metodo-socratico]]`
+- `[[metodos-de-demonstracao]]`
+- `[[movimento-uniformemente-acelerado]]`
+- `[[multiplicacao]]`
+- `[[numero-impar]]`
+- `[[numero-inteiro]]`
+- `[[numero-irracional]]`
+- `[[numero-natural]]`
+- `[[numero-par]]`
+- `[[numero-primo]]`
+- `[[numero-racional]]`
+- `[[numero-real]]`
+- `[[perimetro-e-area]]`
+- `[[pesquisa-amostral-e-censitaria]]`
+- `[[pitagoras]]`
+- `[[plano]]`
+- `[[plano-cartesiano]]`
+- `[[poligono]]`
+- `[[ponto]]`
+- `[[potencia-de-dois]]`
+- `[[potenciacao]]`
+- `[[probabilidade-de-um-evento]]`
+- `[[programacao]]`
+- `[[proporcao]]`
+- `[[quadrado]]`
+- `[[quadrado-perfeito]]`
+- `[[quadrilatero]]`
+- `[[radiano]]`
+- `[[raiz-de-2-irracional]]`
+- `[[reta]]`
+- `[[seno]]`
+- `[[simetria-e-transformacoes-geometricas]]`
+- `[[sistema-monetario-brasileiro]]`
+- `[[sistemas-de-equacoes]]`
+- `[[soma]]`
+- `[[soma-dos-impares]]`
+- `[[tabelas-e-graficos]]`
+- `[[tangente]]`
+- `[[teorema]]`
+- `[[teorema-de-pitagoras]]`
+- `[[teorema-de-tales]]`
+- `[[triangulo]]`
+- `[[triangulo-retangulo]]`
+- `[[triangulo-semelhante]]`
+- `[[trigonometria]]`
+- `[[triplice-pitagorica]]`
+- `[[unidades-de-medida]]`
+- `[[vertice]]`
+- `[[volume-do-bloco-retangular]]`

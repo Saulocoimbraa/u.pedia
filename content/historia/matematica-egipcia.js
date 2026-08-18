@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["matematica-egipcia"] = `A **Matemática Egípcia** refere-se ao corpo de conhecimentos matemáticos desenvolvidos na civilização do Antigo Egito. Sua motivação era essencialmente utilitária e prática, voltada a resolver problemas reais do cotidiano da sociedade.
+  window.UPEDIA_CONTENT["matematica-egipcia"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+ 
+</div>\n\nA **Matemática Egípcia** refere-se ao corpo de conhecimentos matemáticos desenvolvidos na civilização do Antigo Egito. Sua motivação era essencialmente utilitária e prática, voltada a resolver problemas reais do cotidiano da sociedade.
 
 ### O Nilo e as Necessidades Práticas
 

@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-inteiro"] = `O conjunto dos números inteiros (denotado por $\\mathbb{Z}$, do alemão *Zahlen*, que significa "números") é uma extensão do conjunto de cada [[numero-natural]].
+  window.UPEDIA_CONTENT["numero-inteiro"] = `\n\n\nO conjunto dos números inteiros (denotado por $\\mathbb{Z}$, do alemão *Zahlen*, que significa "números") é uma extensão do conjunto de cada [[numero-natural]].
 
 Enquanto os naturais servem perfeitamente para a contagem ($0, 1, 2, \\dots$), eles são insuficientes para resolver equações do tipo $x + 5 = 3$. Para dar consistência algébrica à subtração, a matemática expande o horizonte criando a simetria negativa:
 

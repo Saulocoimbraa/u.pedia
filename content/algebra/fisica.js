@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["fisica"] = `A **Física** é a ciência natural que estuda as propriedades da matéria, da energia, do espaço e do tempo, buscando compreender as leis fundamentais que regem o universo, desde as partículas subatômicas até as maiores galáxias.
+  window.UPEDIA_CONTENT["fisica"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nA **Física** é a ciência natural que estuda as propriedades da matéria, da energia, do espaço e do tempo, buscando compreender as leis fundamentais que regem o universo, desde as partículas subatômicas até as maiores galáxias.
 
 ### A Matemática como Linguagem da Física
 

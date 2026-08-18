@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["arquimedes"] = `Arquimedes de Siracusa (c. 287–212 a.C.) é amplamente considerado o maior matemático e físico da Antiguidade. Sua inventividade combinava a profundidade de um teórico puro com a genialidade prática de um engenheiro — uma raridade em qualquer época.
+  window.UPEDIA_CONTENT["arquimedes"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nArquimedes de Siracusa (c. 287–212 a.C.) é amplamente considerado o maior matemático e físico da Antiguidade. Sua inventividade combinava a profundidade de um teórico puro com a genialidade prática de um engenheiro — uma raridade em qualquer época.
 
 ### A Aproximação de π
 

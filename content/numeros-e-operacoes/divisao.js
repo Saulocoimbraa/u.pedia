@@ -1,6 +1,19 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["divisao"] = `A divisão é a operação inversa da [[multiplicacao]]. Dados dois números $a$ (dividendo) e $b$ (divisor, com $b \\neq 0$), a divisão $a \\div b$ responde à pergunta:
+  window.UPEDIA_CONTENT["divisao"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <rect x="25" y="45" width="55" height="75" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="42" cy="65" r="7" fill="#ef4444"/><circle cx="63" cy="65" r="7" fill="#ef4444"/>
+    <circle cx="42" cy="100" r="7" fill="#ef4444"/><circle cx="63" cy="100" r="7" fill="#ef4444"/>
+    <rect x="92" y="45" width="55" height="75" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="109" cy="65" r="7" fill="#ef4444"/><circle cx="130" cy="65" r="7" fill="#ef4444"/>
+    <circle cx="109" cy="100" r="7" fill="#ef4444"/><circle cx="130" cy="100" r="7" fill="#ef4444"/>
+    <rect x="160" y="45" width="55" height="75" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="177" cy="65" r="7" fill="#ef4444"/><circle cx="198" cy="65" r="7" fill="#ef4444"/>
+    <circle cx="177" cy="100" r="7" fill="#ef4444"/><circle cx="198" cy="100" r="7" fill="#ef4444"/>
+    <text x="85" y="150" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#b91c1c">12 ÷ 3 = 4</text>
+  </svg>
+</div>\n\nA divisão é a operação inversa da [[multiplicacao]]. Dados dois números $a$ (dividendo) e $b$ (divisor, com $b \\neq 0$), a divisão $a \\div b$ responde à pergunta:
 
 > "Qual número $q$ (quociente), quando multiplicado por $b$, resulta em $a$?"
 
@@ -24,5 +37,7 @@ No universo dos [[numeros-inteiros]], a divisão euclidiana sempre garante:
 
 $$a = b \\times q + r, \\quad 0 \\leq r < b$$
 
-onde $r$ é o **resto**. O estudo das propriedades do resto é chamado de aritmética modular e fundamenta a criptografia moderna — o motor invisível que protege nossas senhas e comunicações na internet.`;
+onde $r$ é o **resto**. O estudo das propriedades do resto é chamado de aritmética modular e fundamenta a criptografia moderna — o motor invisível que protege nossas senhas e comunicações na internet.
+
+{{widget}}`;
 })();

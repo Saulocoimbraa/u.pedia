@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["matematica-babilonica"] = `A civilização da Mesopotâmia (atual Iraque), florescendo entre 3000 e 500 a.C., desenvolveu um dos sistemas matemáticos mais sofisticados da Antiguidade — bem antes da [[matematica-grega]]. A matemática babilônica, ao contrário da grega, era eminentemente **prática**: servia para medir terras, calcular impostos, prever eclipses e construir edifícios.
+  window.UPEDIA_CONTENT["matematica-babilonica"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nA civilização da Mesopotâmia (atual Iraque), florescendo entre 3000 e 500 a.C., desenvolveu um dos sistemas matemáticos mais sofisticados da Antiguidade — bem antes da [[matematica-grega]]. A matemática babilônica, ao contrário da grega, era eminentemente **prática**: servia para medir terras, calcular impostos, prever eclipses e construir edifícios.
 
 ### O Sistema Sexagesimal
 

@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["euclides"] = `Euclides de Alexandria (c. 300 a.C.) é o maior arquiteto da [[geometria-dedutiva]] da história. Pouco se sabe sobre sua vida pessoal, mas a obra que nos legou — os treze volumes de *Os Elementos* — é o segundo livro mais publicado da história humana, atrás apenas da Bíblia.
+  window.UPEDIA_CONTENT["euclides"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nEuclides de Alexandria (c. 300 a.C.) é o maior arquiteto da [[geometria-dedutiva]] da história. Pouco se sabe sobre sua vida pessoal, mas a obra que nos legou — os treze volumes de *Os Elementos* — é o segundo livro mais publicado da história humana, atrás apenas da Bíblia.
 
 ### Os Elementos
 

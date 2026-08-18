@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-racional"] = `Os números racionais (denotados por $\\mathbb{Q}$, de *quociente*) representam qualquer valor que possa ser expresso como uma [[fracao]] entre dois números inteiros.
+  window.UPEDIA_CONTENT["numero-racional"] = `\n\n\nOs números racionais (denotados por $\\mathbb{Q}$, de *quociente*) representam qualquer valor que possa ser expresso como uma [[fracao]] entre dois números inteiros.
 
 Formalmente, um racional é um número $x$ que pode ser escrito como:
 $$x = \\frac{p}{q}$$

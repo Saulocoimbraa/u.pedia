@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["computacao"] = `A **computação** é a área do conhecimento que estuda a teoria, os sistemas e as máquinas dedicados ao processamento automático de informações e à realização de cálculos complexos.
+  window.UPEDIA_CONTENT["computacao"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nA **computação** é a área do conhecimento que estuda a teoria, os sistemas e as máquinas dedicados ao processamento automático de informações e à realização de cálculos complexos.
 
 ### A Base Binária e as Potências de 2
 

@@ -1,6 +1,16 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["soma"] = `A soma (ou adição) é a mais fundamental das operações básicas matemáticas. Em sua essência, ela descreve o ato de combinar duas coleções de objetos em uma única coleção.
+  window.UPEDIA_CONTENT["soma"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <rect x="25" y="70" width="30" height="30" rx="6" fill="#3b82f6"/>
+    <rect x="60" y="70" width="30" height="30" rx="6" fill="#3b82f6"/>
+    <text x="100" y="92" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#475569">+</text>
+    <rect x="125" y="70" width="30" height="30" rx="6" fill="#10b981"/>
+    <rect x="160" y="70" width="30" height="30" rx="6" fill="#10b981"/>
+    <rect x="195" y="70" width="30" height="30" rx="6" fill="#10b981"/>
+    <text x="105" y="145" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">2 + 3 = 5</text>
+  </svg>
+</div>\n\nA soma (ou adição) é a mais fundamental das operações básicas matemáticas. Em sua essência, ela descreve o ato de combinar duas coleções de objetos em uma única coleção.
 
 Na notação aritmética moderna, a soma de dois valores $a$ e $b$ é representada pelo símbolo de cruz: $a + b$.
 

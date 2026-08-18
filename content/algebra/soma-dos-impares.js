@@ -1,6 +1,21 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["soma-dos-impares"] = `Se você somar os primeiros números ímpares ($1, 3, 5, 7, \\ldots$) percebe algo curioso: o resultado sempre é um [[quadrado-perfeito]].
+  window.UPEDIA_CONTENT["soma-dos-impares"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <rect x="40" y="30" width="30" height="30" fill="#ef4444" rx="4"/>
+    <rect x="75" y="30" width="30" height="30" fill="#f59e0b" rx="4"/>
+    <rect x="75" y="65" width="30" height="30" fill="#f59e0b" rx="4"/>
+    <rect x="40" y="65" width="30" height="30" fill="#f59e0b" rx="4"/>
+    <rect x="110" y="30" width="30" height="30" fill="#10b981" rx="4"/>
+    <rect x="110" y="65" width="30" height="30" fill="#10b981" rx="4"/>
+    <rect x="110" y="100" width="30" height="30" fill="#10b981" rx="4"/>
+    <rect x="75" y="100" width="30" height="30" fill="#10b981" rx="4"/>
+    <rect x="40" y="100" width="30" height="30" fill="#10b981" rx="4"/>
+    <text x="155" y="85" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#3730a3">1+3+5 = 3²</text>
+  </svg>
+</div>
+
+Se você somar os primeiros números ímpares ($1, 3, 5, 7, \\ldots$) percebe algo curioso: o resultado sempre é um [[quadrado-perfeito]].
 
 * $1 = 1^2$
 * $1 + 3 = 4 = 2^2$

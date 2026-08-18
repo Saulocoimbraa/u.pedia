@@ -1,29 +1,50 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["unidades-de-medida"] = `Uma **Grandeza Física** é qualquer propriedade observável de um corpo ou fenômeno que possa ser quantificada numericamente por meio de uma medição. Uma **Unidade de Medida** é uma quantidade padrão adotada como referência universal. O **Sistema Internacional de Unidades (SI)** padroniza essas unidades globalmente.
+  window.UPEDIA_CONTENT["unidades-de-medida"] = `<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <svg width="260" height="180" viewBox="0 0 260 180" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+    <rect x="20" y="60" width="220" height="60" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="6"/>
+    <line x1="40" y1="60" x2="40" y2="85" stroke="#92400e" stroke-width="2"/><text x="36" y="102" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400e">0</text>
+    <line x1="80" y1="60" x2="80" y2="80" stroke="#92400e" stroke-width="1.5"/><text x="76" y="102" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400e">1</text>
+    <line x1="120" y1="60" x2="120" y2="85" stroke="#92400e" stroke-width="2"/><text x="116" y="102" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400e">2</text>
+    <line x1="160" y1="60" x2="160" y2="80" stroke="#92400e" stroke-width="1.5"/><text x="156" y="102" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400e">3</text>
+    <line x1="200" y1="60" x2="200" y2="85" stroke="#92400e" stroke-width="2"/><text x="196" y="102" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="#92400e">4 cm</text>
+  </svg>
+</div>
+
+Uma **Grandeza Física** é qualquer propriedade observável de um corpo ou fenômeno que possa ser quantificada numericamente por meio de uma medição. Uma **Unidade de Medida** é uma quantidade padrão adotada como referência universal. O **Sistema Internacional de Unidades (SI)** padroniza essas unidades globalmente.
 
 <div style="text-align: center; margin: 1.5rem 0;">
-  <svg viewBox="0 0 500 160" width="100%" max-width="500" style="background: rgba(15, 23, 42, 0.6); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); padding: 10px;">
+<svg viewBox="0 0 500 160" width="100%" max-width="500" style="background: rgba(255, 255, 255, 0.6); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); padding: 10px;">
     <!-- Escala decimal de Comprimento -->
-    <rect x="40" y="60" width="60" height="40" fill="#38bdf8" rx="4" />
-    <text x="70" y="85" fill="#0f172a" font-size="12" font-weight="bold" text-anchor="middle">km</text>
+    <rect x="15" y="60" width="60" height="40" fill="#38bdf8" rx="4"></rect>
+    <text x="45" y="85" fill="#0f172a" font-size="12" font-weight="bold" text-anchor="middle">km</text>
     
-    <text x="120" y="85" fill="#fbbf24" font-size="14" font-weight="bold">÷10 ⇄ ×10</text>
+    <text x="90" y="75" fill="#35cb1eff" font-size="40" font-weight="bold">→</text>
+    <text x="90" y="55" fill="#35cb1eff" font-size="14" font-weight="bold">÷10</text>
+    <text x="90" y="95" fill="#9f53e7ff" font-size="40" font-weight="bold">←</text>
+    <text x="90" y="105" fill="#9f53e7ff" font-size="14" font-weight="bold">×10</text>
 
-    <rect x="160" y="60" width="60" height="40" fill="#818cf8" rx="4" />
-    <text x="190" y="85" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">m</text>
+    <rect x="140" y="60" width="60" height="40" fill="#818cf8" rx="4"></rect>
+    <text x="170" y="85" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">m</text>
 
-    <text x="240" y="85" fill="#fbbf24" font-size="14" font-weight="bold">×100</text>
+    <text x="210" y="75" fill="#35cb1eff" font-size="40" font-weight="bold">→</text>
+    <text x="210" y="55" fill="#35cb1eff" font-size="14" font-weight="bold">÷10</text>
+    <text x="210" y="95" fill="#9f53e7ff" font-size="40" font-weight="bold">←</text>
+    <text x="210" y="105" fill="#9f53e7ff" font-size="14" font-weight="bold">×10</text>
 
-    <rect x="280" y="60" width="60" height="40" fill="#34d399" rx="4" />
-    <text x="310" y="85" fill="#0f172a" font-size="12" font-weight="bold" text-anchor="middle">cm</text>
+    <rect x="265" y="60" width="60" height="40" fill="#818cf8" rx="4"></rect>
+    <text x="295" y="85" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">cm</text>
 
-    <text x="360" y="85" fill="#fbbf24" font-size="14" font-weight="bold">×10</text>
+    <text x="340" y="75" fill="#35cb1eff" font-size="40" font-weight="bold">→</text>
+    <text x="340" y="55" fill="#35cb1eff" font-size="14" font-weight="bold">÷10</text>
+<text x="340" y="95" fill="#9f53e7ff" font-size="40" font-weight="bold">←</text>
+    <text x="340" y="105" fill="#9f53e7ff" font-size="14" font-weight="bold">×10</text>
 
-    <rect x="400" y="60" width="60" height="40" fill="#f43f5e" rx="4" />
-    <text x="430" y="85" fill="#f8fafc" font-size="12" font-weight="bold" text-anchor="middle">mm</text>
+
+    <rect x="390" y="60" width="60" height="40" fill="#f43f5e" rx="4"></rect>
+    <text x="420" y="85" fill="#f8fafc" font-size="12" font-weight="bold" text-anchor="middle">mm</text>
     
-    <text x="250" y="140" fill="#cbd5e1" font-size="12" text-anchor="middle">Fatores de Conversão Decimal no Sistema Métrico</text>
+    <text x="250" y="140" fill="#022754ff" font-size="14" text-anchor="middle">Fatores de Conversão Decimal no Sistema Métrico</text>
   </svg>
 </div>
 

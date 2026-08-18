@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["metodos-de-demonstracao"] = `Uma demonstração matemática é uma cadeia rigorosa de raciocínios que parte de verdades conhecidas ([[axiomas-fundamentais]] ou [[teoremas]] já provados) e chega a uma nova verdade. Ela é universal: não apenas "funciona para os casos que testei", mas vale para todos os casos possíveis, para sempre.
+  window.UPEDIA_CONTENT["metodos-de-demonstracao"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nUma demonstração matemática é uma cadeia rigorosa de raciocínios que parte de verdades conhecidas ([[axiomas-fundamentais]] ou [[teoremas]] já provados) e chega a uma nova verdade. Ela é universal: não apenas "funciona para os casos que testei", mas vale para todos os casos possíveis, para sempre.
 
 Existem seis métodos principais. Cada um é uma estratégia diferente de ataque.
 

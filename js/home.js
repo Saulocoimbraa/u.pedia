@@ -11,7 +11,7 @@ window.renderHome = function (containerId) {
 
   var articles = window.UPEDIA_ARTICLES || [];
   var axes = window.UPEDIA_AXES || {};
-  var featured = articles.find(function (a) { return a.id === "teorema-de-pitagoras"; }) || articles[0];
+  var featured = articles.find(function (a) { return a.id === "historia-da-matematica"; }) || articles[0];
 
   var AXIS_ORDER = [
     "geometria",
@@ -88,7 +88,7 @@ window.renderHome = function (containerId) {
             '<a href="#/artigo/' + featured.id + '" class="btn btn-primary">Explorar Artigo <i data-lucide="arrow-right"></i></a>' +
           '</div>' +
           '<div class="featured-visual">' +
-            '<div class="featured-math-symbol">$$a^2 = b^2 + c^2$$</div>' +
+            '<div class="featured-math-symbol">$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$</div>' +
           '</div>' +
         '</div>' +
       '</div>' +

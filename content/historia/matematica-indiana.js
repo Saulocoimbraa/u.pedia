@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["matematica-indiana"] = `A Índia produziu algumas das maiores inovações da [[historia-da-matematica]], muitas delas adotadas pelo mundo ocidental via transmissão árabe sem o devido crédito histórico. Dois legados em particular moldaram profundamente toda a matemática e [[computacao]] modernas: o **zero** e o **sistema de numeração posicional**.
+  window.UPEDIA_CONTENT["matematica-indiana"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nA Índia produziu algumas das maiores inovações da [[historia-da-matematica]], muitas delas adotadas pelo mundo ocidental via transmissão árabe sem o devido crédito histórico. Dois legados em particular moldaram profundamente toda a matemática e [[computacao]] modernas: o **zero** e o **sistema de numeração posicional**.
 
 ### A Invenção do Zero
 

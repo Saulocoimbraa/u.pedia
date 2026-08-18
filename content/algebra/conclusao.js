@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["conclusao"] = `A conclusão é a coroa final de qualquer [[teorema]] ou inferência na [[logica]] matemática. Se a hipótese é a "semente", a conclusão é a "árvore adulta" validada após o processo rigoroso dos [[metodos-de-demonstracao]].
+  window.UPEDIA_CONTENT["conclusao"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+ 
+</div>\n\nA conclusão é a coroa final de qualquer [[teorema]] ou inferência na [[logica]] matemática. Se a hipótese é a "semente", a conclusão é a "árvore adulta" validada após o processo rigoroso dos [[metodos-de-demonstracao]].
 
 No formato proposicional ("Se $P$, então $Q$"), a conclusão é a declaração $Q$.
 

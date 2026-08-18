@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["matematica-grega"] = `A **Matemática Grega** refere-se à matemática desenvolvida na Grécia Antiga e seus territórios de influência entre aproximadamente 600 a.C. e 600 d.C. Ela representa a maior revolução metodológica da história das ciências matemáticas.
+  window.UPEDIA_CONTENT["matematica-grega"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  
+</div>\n\nA **Matemática Grega** refere-se à matemática desenvolvida na Grécia Antiga e seus territórios de influência entre aproximadamente 600 a.C. e 600 d.C. Ela representa a maior revolução metodológica da história das ciências matemáticas.
 
 ### Do Prático ao Abstrato
 

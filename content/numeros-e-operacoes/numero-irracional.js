@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-irracional"] = `Os números irracionais são a essência das lacunas existentes no conjunto do [[numero-racional]]. Um número irracional é um número real que **não pode** ser expresso de forma exata como a razão (ou [[fracao]]) de dois inteiros $p/q$.
+  window.UPEDIA_CONTENT["numero-irracional"] = `\n\nOs números irracionais são a essência das lacunas existentes no conjunto do [[numero-racional]]. Um número irracional é um número real que **não pode** ser expresso de forma exata como a razão (ou [[fracao]]) de dois inteiros $p/q$.
 
 Enquanto uma representação decimal de um racional ou tem um fim exato ($0.5$) ou repete uma dízima periódica infinita ($0.333\\dots$), o decimal de um número irracional segue pela infinidade **sem padrão de repetição**.
 

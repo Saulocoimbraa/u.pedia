@@ -50,3 +50,9 @@ Para evitar redundâncias e manter o conteúdo focado no aprofundamento:
 * **Links para Aprofundamento:** Use a hipertextualidade (`[[id-do-artigo]]`) apenas quando o termo demandar um aprofundamento rigoroso e independente que desvie ou exceda o escopo do artigo atual. Evite envelopar conceitos com links se a explicação direta e suficiente do conceito já estiver no próprio corpo de texto do artigo atual.
 * **Revisão:** Durante a criação ou edição, remova links que apontem para termos explicados detalhadamente de forma local no mesmo arquivo para evitar links quebrados ou redundantes.
 
+## 8. Regras para os SVG e Widget
+* **Cores Claras:** Fundo Branco, cores pastel, estilo leve, minimalista, ilustração como em livros didáticos
+* **Textos:** O minimo possível, evitar ao máximo sobreposição
+* **Referencia:** A ilustração deve ser literalmente associada a palavra-chave
+* **Widget:** As regras anteriores devem ser consideradas na criação dos widgets (Demonstrações interativas)
+* **Foco dos Widgets:** prático, investigativo, interativo e o mais simples possivel. Um exemplo de boa pratica widgetImpares.js

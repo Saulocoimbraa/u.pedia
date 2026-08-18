@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["potencia-de-dois"] = `As **potências de 2** (uma forma de [[potenciacao]]) para um número natural $n > 0$ são o resultado da multiplicação do número $2$ por si mesmo $n$ vezes:
+  window.UPEDIA_CONTENT["potencia-de-dois"] = `\n\n\nAs **potências de 2** (uma forma de [[potenciacao]]) para um número natural $n > 0$ são o resultado da multiplicação do número $2$ por si mesmo $n$ vezes:
 
 $$2^n = \\underbrace{2 \\times 2 \\times \\cdots \\times 2}_{n \\text{ vezes}}$$
 
@@ -28,5 +28,6 @@ As potências respeitam os [[axiomas-fundamentais]] da álgebra:
 * **Multiplicação:** $2^a \\times 2^b = 2^{a+b}$
 * **Divisão:** $2^a \\div 2^b = 2^{a-b}$
 * **Potência de potência:** $(2^a)^b = 2^{a \\cdot b}$
-`;
+
+{{widget}}`;
 })();

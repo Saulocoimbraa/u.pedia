@@ -745,6 +745,24 @@ window.UPEDIA_ARTICLES = [
   },
 
   {
+    id: "historia-da-matematica",
+    title: "História da Matemática",
+    level: "Ensino Médio",
+    category: "História",
+    axis: "historia",
+    icon: "globe",
+    summary: "A matemática é uma criação de toda a humanidade. Da África ao Andes, da Índia ao mundo islâmico — cada povo teceu sua própria teia de conhecimento matemático.",
+    infobox: {
+      "Perspectiva": "Etnomatemática (D'Ambrósio)",
+      "Evidência mais antiga": "Osso de Ishango (~20 000 a.C., Congo)",
+      "Zero": "Brahmagupta, Índia (628 d.C.)",
+      "Álgebra": "Al-Khwarizmi, Bagdá (~820 d.C.)",
+      "Conexão": "[[matematica-babilonica]], [[matematica-indiana]]"
+    },
+    widget: null
+  },
+
+  {
     id: "numero-primo",
     title: "Número Primo",
     level: "Ensino Fundamental II",
@@ -1635,9 +1653,9 @@ window.UPEDIA_AXES = {
     icon: "scroll-text",
     color: "#ec4899",
     colorLight: "#fce7f3",
-    description: "As pessoas e culturas que construíram a matemática: de Euclides e Pitágoras à civilização babilônica.",
-    anchor: "euclides",
-    keywords: ["Euclides", "Pitágoras", "Peano", "Arquimedes", "babilônia", "axiomas"]
+    description: "A matemática é uma criação de toda a humanidade: África, Américas, Índia, mundo islâmico e Grécia — cada povo teceu sua teia de conhecimento.",
+    anchor: "historia-da-matematica",
+    keywords: ["etnomatemática", "Pitágoras", "Peano", "Arquimedes", "babilônia", "Al-Khwarizmi"]
   },
   "estatistica": {
     label: "Estatística e Probabilidade",

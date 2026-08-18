@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["metodo-socratico"] = `O **Método Socrático** é uma técnica de investigação filosófica e pedagógica desenvolvida pelo filósofo grego Sócrates. Ele baseia-se em um diálogo conduzido por perguntas sucessivas destinadas a fazer o interlocutor expor suas próprias crenças e, a partir delas, perceber contradições ocultas ou lacunas na sua lógica.
+  window.UPEDIA_CONTENT["metodo-socratico"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nO **Método Socrático** é uma técnica de investigação filosófica e pedagógica desenvolvida pelo filósofo grego Sócrates. Ele baseia-se em um diálogo conduzido por perguntas sucessivas destinadas a fazer o interlocutor expor suas próprias crenças e, a partir delas, perceber contradições ocultas ou lacunas na sua lógica.
 
 ### A Maiêutica e a Busca por Definições
 

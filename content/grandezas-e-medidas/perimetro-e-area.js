@@ -2,20 +2,6 @@
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
   window.UPEDIA_CONTENT["perimetro-e-area"] = `Na [[geometria-plana]], **Perímetro** e **Área** são duas grandezas distintas utilizadas para mensurar figuras bidimensionais. A confusão entre ambas é comum, mas elas possuem conceitos, dimensões físicas e fórmulas completamente diferentes.
 
-<div style="text-align: center; margin: 1.5rem 0;">
-  <svg viewBox="0 0 500 180" width="100%" max-width="500" style="background: rgba(15, 23, 42, 0.6); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); padding: 10px;">
-    <!-- Figura Retângulo -->
-    <rect x="150" y="40" width="200" height="100" fill="rgba(56, 189, 248, 0.25)" stroke="#38bdf8" stroke-width="4" />
-    
-    <!-- Linha de Perímetro destacada -->
-    <text x="250" y="30" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">Contorno 1D: Perímetro P = 2b + 2h</text>
-    
-    <!-- Região Interna de Área -->
-    <text x="250" y="95" fill="#f8fafc" font-size="14" font-weight="bold" text-anchor="middle">Superfície 2D: Área A = b · h</text>
-    
-    <text x="250" y="165" fill="#cbd5e1" font-size="12" text-anchor="middle">Diferença entre Contorno Unidimensional e Superfície Bidimensional</text>
-  </svg>
-</div>
 
 ### 1. Distinção Conceitual Fundamentadora
 
@@ -45,7 +31,7 @@ Dados a base maior $B$, a base menor $b$ e a altura $h$:
 $$A = \\frac{(B + b) \\cdot h}{2}$$
 
 #### F. Círculo
-Dado o raio $r$ e a constante $\pi$ ($\\pi \\approx 3{,}14159$):
+Dado o raio $r$ e a constante $\\pi$ ($\\pi \\approx 3{,}14159$):
 $$A = \\pi r^2, \\quad \\text{Comprimento da Circunferência: } C = 2\\pi r$$
 
 ### 3. Independência entre Perímetro e Área

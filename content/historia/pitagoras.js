@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["pitagoras"] = `Pitágoras de Samos (c. 570–495 a.C.) foi um filósofo e matemático da antiga [[matematica-grega]] cuja influência moldou de forma decisiva a tradição intelectual ocidental. Fundador da escola pitagórica em Crotona (sul da Itália), ele era ao mesmo tempo místico, religioso e cientista — uma combinação que tornou sua herança complexa e fascinante.
+  window.UPEDIA_CONTENT["pitagoras"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nPitágoras de Samos (c. 570–495 a.C.) foi um filósofo e matemático da antiga [[matematica-grega]] cuja influência moldou de forma decisiva a tradição intelectual ocidental. Fundador da escola pitagórica em Crotona (sul da Itália), ele era ao mesmo tempo místico, religioso e cientista — uma combinação que tornou sua herança complexa e fascinante.
 
 ### A Escola Pitagórica
 

@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-real"] = `O conjunto dos números reais, denotado por $\\mathbb{R}$, é a estrutura numérica mais completa utilizada na matemática elementar e avançada. Ele é a **reunião de todos os [[numeros-racionais]] e todos os [[numeros-irracionais]]** — ou seja, reúne absolutamente todo número que pode ser representado por um ponto sobre a reta numérica.
+  window.UPEDIA_CONTENT["numero-real"] = `\n\n\nO conjunto dos números reais, denotado por $\\mathbb{R}$, é a estrutura numérica mais completa utilizada na matemática elementar e avançada. Ele é a **reunião de todos os [[numeros-racionais]] e todos os [[numeros-irracionais]]** — ou seja, reúne absolutamente todo número que pode ser representado por um ponto sobre a reta numérica.
 
 $$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$
 

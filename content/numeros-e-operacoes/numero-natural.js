@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-natural"] = `Os números naturais são a base de toda a construção da aritmética. Eles representam a intuição humana mais básica: a contagem e a ordenação.
+  window.UPEDIA_CONTENT["numero-natural"] = `\n\n\nOs números naturais são a base de toda a construção da aritmética. Eles representam a intuição humana mais básica: a contagem e a ordenação.
 
 A sequência dos naturais é frequentemente denotada por $\\mathbb{N}$:
 $$\\mathbb{N} = \\{0, 1, 2, 3, 4, \\dots\\}$$

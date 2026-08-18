@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["numero-primo"] = `Um **número primo** é um [[numero-natural]] maior que 1 que possui apenas dois divisores inteiros positivos distintos: o número 1 e ele próprio. Números que possuem mais de dois divisores são chamados de **números compostos**.
+  window.UPEDIA_CONTENT["numero-primo"] = `\n\n\nUm **número primo** é um [[numero-natural]] maior que 1 que possui apenas dois divisores inteiros positivos distintos: o número 1 e ele próprio. Números que possuem mais de dois divisores são chamados de **números compostos**.
 
 O número 1 **não é considerado primo** por convenção matemática moderna. Essa exclusão é crucial para manter a elegância e a unicidade de teoremas fundamentais.
 

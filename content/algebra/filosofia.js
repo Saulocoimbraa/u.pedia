@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["filosofia"] = `A **Filosofia** (do grego, *"amor à sabedoria"*) é a investigação crítica das questões mais fundamentais sobre a existência, o conhecimento, a verdade, a mente, a linguagem e a ética.
+  window.UPEDIA_CONTENT["filosofia"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nA **Filosofia** (do grego, *"amor à sabedoria"*) é a investigação crítica das questões mais fundamentais sobre a existência, o conhecimento, a verdade, a mente, a linguagem e a ética.
 
 Historicamente, a filosofia e a matemática nasceram juntas. Quase todos os grandes matemáticos da Antiguidade eram também filósofos.
 

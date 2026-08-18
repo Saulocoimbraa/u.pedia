@@ -1,6 +1,8 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["hipotese"] = `No esqueleto da [[logica]] dedutiva que sustenta a matemática, a hipótese é a "condição inicial". É o solo do qual todo o raciocínio parte.
+  window.UPEDIA_CONTENT["hipotese"] = `\n<div style="display: flex; justify-content: center; margin: 2rem 0;">
+
+</div>\n\nNo esqueleto da [[logica]] dedutiva que sustenta a matemática, a hipótese é a "condição inicial". É o solo do qual todo o raciocínio parte.
 
 Num [[teorema]], que quase sempre obedece ao fluxo da implicação ("Se $P$, então $Q$"), a letra $P$ representa a hipótese.
 

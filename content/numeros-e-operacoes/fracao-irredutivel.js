@@ -1,6 +1,6 @@
 (function () {
   window.UPEDIA_CONTENT = window.UPEDIA_CONTENT || {};
-  window.UPEDIA_CONTENT["fracao-irredutivel"] = `Uma **fração irredutível** (ou simplificada) é aquela em que o numerador e o denominador são números inteiros primos entre si. Isso significa que o único divisor comum positivo entre eles é o número 1, impossibilitando qualquer simplificação adicional.
+  window.UPEDIA_CONTENT["fracao-irredutivel"] = `\n\n\nUma **fração irredutível** (ou simplificada) é aquela em que o numerador e o denominador são números inteiros primos entre si. Isso significa que o único divisor comum positivo entre eles é o número 1, impossibilitando qualquer simplificação adicional.
 
 ### Como Obter uma Fração Irredutível
 
@@ -18,5 +18,6 @@ Para transformar qualquer [[fracao]] em sua forma irredutível, devemos dividir 
 A forma irredutível é o padrão para expressar qualquer [[numero-racional]]. Sem ela, um único número real teria infinitas representações escritas. 
 
 Essa propriedade é fundamental em provas clássicas. Por exemplo, na prova da [[raiz-de-2-irracional]], assume-se que $\\sqrt{2}$ pode ser escrito como uma fração irredutível $\\frac{p}{q}$. A demonstração prossegue mostrando que tanto $p$ quanto $q$ devem ser múltiplos de 2, o que contradiz o fato de a fração ser irredutível, provando assim a irracionalidade do número.
-`;
+
+{{widget}}`;
 })();
